@@ -1,0 +1,222 @@
+2023-09-12 16:17:33, INFO: Using device: cpu
+2023-09-12 16:17:33, INFO: Policy: SARL w/o global state
+2023-09-12 16:17:33, INFO: human number: 6
+2023-09-12 16:17:33, INFO: Randomize human's radius and preferred speed
+2023-09-12 16:17:33, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2023-09-12 16:17:33, INFO: Square width: 10.0, circle width: 6.0
+2023-09-12 16:17:33, INFO: Current learning rate: 0.010000
+2023-09-12 16:17:33, INFO: running 1/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:33, INFO: 1/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 2/5000 episode, simulation environment: static
+2023-09-12 16:17:33, INFO: 2/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 3/5000 episode, simulation environment: no
+2023-09-12 16:17:33, INFO: 3/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 4/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:33, INFO: 4/5000 episode: Collision!
+2023-09-12 16:17:33, INFO: running 5/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:33, INFO: 5/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 6/5000 episode, simulation environment: square_static
+2023-09-12 16:17:33, INFO: 6/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 7/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:33, INFO: 7/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 8/5000 episode, simulation environment: static
+2023-09-12 16:17:33, INFO: 8/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 9/5000 episode, simulation environment: no
+2023-09-12 16:17:33, INFO: 9/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 10/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:33, INFO: 10/5000 episode: Collision!
+2023-09-12 16:17:33, INFO: running 11/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:33, INFO: 11/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 12/5000 episode, simulation environment: square_static
+2023-09-12 16:17:33, INFO: 12/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 13/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:33, INFO: 13/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 14/5000 episode, simulation environment: static
+2023-09-12 16:17:33, INFO: 14/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 15/5000 episode, simulation environment: no
+2023-09-12 16:17:33, INFO: 15/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 16/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:33, INFO: 16/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 17/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:33, INFO: 17/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 18/5000 episode, simulation environment: square_static
+2023-09-12 16:17:33, INFO: 18/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 19/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:33, INFO: 19/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 20/5000 episode, simulation environment: static
+2023-09-12 16:17:33, INFO: 20/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 21/5000 episode, simulation environment: no
+2023-09-12 16:17:33, INFO: 21/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 22/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:33, INFO: 22/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 23/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:33, INFO: 23/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 24/5000 episode, simulation environment: square_static
+2023-09-12 16:17:33, INFO: 24/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 25/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:33, INFO: 25/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 26/5000 episode, simulation environment: static
+2023-09-12 16:17:33, INFO: 26/5000 episode: Success!
+2023-09-12 16:17:33, INFO: running 27/5000 episode, simulation environment: no
+2023-09-12 16:17:34, INFO: 27/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 28/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:34, INFO: 28/5000 episode: Collision!
+2023-09-12 16:17:34, INFO: running 29/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:34, INFO: 29/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 30/5000 episode, simulation environment: square_static
+2023-09-12 16:17:34, INFO: 30/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 31/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:34, INFO: 31/5000 episode: Collision!
+2023-09-12 16:17:34, INFO: running 32/5000 episode, simulation environment: static
+2023-09-12 16:17:34, INFO: 32/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 33/5000 episode, simulation environment: no
+2023-09-12 16:17:34, INFO: 33/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 34/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:34, INFO: 34/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 35/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:34, INFO: 35/5000 episode: Collision!
+2023-09-12 16:17:34, INFO: running 36/5000 episode, simulation environment: square_static
+2023-09-12 16:17:34, INFO: 36/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 37/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:34, INFO: 37/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 38/5000 episode, simulation environment: static
+2023-09-12 16:17:34, INFO: 38/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 39/5000 episode, simulation environment: no
+2023-09-12 16:17:34, INFO: 39/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 40/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:34, INFO: 40/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 41/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:34, INFO: 41/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 42/5000 episode, simulation environment: square_static
+2023-09-12 16:17:34, INFO: 42/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 43/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:34, INFO: 43/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 44/5000 episode, simulation environment: static
+2023-09-12 16:17:34, INFO: 44/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 45/5000 episode, simulation environment: no
+2023-09-12 16:17:34, INFO: 45/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 46/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:34, INFO: 46/5000 episode: Collision!
+2023-09-12 16:17:34, INFO: running 47/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:34, INFO: 47/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 48/5000 episode, simulation environment: square_static
+2023-09-12 16:17:34, INFO: 48/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 49/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:34, INFO: 49/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 50/5000 episode, simulation environment: static
+2023-09-12 16:17:34, INFO: 50/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 51/5000 episode, simulation environment: no
+2023-09-12 16:17:34, INFO: 51/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 52/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:34, INFO: 52/5000 episode: Collision!
+2023-09-12 16:17:34, INFO: running 53/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:34, INFO: 53/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 54/5000 episode, simulation environment: square_static
+2023-09-12 16:17:34, INFO: 54/5000 episode: Success!
+2023-09-12 16:17:34, INFO: running 55/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:34, INFO: 55/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 56/5000 episode, simulation environment: static
+2023-09-12 16:17:35, INFO: 56/5000 episode: Collision!
+2023-09-12 16:17:35, INFO: running 57/5000 episode, simulation environment: no
+2023-09-12 16:17:35, INFO: 57/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 58/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:35, INFO: 58/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 59/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:35, INFO: 59/5000 episode: Collision!
+2023-09-12 16:17:35, INFO: running 60/5000 episode, simulation environment: square_static
+2023-09-12 16:17:35, INFO: 60/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 61/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:35, INFO: 61/5000 episode: Collision!
+2023-09-12 16:17:35, INFO: running 62/5000 episode, simulation environment: static
+2023-09-12 16:17:35, INFO: 62/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 63/5000 episode, simulation environment: no
+2023-09-12 16:17:35, INFO: 63/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 64/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:35, INFO: 64/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 65/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:35, INFO: 65/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 66/5000 episode, simulation environment: square_static
+2023-09-12 16:17:35, INFO: 66/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 67/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:35, INFO: 67/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 68/5000 episode, simulation environment: static
+2023-09-12 16:17:35, INFO: 68/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 69/5000 episode, simulation environment: no
+2023-09-12 16:17:35, INFO: 69/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 70/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:35, INFO: 70/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 71/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:35, INFO: 71/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 72/5000 episode, simulation environment: square_static
+2023-09-12 16:17:35, INFO: 72/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 73/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:35, INFO: 73/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 74/5000 episode, simulation environment: static
+2023-09-12 16:17:35, INFO: 74/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 75/5000 episode, simulation environment: no
+2023-09-12 16:17:35, INFO: 75/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 76/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:35, INFO: 76/5000 episode: Collision!
+2023-09-12 16:17:35, INFO: running 77/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:35, INFO: 77/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 78/5000 episode, simulation environment: square_static
+2023-09-12 16:17:35, INFO: 78/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 79/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:35, INFO: 79/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 80/5000 episode, simulation environment: static
+2023-09-12 16:17:35, INFO: 80/5000 episode: Collision!
+2023-09-12 16:17:35, INFO: running 81/5000 episode, simulation environment: no
+2023-09-12 16:17:35, INFO: 81/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 82/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:35, INFO: 82/5000 episode: Collision!
+2023-09-12 16:17:35, INFO: running 83/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:35, INFO: 83/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 84/5000 episode, simulation environment: square_static
+2023-09-12 16:17:35, INFO: 84/5000 episode: Success!
+2023-09-12 16:17:35, INFO: running 85/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:35, INFO: 85/5000 episode: Collision!
+2023-09-12 16:17:36, INFO: running 86/5000 episode, simulation environment: static
+2023-09-12 16:17:36, INFO: 86/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 87/5000 episode, simulation environment: no
+2023-09-12 16:17:36, INFO: 87/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 88/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:36, INFO: 88/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 89/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:36, INFO: 89/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 90/5000 episode, simulation environment: square_static
+2023-09-12 16:17:36, INFO: 90/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 91/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:36, INFO: 91/5000 episode: Collision!
+2023-09-12 16:17:36, INFO: running 92/5000 episode, simulation environment: static
+2023-09-12 16:17:36, INFO: 92/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 93/5000 episode, simulation environment: no
+2023-09-12 16:17:36, INFO: 93/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 94/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:36, INFO: 94/5000 episode: Collision!
+2023-09-12 16:17:36, INFO: running 95/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:36, INFO: 95/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 96/5000 episode, simulation environment: square_static
+2023-09-12 16:17:36, INFO: 96/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 97/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:36, INFO: 97/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 98/5000 episode, simulation environment: static
+2023-09-12 16:17:36, INFO: 98/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 99/5000 episode, simulation environment: no
+2023-09-12 16:17:36, INFO: 99/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 100/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:36, INFO: 100/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 101/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:36, INFO: 101/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 102/5000 episode, simulation environment: square_static
+2023-09-12 16:17:36, INFO: 102/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 103/5000 episode, simulation environment: circle_crossing
+2023-09-12 16:17:36, INFO: 103/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 104/5000 episode, simulation environment: static
+2023-09-12 16:17:36, INFO: 104/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 105/5000 episode, simulation environment: no
+2023-09-12 16:17:36, INFO: 105/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 106/5000 episode, simulation environment: square_crossing
+2023-09-12 16:17:36, INFO: 106/5000 episode: Collision!
+2023-09-12 16:17:36, INFO: running 107/5000 episode, simulation environment: circle_static
+2023-09-12 16:17:36, INFO: 107/5000 episode: Success!
+2023-09-12 16:17:36, INFO: running 108/5000 episode, simulation environment: square_static

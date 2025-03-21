@@ -1,0 +1,196 @@
+2024-05-13 00:09:21, INFO: Using device: cpu
+2024-05-13 00:09:21, INFO: Policy: SARL w/o global state
+2024-05-13 00:09:21, INFO: human number: 4
+2024-05-13 00:09:21, INFO: Randomize human's radius and preferred speed
+2024-05-13 00:09:21, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2024-05-13 00:09:21, INFO: Square width: 10.0, circle width: 8.0
+2024-05-13 00:09:21, INFO: Current learning rate: 0.010000
+2024-05-13 00:09:21, INFO: 4
+2024-05-13 00:09:21, INFO: running 1/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:09:22, INFO: 1/4000 episode: Collision! Total Reward: -0.494, R_dan: 0.006, R_goal: 0.0, R_col: -0.5, R_km: 0.6, R_col_wall: 0.0, R_wall_min_dist: -0.6, R_stop_t: 0.0
+2024-05-13 00:09:22, INFO: Path length: 3.81713359276
+2024-05-13 00:09:22, INFO: Path left: 14.965987592
+2024-05-13 00:09:22, INFO: Actions: 6
+2024-05-13 00:09:22, INFO: Coordinates: -0.363805688648 -8.58980589445
+2024-05-13 00:09:22, INFO: Stops times: 0
+
+2024-05-13 00:09:22, INFO: 4
+2024-05-13 00:09:22, INFO: running 2/4000 episode, simulation environment: circle_static
+2024-05-13 00:09:22, INFO: 2/4000 episode: Collision! Total Reward: -0.674, R_dan: 0.006, R_goal: 0.0, R_col: -0.5, R_km: 0.43, R_col_wall: 0.0, R_wall_min_dist: -0.6, R_stop_t: -0.01
+2024-05-13 00:09:22, INFO: Path length: 2.77195659521
+2024-05-13 00:09:22, INFO: Path left: 18.1043978524
+2024-05-13 00:09:22, INFO: Actions: 6
+2024-05-13 00:09:22, INFO: Coordinates: 3.90877867424 -9.31724049274
+2024-05-13 00:09:22, INFO: Stops times: 1
+
+2024-05-13 00:09:22, INFO: 4
+2024-05-13 00:09:22, INFO: running 3/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:09:22, INFO: 3/4000 episode: Collision! Total Reward: -0.285, R_dan: 0.01, R_goal: 0.0, R_col: -0.5, R_km: 1.0, R_col_wall: 0.0, R_wall_min_dist: -0.796, R_stop_t: 0.0
+2024-05-13 00:09:22, INFO: Path length: 6.37555517369
+2024-05-13 00:09:22, INFO: Path left: 12.4148403093
+2024-05-13 00:09:22, INFO: Actions: 10
+2024-05-13 00:09:22, INFO: Coordinates: -3.63288203746 -7.43000121467
+2024-05-13 00:09:22, INFO: Stops times: 0
+
+2024-05-13 00:09:22, INFO: 4
+2024-05-13 00:09:22, INFO: running 4/4000 episode, simulation environment: circle_static
+2024-05-13 00:09:22, INFO: 4/4000 episode: Timeout! Total Reward: -25.014, R_dan: 0.257, R_goal: 0.0, R_col: 0.0, R_km: 0.71, R_col_wall: 0.0, R_wall_min_dist: -24.986, R_stop_t: -1.0
+2024-05-13 00:09:22, INFO: Path length: 47.0211717509
+2024-05-13 00:09:22, INFO: Path left: 22.5427884047
+2024-05-13 00:09:22, INFO: Actions: 257
+2024-05-13 00:09:22, INFO: Coordinates: 9.69008811973 18.3795890121
+2024-05-13 00:09:22, INFO: Stops times: 100
+
+2024-05-13 00:09:22, INFO: 4
+2024-05-13 00:09:22, INFO: running 5/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:09:22, INFO: 5/4000 episode: Collision! Total Reward: -0.488, R_dan: 0.012, R_goal: 0.0, R_col: -0.5, R_km: 1.2, R_col_wall: 0.0, R_wall_min_dist: -1.2, R_stop_t: 0.0
+2024-05-13 00:09:22, INFO: Path length: 3.62600833834
+2024-05-13 00:09:22, INFO: Path left: 15.4708833562
+2024-05-13 00:09:22, INFO: Actions: 12
+2024-05-13 00:09:22, INFO: Coordinates: 2.9467434337 -7.98818988213
+2024-05-13 00:09:22, INFO: Stops times: 0
+
+2024-05-13 00:09:22, INFO: 4
+2024-05-13 00:09:22, INFO: running 6/4000 episode, simulation environment: circle_static
+2024-05-13 00:09:23, INFO: 6/4000 episode: Timeout! Total Reward: -24.503, R_dan: 0.257, R_goal: 0.0, R_col: 0.0, R_km: 1.22, R_col_wall: 0.0, R_wall_min_dist: -24.986, R_stop_t: -1.0
+2024-05-13 00:09:23, INFO: Path length: 39.70345311
+2024-05-13 00:09:23, INFO: Path left: 9.62023650926
+2024-05-13 00:09:23, INFO: Actions: 257
+2024-05-13 00:09:23, INFO: Coordinates: 4.37022845566 13.8280878808
+2024-05-13 00:09:23, INFO: Stops times: 100
+
+2024-05-13 00:09:23, INFO: 4
+2024-05-13 00:09:23, INFO: running 7/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:09:23, INFO: 7/4000 episode: Collision! Total Reward: -0.489, R_dan: 0.011, R_goal: 0.0, R_col: -0.5, R_km: 1.1, R_col_wall: 0.0, R_wall_min_dist: -1.1, R_stop_t: 0.0
+2024-05-13 00:09:23, INFO: Path length: 5.28605726398
+2024-05-13 00:09:23, INFO: Path left: 17.562325873
+2024-05-13 00:09:23, INFO: Actions: 11
+2024-05-13 00:09:23, INFO: Coordinates: 1.50432600634 -9.63710369249
+2024-05-13 00:09:23, INFO: Stops times: 0
+
+2024-05-13 00:09:23, INFO: 4
+2024-05-13 00:09:23, INFO: running 8/4000 episode, simulation environment: circle_static
+2024-05-13 00:09:23, INFO: 8/4000 episode: Timeout! Total Reward: -23.223, R_dan: 0.257, R_goal: 0.0, R_col: 0.0, R_km: 2.41, R_col_wall: 0.0, R_wall_min_dist: -24.981, R_stop_t: -0.91
+2024-05-13 00:09:23, INFO: Path length: 55.2936149135
+2024-05-13 00:09:23, INFO: Path left: 19.080626619
+2024-05-13 00:09:23, INFO: Actions: 257
+2024-05-13 00:09:23, INFO: Coordinates: 7.67203566721 23.0601516811
+2024-05-13 00:09:23, INFO: Stops times: 91
+
+2024-05-13 00:09:23, INFO: 4
+2024-05-13 00:09:23, INFO: running 9/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:09:24, INFO: 9/4000 episode: Collision! Total Reward: -0.489, R_dan: 0.011, R_goal: 0.0, R_col: -0.5, R_km: 1.1, R_col_wall: 0.0, R_wall_min_dist: -1.1, R_stop_t: 0.0
+2024-05-13 00:09:24, INFO: Path length: 2.9457908784
+2024-05-13 00:09:24, INFO: Path left: 14.5472079623
+2024-05-13 00:09:24, INFO: Actions: 11
+2024-05-13 00:09:24, INFO: Coordinates: 2.06828447273 -8.01579333586
+2024-05-13 00:09:24, INFO: Stops times: 0
+
+2024-05-13 00:09:24, INFO: 4
+2024-05-13 00:09:24, INFO: running 10/4000 episode, simulation environment: circle_static
+2024-05-13 00:09:24, INFO: 10/4000 episode: Timeout! Total Reward: -3.306, R_dan: 0.255, R_goal: 0.0, R_col: 0.0, R_km: 21.45, R_col_wall: 0.0, R_wall_min_dist: -24.985, R_stop_t: -0.03
+2024-05-13 00:09:24, INFO: Path length: 73.7484990905
+2024-05-13 00:09:24, INFO: Path left: 0.789911948931
+2024-05-13 00:09:24, INFO: Actions: 257
+2024-05-13 00:09:24, INFO: Coordinates: -9.11955940674 29.9739770615
+2024-05-13 00:09:24, INFO: Stops times: 3
+
+2024-05-13 00:09:24, INFO: 4
+2024-05-13 00:09:24, INFO: running 11/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:09:24, INFO: 11/4000 episode: Collision! Total Reward: -0.477, R_dan: 0.023, R_goal: 0.0, R_col: -0.5, R_km: 2.3, R_col_wall: 0.0, R_wall_min_dist: -2.3, R_stop_t: 0.0
+2024-05-13 00:09:24, INFO: Path length: 10.4670000581
+2024-05-13 00:09:24, INFO: Path left: 13.4156942718
+2024-05-13 00:09:24, INFO: Actions: 23
+2024-05-13 00:09:24, INFO: Coordinates: -1.81332114204 -8.34229971845
+2024-05-13 00:09:24, INFO: Stops times: 0
+
+2024-05-13 00:09:24, INFO: 4
+2024-05-13 00:09:24, INFO: running 12/4000 episode, simulation environment: circle_static
+2024-05-13 00:09:24, INFO: 12/4000 episode: Collision! Total Reward: -0.669, R_dan: 0.011, R_goal: 0.0, R_col: -0.5, R_km: 0.93, R_col_wall: 0.0, R_wall_min_dist: -1.1, R_stop_t: -0.01
+2024-05-13 00:09:24, INFO: Path length: 6.2630765476
+2024-05-13 00:09:24, INFO: Path left: 15.7659933319
+2024-05-13 00:09:24, INFO: Actions: 11
+2024-05-13 00:09:24, INFO: Coordinates: 0.395630506695 -9.85590720121
+2024-05-13 00:09:24, INFO: Stops times: 1
+
+2024-05-13 00:09:24, INFO: 4
+2024-05-13 00:09:24, INFO: running 13/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:09:24, INFO: 13/4000 episode: Collision! Total Reward: -0.485, R_dan: 0.015, R_goal: 0.0, R_col: -0.5, R_km: 1.5, R_col_wall: 0.0, R_wall_min_dist: -1.5, R_stop_t: 0.0
+2024-05-13 00:09:24, INFO: Path length: 8.8347639452
+2024-05-13 00:09:24, INFO: Path left: 17.4146064169
+2024-05-13 00:09:24, INFO: Actions: 15
+2024-05-13 00:09:24, INFO: Coordinates: 1.32219220354 -9.01612276546
+2024-05-13 00:09:24, INFO: Stops times: 0
+
+2024-05-13 00:09:24, INFO: 4
+2024-05-13 00:09:24, INFO: running 14/4000 episode, simulation environment: circle_static
+2024-05-13 00:09:25, INFO: 14/4000 episode: Timeout! Total Reward: -26.063, R_dan: 0.257, R_goal: 0.0, R_col: 0.0, R_km: -0.31, R_col_wall: 0.0, R_wall_min_dist: -24.981, R_stop_t: -1.03
+2024-05-13 00:09:25, INFO: Path length: 37.0593344461
+2024-05-13 00:09:25, INFO: Path left: 13.3295587033
+2024-05-13 00:09:25, INFO: Actions: 257
+2024-05-13 00:09:25, INFO: Coordinates: -1.46130413373 12.4500070138
+2024-05-13 00:09:25, INFO: Stops times: 103
+
+2024-05-13 00:09:25, INFO: 4
+2024-05-13 00:09:25, INFO: running 15/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:09:25, INFO: 15/4000 episode: Collision! Total Reward: -0.489, R_dan: 0.011, R_goal: 0.0, R_col: -0.5, R_km: 1.1, R_col_wall: 0.0, R_wall_min_dist: -1.1, R_stop_t: 0.0
+2024-05-13 00:09:25, INFO: Path length: 6.04139696054
+2024-05-13 00:09:25, INFO: Path left: 19.1158631719
+2024-05-13 00:09:25, INFO: Actions: 11
+2024-05-13 00:09:25, INFO: Coordinates: 3.52792971592 -9.93762966816
+2024-05-13 00:09:25, INFO: Stops times: 0
+
+2024-05-13 00:09:25, INFO: 4
+2024-05-13 00:09:25, INFO: running 16/4000 episode, simulation environment: circle_static
+2024-05-13 00:09:25, INFO: 16/4000 episode: Success! Total Reward: 10.726, R_dan: 0.186, R_goal: 10.0, R_col: 0.0, R_km: 18.43, R_col_wall: 0.0, R_wall_min_dist: -17.881, R_stop_t: -0.01
+2024-05-13 00:09:25, INFO: Path length: 77.403077887
+2024-05-13 00:09:25, INFO: Path left: 0
+2024-05-13 00:09:25, INFO: Actions: 186
+2024-05-13 00:09:25, INFO: Coordinates: -9.2535481649 29.4825618935
+2024-05-13 00:09:25, INFO: Stops times: 1
+
+2024-05-13 00:10:39, INFO: 4
+2024-05-13 00:10:39, INFO: running 17/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:10:39, INFO: 17/4000 episode: Collision! Total Reward: -0.67, R_dan: 0.01, R_goal: 0.0, R_col: -0.5, R_km: 0.83, R_col_wall: 0.0, R_wall_min_dist: -1.0, R_stop_t: -0.01
+2024-05-13 00:10:39, INFO: Path length: 5.39811061203
+2024-05-13 00:10:39, INFO: Path left: 15.1039697136
+2024-05-13 00:10:39, INFO: Actions: 10
+2024-05-13 00:10:39, INFO: Coordinates: -2.45615527771 -8.70079617064
+2024-05-13 00:10:39, INFO: Stops times: 1
+
+2024-05-13 00:10:39, INFO: 4
+2024-05-13 00:10:39, INFO: running 18/4000 episode, simulation environment: circle_static
+2024-05-13 00:10:39, INFO: 18/4000 episode: Collision! Total Reward: 0.098, R_dan: 0.057, R_goal: 0.0, R_col: -0.5, R_km: 5.73, R_col_wall: 0.0, R_wall_min_dist: -5.186, R_stop_t: -0.01
+2024-05-13 00:10:39, INFO: Path length: 38.9537729234
+2024-05-13 00:10:39, INFO: Path left: 10.525158531
+2024-05-13 00:10:39, INFO: Actions: 59
+2024-05-13 00:10:39, INFO: Coordinates: 2.34226396107 12.1564256006
+2024-05-13 00:10:39, INFO: Stops times: 1
+
+2024-05-13 00:10:39, INFO: 4
+2024-05-13 00:10:39, INFO: running 19/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:10:39, INFO: 19/4000 episode: Collision! Total Reward: -0.492, R_dan: 0.008, R_goal: 0.0, R_col: -0.5, R_km: 0.8, R_col_wall: 0.0, R_wall_min_dist: -0.8, R_stop_t: 0.0
+2024-05-13 00:10:39, INFO: Path length: 2.89873079358
+2024-05-13 00:10:39, INFO: Path left: 18.8045215796
+2024-05-13 00:10:39, INFO: Actions: 8
+2024-05-13 00:10:39, INFO: Coordinates: 5.9382454148 -8.82131772004
+2024-05-13 00:10:39, INFO: Stops times: 0
+
+2024-05-13 00:10:39, INFO: 4
+2024-05-13 00:10:39, INFO: running 20/4000 episode, simulation environment: circle_static
+2024-05-13 00:10:40, INFO: 20/4000 episode: Timeout! Total Reward: -5.514, R_dan: 0.255, R_goal: 0.0, R_col: 0.0, R_km: 19.24, R_col_wall: 0.0, R_wall_min_dist: -24.981, R_stop_t: -0.03
+2024-05-13 00:10:40, INFO: Path length: 70.5487439394
+2024-05-13 00:10:40, INFO: Path left: 4.65170087089
+2024-05-13 00:10:40, INFO: Actions: 257
+2024-05-13 00:10:40, INFO: Coordinates: -5.03131247942 28.7312049658
+2024-05-13 00:10:40, INFO: Stops times: 3
+
+2024-05-13 00:10:40, INFO: 4
+2024-05-13 00:10:40, INFO: running 21/4000 episode, simulation environment: circle_crossing
+2024-05-13 00:10:40, INFO: 21/4000 episode: Success! Total Reward: 11.888, R_dan: 0.146, R_goal: 10.0, R_col: 0.0, R_km: 14.6, R_col_wall: 0.0, R_wall_min_dist: -12.866, R_stop_t: 0.0
+2024-05-13 00:10:40, INFO: Path length: 68.9352386497
+2024-05-13 00:10:40, INFO: Path left: 0
+2024-05-13 00:10:40, INFO: Actions: 146
+2024-05-13 00:10:40, INFO: Coordinates: -9.14174212436 31.6508900378
+2024-05-13 00:10:40, INFO: Stops times: 0
+

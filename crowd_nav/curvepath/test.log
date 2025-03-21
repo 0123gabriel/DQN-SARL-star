@@ -1,0 +1,15 @@
+2024-01-15 19:31:51, INFO: Using device: cpu
+2024-01-15 19:31:51, INFO: Policy: SARL w/o global state
+2024-01-15 19:31:51, INFO: human number: 8
+2024-01-15 19:31:51, INFO: Randomize human's radius and preferred speed
+2024-01-15 19:31:51, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2024-01-15 19:31:51, INFO: Square width: 10.0, circle width: 8.0
+2024-01-15 19:31:51, INFO: Current learning rate: 0.001000
+2024-01-15 19:31:51, INFO: 8
+2024-01-15 19:31:51, INFO: running 1/6000 episode, simulation environment: no
+2024-01-15 19:31:52, INFO: 1/6000 episode: Success! Total Reward: 11.232, R_dan: 0.056, 2*R_stop: 0.0, R_for: 0.56 R_goal: 10.0, R_col: 0.0, R_km: 0.56, R_col_wall: 0.0, timeout: 0.0, R_wall_min_dist: 0.056, R_wall_max_dist: 0.0, R_end: 0.0, R_stop_t: 0.0
+2024-01-15 19:31:52, INFO: Path length: 11.20000020903691
+2024-01-15 19:31:52, INFO: Path left: 0
+2024-01-15 19:31:52, INFO: Actions: 56
+2024-01-15 19:31:52, INFO: Coordinates: -3.77758532763 3.77875047922
+2024-01-15 19:31:52, INFO: Stops times: 0

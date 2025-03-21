@@ -1,0 +1,130 @@
+2023-06-21 16:00:36, INFO: Using device: cpu
+2023-06-21 16:00:36, INFO: Policy: SARL w/o global state
+2023-06-21 16:00:36, INFO: human number: 10
+2023-06-21 16:00:36, INFO: Randomize human's radius and preferred speed
+2023-06-21 16:00:36, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2023-06-21 16:00:36, INFO: Square width: 10.0, circle width: 6.0
+2023-06-21 16:00:36, INFO: Load imitation learning trained weights.
+2023-06-21 16:00:36, INFO: Agent is invisible and has unicycle kinematic constraint
+2023-06-21 16:00:36, INFO: Current learning rate: 0.001000
+2023-06-21 16:00:36, INFO: running 1/18 episode, simulation environment: circle_crossing
+2023-06-21 16:00:42, INFO: 1/18 episode: Success!
+2023-06-21 16:00:42, INFO: running 2/18 episode, simulation environment: static
+2023-06-21 16:00:45, INFO: 2/18 episode: Success!
+2023-06-21 16:00:45, INFO: running 3/18 episode, simulation environment: no
+2023-06-21 16:00:49, INFO: 3/18 episode: Success!
+2023-06-21 16:00:49, INFO: running 4/18 episode, simulation environment: square_crossing
+2023-06-21 16:00:53, INFO: 4/18 episode: Success!
+2023-06-21 16:00:53, INFO: running 5/18 episode, simulation environment: circle_static
+2023-06-21 16:00:57, INFO: 5/18 episode: Success!
+2023-06-21 16:00:57, INFO: running 6/18 episode, simulation environment: square_static
+2023-06-21 16:01:00, INFO: 6/18 episode: Collision!
+2023-06-21 16:01:00, INFO: running 7/18 episode, simulation environment: circle_crossing
+2023-06-21 16:01:08, INFO: 7/18 episode: Success!
+2023-06-21 16:01:08, INFO: running 8/18 episode, simulation environment: static
+2023-06-21 16:01:23, INFO: 8/18 episode: Timeout!
+2023-06-21 16:01:23, INFO: running 9/18 episode, simulation environment: no
+2023-06-21 16:01:26, INFO: 9/18 episode: Success!
+2023-06-21 16:01:26, INFO: running 10/18 episode, simulation environment: square_crossing
+2023-06-21 16:01:28, INFO: 10/18 episode: Collision!
+2023-06-21 16:01:28, INFO: running 11/18 episode, simulation environment: circle_static
+2023-06-21 16:01:31, INFO: 11/18 episode: Collision!
+2023-06-21 16:01:31, INFO: running 12/18 episode, simulation environment: square_static
+2023-06-21 16:01:34, INFO: 12/18 episode: Collision!
+2023-06-21 16:01:34, INFO: running 13/18 episode, simulation environment: circle_crossing
+2023-06-21 16:01:35, INFO: 13/18 episode: Collision!
+2023-06-21 16:01:35, INFO: running 14/18 episode, simulation environment: static
+2023-06-21 16:01:50, INFO: 14/18 episode: Timeout!
+2023-06-21 16:01:50, INFO: running 15/18 episode, simulation environment: no
+2023-06-21 16:01:54, INFO: 15/18 episode: Success!
+2023-06-21 16:01:54, INFO: running 16/18 episode, simulation environment: square_crossing
+2023-06-21 16:01:58, INFO: 16/18 episode: Success!
+2023-06-21 16:01:58, INFO: running 17/18 episode, simulation environment: circle_static
+2023-06-21 16:02:04, INFO: 17/18 episode: Success!
+2023-06-21 16:02:04, INFO: running 18/18 episode, simulation environment: square_static
+2023-06-21 16:02:09, INFO: 18/18 episode: Success!
+2023-06-21 16:02:09, INFO: VAL   in episode 0 has success rate: 0.61, collision rate: 0.28, nav time: 12.41, total reward: 2.3915
+2023-06-21 16:02:09, INFO: In each scenarios, VAL   in episode 0 has success rate: 0.67 0.33 1.00 0.67 0.67 0.33, collision rate: 0.33 0.00 0.00 0.33 0.33 0.67, nav time: 18.62 11.50 9.75 11.00 12.62 11.25, total reward: 1.5067 1.1599 4.8982 2.8376 2.5575 1.3889
+2023-06-21 16:02:09, INFO: Frequency in danger: 0.53 and average min separate distance in danger: 0.11
+2023-06-21 16:02:09, INFO: In each scenarios, Frequency in danger: 0.39 0.27 0.00 1.38 1.33 0.35 and average min separate distance in danger: 0.21 0.26 0.00 0.37 0.27 0.08
+2023-06-21 16:02:09, INFO: running 1/6 episode, simulation environment: circle_crossing
+2023-06-21 16:02:12, INFO: 1/6 episode: Collision!
+2023-06-21 16:02:12, INFO: running 2/6 episode, simulation environment: static
+2023-06-21 16:02:17, INFO: 2/6 episode: Success!
+2023-06-21 16:02:17, INFO: running 3/6 episode, simulation environment: no
+2023-06-21 16:02:21, INFO: 3/6 episode: Success!
+2023-06-21 16:02:21, INFO: running 4/6 episode, simulation environment: square_crossing
+2023-06-21 16:02:23, INFO: 4/6 episode: Collision!
+2023-06-21 16:02:23, INFO: running 5/6 episode, simulation environment: circle_static
+2023-06-21 16:02:28, INFO: 5/6 episode: Collision!
+2023-06-21 16:02:28, INFO: running 6/6 episode, simulation environment: square_static
+2023-06-21 16:02:30, INFO: 6/6 episode: Collision!
+2023-06-21 16:02:30, INFO: TRAIN in episode 0 has success rate: 0.33, collision rate: 0.67, nav time: 28.38, total reward: 0.3394
+2023-06-21 16:02:30, INFO: In each scenarios, TRAIN in episode 0 has success rate: 0.00 1.00 1.00 0.00 0.00 0.00, collision rate: 1.00 0.00 0.00 1.00 1.00 1.00, nav time: 38.00 30.50 26.25 38.00 38.00 38.00, total reward: -0.0820 0.8526 1.3577 -0.0996 0.0685 -0.0605
+2023-06-21 16:02:31, INFO: running 1/6 episode, simulation environment: circle_crossing
+2023-06-21 16:02:39, INFO: 1/6 episode: Timeout!
+2023-06-21 16:02:39, INFO: running 2/6 episode, simulation environment: static
+2023-06-21 16:02:44, INFO: 2/6 episode: Success!
+2023-06-21 16:02:44, INFO: running 3/6 episode, simulation environment: no
+2023-06-21 16:02:47, INFO: 3/6 episode: Success!
+2023-06-21 16:02:47, INFO: running 4/6 episode, simulation environment: square_crossing
+2023-06-21 16:02:53, INFO: 4/6 episode: Collision!
+2023-06-21 16:02:53, INFO: running 5/6 episode, simulation environment: circle_static
+2023-06-21 16:02:54, INFO: 5/6 episode: Collision!
+2023-06-21 16:02:54, INFO: running 6/6 episode, simulation environment: square_static
+2023-06-21 16:02:58, INFO: 6/6 episode: Collision!
+2023-06-21 16:02:58, INFO: TRAIN in episode 1 has success rate: 0.33, collision rate: 0.50, nav time: 21.50, total reward: 0.5945
+2023-06-21 16:02:58, INFO: In each scenarios, TRAIN in episode 1 has success rate: 0.00 1.00 1.00 0.00 0.00 0.00, collision rate: 0.00 0.00 0.00 1.00 1.00 1.00, nav time: 38.00 26.00 17.00 38.00 38.00 38.00, total reward: -0.4122 1.2291 2.7270 0.0967 -0.1497 0.0762
+2023-06-21 16:02:59, INFO: running 1/6 episode, simulation environment: circle_crossing
+2023-06-21 16:03:03, INFO: 1/6 episode: Collision!
+2023-06-21 16:03:03, INFO: running 2/6 episode, simulation environment: static
+2023-06-21 16:03:10, INFO: 2/6 episode: Timeout!
+2023-06-21 16:03:10, INFO: running 3/6 episode, simulation environment: no
+2023-06-21 16:03:13, INFO: 3/6 episode: Success!
+2023-06-21 16:03:13, INFO: running 4/6 episode, simulation environment: square_crossing
+2023-06-21 16:03:17, INFO: 4/6 episode: Collision!
+2023-06-21 16:03:18, INFO: running 5/6 episode, simulation environment: circle_static
+2023-06-21 16:03:19, INFO: 5/6 episode: Collision!
+2023-06-21 16:03:19, INFO: running 6/6 episode, simulation environment: square_static
+2023-06-21 16:03:20, INFO: 6/6 episode: Collision!
+2023-06-21 16:03:20, INFO: TRAIN in episode 2 has success rate: 0.17, collision rate: 0.67, nav time: 13.50, total reward: 0.4940
+2023-06-21 16:03:20, INFO: In each scenarios, TRAIN in episode 2 has success rate: 0.00 0.00 1.00 0.00 0.00 0.00, collision rate: 1.00 0.00 0.00 1.00 1.00 1.00, nav time: 38.00 38.00 13.50 38.00 38.00 38.00, total reward: -0.0818 -0.4534 3.6262 0.0677 -0.0722 -0.1227
+2023-06-21 16:03:21, INFO: running 1/6 episode, simulation environment: circle_crossing
+2023-06-21 16:03:22, INFO: 1/6 episode: Collision!
+2023-06-21 16:03:22, INFO: running 2/6 episode, simulation environment: static
+2023-06-21 16:03:29, INFO: 2/6 episode: Timeout!
+2023-06-21 16:03:29, INFO: running 3/6 episode, simulation environment: no
+2023-06-21 16:03:32, INFO: 3/6 episode: Success!
+2023-06-21 16:03:32, INFO: running 4/6 episode, simulation environment: square_crossing
+2023-06-21 16:03:35, INFO: 4/6 episode: Collision!
+2023-06-21 16:03:35, INFO: running 5/6 episode, simulation environment: circle_static
+2023-06-21 16:03:35, INFO: 5/6 episode: Collision!
+2023-06-21 16:03:35, INFO: running 6/6 episode, simulation environment: square_static
+2023-06-21 16:03:43, INFO: 6/6 episode: Timeout!
+2023-06-21 16:03:43, INFO: TRAIN in episode 3 has success rate: 0.17, collision rate: 0.50, nav time: 12.75, total reward: 0.4143
+2023-06-21 16:03:43, INFO: In each scenarios, TRAIN in episode 3 has success rate: 0.00 0.00 1.00 0.00 0.00 0.00, collision rate: 1.00 0.00 0.00 1.00 1.00 0.00, nav time: 38.00 38.00 12.75 38.00 38.00 38.00, total reward: -0.1640 -0.4041 3.8520 -0.1405 -0.1891 -0.4687
+2023-06-21 16:03:44, INFO: running 1/6 episode, simulation environment: circle_crossing
+2023-06-21 16:03:45, INFO: 1/6 episode: Collision!
+2023-06-21 16:03:45, INFO: running 2/6 episode, simulation environment: static
+2023-06-21 16:03:45, INFO: 2/6 episode: Collision!
+2023-06-21 16:03:45, INFO: running 3/6 episode, simulation environment: no
+2023-06-21 16:03:49, INFO: 3/6 episode: Success!
+2023-06-21 16:03:49, INFO: running 4/6 episode, simulation environment: square_crossing
+2023-06-21 16:03:50, INFO: 4/6 episode: Collision!
+2023-06-21 16:03:50, INFO: running 5/6 episode, simulation environment: circle_static
+2023-06-21 16:03:51, INFO: 5/6 episode: Collision!
+2023-06-21 16:03:51, INFO: running 6/6 episode, simulation environment: square_static
+2023-06-21 16:03:53, INFO: 6/6 episode: Collision!
+2023-06-21 16:03:53, INFO: TRAIN in episode 4 has success rate: 0.17, collision rate: 0.83, nav time: 15.50, total reward: 0.3848
+2023-06-21 16:03:53, INFO: In each scenarios, TRAIN in episode 4 has success rate: 0.00 0.00 1.00 0.00 0.00 0.00, collision rate: 1.00 1.00 0.00 1.00 1.00 1.00, nav time: 38.00 38.00 15.50 38.00 38.00 38.00, total reward: -0.1430 -0.2519 3.0740 -0.1208 -0.1919 -0.0576
+2023-06-21 16:03:54, INFO: running 1/6 episode, simulation environment: circle_crossing
+2023-06-21 16:03:55, INFO: 1/6 episode: Collision!
+2023-06-21 16:03:55, INFO: running 2/6 episode, simulation environment: static
+2023-06-21 16:04:02, INFO: 2/6 episode: Timeout!
+2023-06-21 16:04:02, INFO: running 3/6 episode, simulation environment: no
+2023-06-21 16:04:04, INFO: 3/6 episode: Success!
+2023-06-21 16:04:04, INFO: running 4/6 episode, simulation environment: square_crossing
+2023-06-21 16:04:06, INFO: 4/6 episode: Collision!
+2023-06-21 16:04:06, INFO: running 5/6 episode, simulation environment: circle_static
+2023-06-21 16:04:06, INFO: 5/6 episode: Collision!
+2023-06-21 16:04:06, INFO: running 6/6 episode, simulation environment: square_static
