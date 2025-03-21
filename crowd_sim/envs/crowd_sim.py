@@ -1127,7 +1127,7 @@ class CrowdSim(gym.Env):
         position_variation = norm(new_position - self.robot.get_position())
 
         if position_variation > 0.2:
-            R_km = 0.08
+            R_km = 0.05
         else:
 	        R_km = -0.5
 
