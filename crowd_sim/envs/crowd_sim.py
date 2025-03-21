@@ -1058,7 +1058,7 @@ class CrowdSim(gym.Env):
             r_danger_r = True
 
         if not r_danger_r:
-            R_danger = 0.01
+            R_danger = 0.05
 
         left_path = 0
         if len(self.w_points) > 1:
@@ -1127,7 +1127,7 @@ class CrowdSim(gym.Env):
         position_variation = norm(new_position - self.robot.get_position())
 
         if position_variation > 0.2:
-            R_km = 0.03
+            R_km = 0.08
         else:
 	        R_km = -0.5
 
