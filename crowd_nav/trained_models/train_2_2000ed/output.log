@@ -691,3 +691,64 @@
 
 2025-03-22 15:14:37, INFO: human number: 8
 2025-03-22 15:14:37, INFO: running 77/3600 episode, simulation environment: circle_crossing
+2025-03-22 15:14:38, INFO: 77/3600 episode: Collision! Total Reward: -24.33, R_dan: 0.69, R_goal: 0, R_col: -25.0, R_km: -0.8, R_col_wall: 0, R_wall_min_dist: 0.038, R_way_point_dist: 0.51, R_wp: 0.225
+2025-03-22 15:14:38, INFO: Path length: 8.662205042264064
+2025-03-22 15:14:38, INFO: Path left: 71.59959609368076
+2025-03-22 15:14:38, INFO: Actions: 17
+2025-03-22 15:14:38, INFO: Coordinates: 1.0214839167892933 -9.720968910492957
+2025-03-22 15:14:38, INFO: Stops times: 0
+
+2025-03-22 15:14:40, INFO: human number: 8
+2025-03-22 15:14:41, INFO: running 78/3600 episode, simulation environment: circle_static
+2025-03-22 15:14:41, INFO: 78/3600 episode: Collision! Total Reward: -21.359, R_dan: 0.78, R_goal: 0, R_col: -25.0, R_km: 0.8, R_col_wall: 0, R_wall_min_dist: 0.092, R_way_point_dist: 1.14, R_wp: 0.825
+2025-03-22 15:14:41, INFO: Path length: 17.645391975330924
+2025-03-22 15:14:41, INFO: Path left: 62.202762431818634
+2025-03-22 15:14:41, INFO: Actions: 38
+2025-03-22 15:14:41, INFO: Coordinates: -7.318459466099739 -6.104567069560289
+2025-03-22 15:14:41, INFO: Stops times: 0
+
+2025-03-22 15:14:44, INFO: human number: 8
+2025-03-22 15:14:44, INFO: running 79/3600 episode, simulation environment: no
+2025-03-22 15:14:44, INFO: 79/3600 episode: Success! Total Reward: 19.522, R_dan: 5.3, R_goal: 10.0, R_col: 0, R_km: 3.1, R_col_wall: 0, R_wall_min_dist: -13.762, R_way_point_dist: 3.18, R_wp: 11.7
+2025-03-22 15:14:44, INFO: Path length: 72.55867934032906
+2025-03-22 15:14:44, INFO: Path left: 0
+2025-03-22 15:14:44, INFO: Actions: 106
+2025-03-22 15:14:44, INFO: Coordinates: -9.035543277859688 30.745487678796053
+2025-03-22 15:14:44, INFO: Stops times: 4
+
+2025-03-22 15:14:47, INFO: human number: 8
+2025-03-22 15:14:48, INFO: running 80/3600 episode, simulation environment: circle_crossing
+2025-03-22 15:14:48, INFO: 80/3600 episode: Collision! Total Reward: -23.834, R_dan: 0.72, R_goal: 0, R_col: -25.0, R_km: -0.3, R_col_wall: 0, R_wall_min_dist: 0.036, R_way_point_dist: 0.48, R_wp: 0.225
+2025-03-22 15:14:48, INFO: Path length: 8.750214671273946
+2025-03-22 15:14:48, INFO: Path left: 71.69296155735996
+2025-03-22 15:14:48, INFO: Actions: 16
+2025-03-22 15:14:48, INFO: Coordinates: 1.1426511481404305 -9.245579309761524
+2025-03-22 15:14:48, INFO: Stops times: 0
+
+2025-03-22 15:14:50, INFO: human number: 8
+2025-03-22 15:14:51, INFO: running 81/3600 episode, simulation environment: circle_static
+2025-03-22 15:14:51, INFO: 81/3600 episode: Collision! Total Reward: -23.786, R_dan: 0.53, R_goal: 0, R_col: -25.0, R_km: -0.4, R_col_wall: 0, R_wall_min_dist: -0.094, R_way_point_dist: 0.75, R_wp: 0.42
+2025-03-22 15:14:51, INFO: Path length: 12.415772093794335
+2025-03-22 15:14:51, INFO: Path left: 68.07843650707548
+2025-03-22 15:14:51, INFO: Actions: 25
+2025-03-22 15:14:51, INFO: Coordinates: -2.129112184047699 -8.282106162980199
+2025-03-22 15:14:51, INFO: Stops times: 0
+
+2025-03-22 15:14:54, INFO: human number: 8
+2025-03-22 15:14:54, INFO: running 82/3600 episode, simulation environment: no
+2025-03-22 15:14:54, INFO: 82/3600 episode: Success! Total Reward: 19.522, R_dan: 5.3, R_goal: 10.0, R_col: 0, R_km: 3.1, R_col_wall: 0, R_wall_min_dist: -13.762, R_way_point_dist: 3.18, R_wp: 11.7
+2025-03-22 15:14:54, INFO: Path length: 72.55867934032906
+2025-03-22 15:14:54, INFO: Path left: 0
+2025-03-22 15:14:54, INFO: Actions: 106
+2025-03-22 15:14:54, INFO: Coordinates: -9.035543277859688 30.745487678796053
+2025-03-22 15:14:54, INFO: Stops times: 4
+
+2025-03-22 15:14:56, INFO: human number: 8
+2025-03-22 15:14:57, INFO: running 83/3600 episode, simulation environment: circle_crossing
+2025-03-22 15:14:58, INFO: 83/3600 episode: Success! Total Reward: 31.396, R_dan: 6.39, R_goal: 10.0, R_col: 0, R_km: 4.2, R_col_wall: 0, R_wall_min_dist: -4.858, R_way_point_dist: 3.96, R_wp: 11.7
+2025-03-22 15:14:58, INFO: Path length: 77.56901080537654
+2025-03-22 15:14:58, INFO: Path left: 0
+2025-03-22 15:14:58, INFO: Actions: 139
+2025-03-22 15:14:58, INFO: Coordinates: -9.14515051804483 31.210644154809415
+2025-03-22 15:14:58, INFO: Stops times: 0
+
