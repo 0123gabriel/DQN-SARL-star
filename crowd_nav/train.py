@@ -31,7 +31,7 @@ def main():
     parser.add_argument('--policy', type=str, default='cadrl')    # --policy sarl
     parser.add_argument('--policy_config', type=str, default='configs/policy.config')
     parser.add_argument('--train_config', type=str, default='configs/train.config')
-    parser.add_argument('--output_dir', type=str, default='trained_models/tests')
+    parser.add_argument('--output_dir', type=str, default='trained_models/train_1_4000ed')
     parser.add_argument('--weights', type=str)
     parser.add_argument('--resume', default=False, action='store_true')
     parser.add_argument('--gpu', default=False, action='store_true')

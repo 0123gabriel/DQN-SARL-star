@@ -88,11 +88,11 @@ class CADRL(Policy):
         Action space consists of 25 uniformly sampled actions in permitted range and 25 randomly sampled actions.
         """
         holonomic = True if self.kinematics == 'holonomic' else False
-        speeds = [0] + [(np.exp((i + 1) / self.speed_samples) - 1) / (np.e - 1) * v_pref for i in range(self.speed_samples)]
+        speeds = [-1.59, -0.71, 0] + [(np.exp((i + 1) / self.speed_samples) - 1) / (np.e - 1) * v_pref for i in range(self.speed_samples)]
         if holonomic:
             rotations = list(np.linspace(0, np.pi * 2, num=15, endpoint=False))
         else:
-            rotations = list(np.linspace(-np.pi / 4, np.pi / 4, num=self.rotation_samples))
+            rotations = list(np.linspace(-np.pi / 6, np.pi / 6, num=self.rotation_samples))
 
         action_space = [ActionXY(0, 0) if holonomic else ActionRot(0, 0)]
         for rotation, speed in itertools.product(rotations, speeds):

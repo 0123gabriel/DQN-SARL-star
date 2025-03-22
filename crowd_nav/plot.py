@@ -5,7 +5,6 @@ import math
 def distance((x1, y1), (x2, y2)):
     return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 
-
 def plot_circles_and_line(circle_center, circle_radius1, circle_radius2, robot_position,block_area1, block_area2):
 
     fig, ax = plt.subplots()
@@ -25,21 +24,21 @@ def plot_circles_and_line(circle_center, circle_radius1, circle_radius2, robot_p
     dist2 = circle_radius2 - distance(robot_position, circle_center)
 
     if dist1 < dist2:
-	dx = circle_center[0] - robot_position[0]
-	dy = circle_center[1] - robot_position[1]
-	direction_length = (dx**2 + dy**2)**0.5
-	dx /= direction_length
-	dy /= direction_length
-	x_end = robot_position[0] + dx * dist1
-	y_end = robot_position[1] + dy * dist1
+	    dx = circle_center[0] - robot_position[0]
+        dy = circle_center[1] - robot_position[1]
+        direction_length = (dx**2 + dy**2)**0.5
+        dx /= direction_length
+        dy /= direction_length
+        x_end = robot_position[0] + dx * dist1
+        y_end = robot_position[1] + dy * dist1
     else:
-	dx = -circle_center[0] + robot_position[0]
-	dy = -circle_center[1] + robot_position[1]
-	direction_length = (dx**2 + dy**2)**0.5
-	dx /= direction_length
-	dy /= direction_length
-	x_end = robot_position[0] + dx * dist2
-	y_end = robot_position[1] + dy * dist2	
+        dx = -circle_center[0] + robot_position[0]
+        dy = -circle_center[1] + robot_position[1]
+        direction_length = (dx**2 + dy**2)**0.5
+        dx /= direction_length
+        dy /= direction_length
+        x_end = robot_position[0] + dx * dist2
+        y_end = robot_position[1] + dy * dist2	
 
     plt.plot([robot_position[0], x_end], [robot_position[1], y_end], 'b')
     plt.plot(robot_position[0], robot_position[1], 'ro')
