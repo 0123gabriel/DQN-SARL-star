@@ -835,21 +835,21 @@ class CrowdSim(gym.Env):
         if next_py <= 0 and next_px >= 0:
             if point_to_segment_dist(self.lower_center[0], -self.small_radius, self.big_radius, -self.small_radius, next_px, next_py) < min_dist or \
                     point_to_segment_dist(self.lower_center[0], -self.big_radius, self.big_radius, -self.big_radius, next_px, next_py) < min_dist or \
-                        next_py > -self.small_radius or next_px > self.big_radius:
+                        next_py > -self.small_radius or next_py < -self.big_radius or next_px > self.big_radius:
                         collision_wall = True
                         #print("botoom")
                         #print(next_px, next_py)
 
         # Distance to the upper arc
         if next_py > 0 and next_px >= 0:
-            if point_to_arc_dist(self.upper_center[0], self.upper_center[1], self.small_radius, self.upper_circle_angles[0], self.upper_circle_angles[1], next_px, next_py) < min_dist: # or \
-                    #math.sqrt((self.upper_center[0] - next_px)**2 + (self.upper_center[1] - next_py)**2) < self.small_radius:
+            if point_to_arc_dist(self.upper_center[0], self.upper_center[1], self.small_radius, self.upper_circle_angles[0], self.upper_circle_angles[1], next_px, next_py) < min_dist or \
+                    math.sqrt((self.upper_center[0] - next_px)**2 + (self.upper_center[1] - next_py)**2) < self.small_radius:
                         collision_wall = True
                         #print("small upper arc")
                         #print(next_px, next_py)
 
-            if point_to_arc_dist(self.upper_center[0], self.upper_center[1], self.big_radius, self.upper_circle_angles[0], self.upper_circle_angles[1], next_px, next_py) < min_dist: #or \
-                    #math.sqrt((self.upper_center[0] - next_px)**2 + (self.upper_center[1] - next_py)**2) > self.big_radius:
+            if point_to_arc_dist(self.upper_center[0], self.upper_center[1], self.big_radius, self.upper_circle_angles[0], self.upper_circle_angles[1], next_px, next_py) < min_dist or \
+                    math.sqrt((self.upper_center[0] - next_px)**2 + (self.upper_center[1] - next_py)**2) > self.big_radius:
                         collision_wall = True
                         #print("big upper arc")
                         #print(point_to_arc_dist(self.upper_center[0], self.upper_center[1], self.big_radius, self.upper_circle_angles[0], self.upper_circle_angles[1], next_px, next_py) < min_dist)
@@ -860,14 +860,14 @@ class CrowdSim(gym.Env):
 
         # Distance to the lower arc
         if next_py < 21 and next_px < 0:
-            if point_to_arc_dist(self.lower_center[0], self.lower_center[1], self.small_radius, self.lower_circle_angles[0], self.lower_circle_angles[1], next_px, next_py) < min_dist:# or \
-                    #math.sqrt((self.lower_center[0] - next_px)**2 + (self.lower_center[1] - next_py)**2) < self.small_radius:
+            if point_to_arc_dist(self.lower_center[0], self.lower_center[1], self.small_radius, self.lower_circle_angles[0], self.lower_circle_angles[1], next_px, next_py) < min_dist or \
+                    math.sqrt((self.lower_center[0] - next_px)**2 + (self.lower_center[1] - next_py)**2) < self.small_radius:
                         collision_wall = True
                         #print("small lower arc")
                         #print(next_px, next_py)
 
-            if point_to_arc_dist(self.lower_center[0], self.lower_center[1], self.big_radius, self.lower_circle_angles[0], self.lower_circle_angles[1], next_px, next_py) < min_dist:# or \
-                    #math.sqrt((self.upper_center[0] - next_px)**2 + (self.upper_center[1] - next_py)**2) > self.big_radius:
+            if point_to_arc_dist(self.lower_center[0], self.lower_center[1], self.big_radius, self.lower_circle_angles[0], self.lower_circle_angles[1], next_px, next_py) < min_dist or \
+                    math.sqrt((self.lower_center[0] - next_px)**2 + (self.lower_center[1] - next_py)**2) > self.big_radius:
                         collision_wall = True
                         #print("big lower arc")
                         #print(next_px, next_py)
@@ -1152,16 +1152,16 @@ class CrowdSim(gym.Env):
         elif self.global_time >= self.time_limit - 1:
             done = True
             info = Timeout()
-            timeout = -0.5
+            timeout = -25
 	        #R_for += 3*(1 / (1+np.exp(3*end_dg-5.5)))**0.1
         else:
             done = False
             info = Nothing()
         
-        reward = R_danger + R_goal + R_collision + R_km + R_col_wall + R_wall_min_dist + R_way_point_dist + R_wp
+        reward = R_danger + R_goal + R_collision + R_km + R_col_wall + R_wall_min_dist + R_way_point_dist + R_wp + timeout
         reward_values = {"Total Reward": reward,"R_dan": R_danger, "R_goal": R_goal,"R_col": R_collision, "R_km": R_km, "R_col_wall": R_col_wall, \
                         "R_wall_min_dist": R_wall_min_dist, "R_way_point_dist": R_way_point_dist, \
-                        "R_wp": R_wp} 
+                        "R_wp": R_wp, "timeout": timeout} 
         
         if update:
             # store state, action value and attention weights

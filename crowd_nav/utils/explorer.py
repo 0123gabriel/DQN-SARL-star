@@ -56,16 +56,18 @@ class Explorer(object):
             rewards = []
             length = 0
             stops = 0
-            rewards_dict = {"Total Reward": 0,"R_dan": 0, "R_goal": 0,"R_col": 0,"R_km": 0, "R_col_wall": 0, "R_wall_min_dist": 0, "R_way_point_dist": 0, "R_wp": 0}
+            rewards_dict = {"Total Reward": 0,"R_dan": 0, "R_goal": 0,"R_col": 0,"R_km": 0, "R_col_wall": 0, "R_wall_min_dist": 0, "R_way_point_dist": 0, "R_wp": 0, "timeout": 0}
             far_points = 0
             close_points = 0
             while not done:
                 action = self.robot.act(ob)
+                #print(action)
+                #print('Lenght before: ', length)
                 if isinstance(action, ActionXY):
-                    length = length + 0.25*np.linalg.norm([action.vx,action.vy])
+                    length = length + abs(0.25*np.linalg.norm([action.vx,action.vy]))
                 else:
-                    length = length + 0.25*action.v
-                length = abs(length)
+                    length = length + abs(0.25*action.v)
+                #print('Lenght after: ', length)
                 ob, reward, done, info, reward_values, end_dg, coordinates, is_stopped = self.env.step(action)
                 states.append(self.robot.policy.last_state)
                 actions.append(action)
@@ -123,7 +125,7 @@ class Explorer(object):
 
             if isinstance(info, ReachGoal):
                 #logging.info("%s/%s episode: Success! Total Reward: %s, R_dan: %s, 2*R_stop: %s, R_for: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_stop_t: %s, R_for: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["2*R_stop"], rewards_dict["R_for"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_stop_t"], rewards_dict["R_for"]))
-                logging.info("%s/%s episode: Success! Total Reward: %s, R_dan: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_way_point_dist: %s, R_wp: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_way_point_dist"], rewards_dict["R_wp"]))
+                logging.info("%s/%s episode: Success! Total Reward: %s, R_dan: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_way_point_dist: %s, R_wp: %s, timeout: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_way_point_dist"], rewards_dict["R_wp"], rewards_dict["timeout"]))
                 logging.info("Path length: %s" % length)
                 logging.info("Path left: %s" % end_dg)
                 logging.info("Actions: %s" % len(actions))
@@ -147,14 +149,14 @@ class Explorer(object):
             elif isinstance(info, Collision):
                 #logging.info("%s/%s episode: Collision! Total Reward: %s, R_dan: %s, 2*R_stop: %s, R_for: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_stop_t: %s, R_for: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["2*R_stop"], rewards_dict["R_for"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_stop_t"], rewards_dict["R_for"]))
                 
-                logging.info("%s/%s episode: Collision! Total Reward: %s, R_dan: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_way_point_dist: %s, R_wp: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_way_point_dist"], rewards_dict["R_wp"]))
+                logging.info("%s/%s episode: Collision! Total Reward: %s, R_dan: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_way_point_dist: %s, R_wp: %s, timeout: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_way_point_dist"], rewards_dict["R_wp"], rewards_dict["timeout"]))
 
                 logging.info("Path length: %s" % length)
                 logging.info("Path left: %s" % end_dg)
                 logging.info("Actions: %s" % len(actions))
                 logging.info("Coordinates: %s %s" % coordinates)
                 logging.info("Stops times: %s\n" % stops)
-                robot_path_length_list.append(0)
+                robot_path_length_list.append(length)
                 success.append(0)
                 collision.append(1)
                 timeout.append(0)
@@ -167,14 +169,14 @@ class Explorer(object):
             elif isinstance(info, Timeout):
                 #logging.info("%s/%s episode: Timeout! Total Reward: %s, R_dan: %s, 2*R_stop: %s, R_for: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_stop_t: %s, R_for: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["2*R_stop"], rewards_dict["R_for"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_stop_t"], rewards_dict["R_for"]))
                 
-                logging.info("%s/%s episode: Timeout! Total Reward: %s, R_dan: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_way_point_dist: %s, R_wp: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_way_point_dist"], rewards_dict["R_wp"]))
+                logging.info("%s/%s episode: Timeout! Total Reward: %s, R_dan: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_way_point_dist: %s, R_wp: %s, timeout: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_way_point_dist"], rewards_dict["R_wp"], rewards_dict["timeout"]))
                 
                 logging.info("Path length: %s" % length)
                 logging.info("Path left: %s" % end_dg)
                 logging.info("Actions: %s" % len(actions))
                 logging.info("Coordinates: %s %s" % coordinates)
                 logging.info("Stops times: %s\n" % stops)
-                robot_path_length_list.append(0)
+                robot_path_length_list.append(length)
                 success.append(0)
                 collision.append(0)
                 timeout.append(1)
@@ -187,14 +189,14 @@ class Explorer(object):
             elif isinstance(info, CollisionWall):
                 #logging.info("%s/%s episode: Collision Wall! Total Reward: %s, R_dan: %s, 2*R_stop: %s, R_for: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_stop_t: %s, R_for: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["2*R_stop"], rewards_dict["R_for"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_stop_t"], rewards_dict["R_for"]))
                 
-                logging.info("%s/%s episode: Collision Wall! Total Reward: %s, R_dan: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_way_point_dist: %s, R_wp: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_way_point_dist"], rewards_dict["R_wp"]))
+                logging.info("%s/%s episode: Collision Wall! Total Reward: %s, R_dan: %s, R_goal: %s, R_col: %s, R_km: %s, R_col_wall: %s, R_wall_min_dist: %s, R_way_point_dist: %s, R_wp: %s, timeout: %s" % (i + 1, k, rewards_dict["Total Reward"], rewards_dict["R_dan"], rewards_dict["R_goal"], rewards_dict["R_col"], rewards_dict["R_km"], rewards_dict["R_col_wall"], rewards_dict["R_wall_min_dist"], rewards_dict["R_way_point_dist"], rewards_dict["R_wp"], rewards_dict["timeout"]))
                 
                 logging.info("Path length: %s" % length)
                 logging.info("Path left: %s" % end_dg)
                 logging.info("Actions: %s" % len(actions))
                 logging.info("Coordinates: %s %s" % coordinates)
                 logging.info("Stops times: %s\n" % stops)
-                robot_path_length_list.append(0)
+                robot_path_length_list.append(length)
                 success.append(0)
                 collision.append(0)
                 timeout.append(0)
@@ -207,6 +209,9 @@ class Explorer(object):
             else:
                 raise ValueError('Invalid end signal from environment')
 
+            # if not imitation_learning and not isinstance(info, ReachGoal):
+            #    self.env.render(mode='video')
+
             if update_memory:
                 if isinstance(info, ReachGoal) or isinstance(info, Collision) or isinstance(info, CollisionWall):
                     # only add positive(success) or negative(collision) experience in experience set
@@ -214,6 +219,7 @@ class Explorer(object):
 
             cumulative_rewards.append(sum([pow(self.gamma, t * self.robot.time_step * self.robot.v_pref)
                                            * reward for t, reward in enumerate(rewards)]))  # enumerate from 0
+        #print('Cumulative Reward: ', cumulative_rewards)
         success_number = [0]*nos
         collision_number = [0]*nos
         timeout_number = [0]*nos
@@ -233,7 +239,9 @@ class Explorer(object):
             collision_number[remainder] += collision[index]
             timeout_number[remainder] += timeout[index]
             collision_wall_number[remainder] += collision_wall[index]
-            nav_time[remainder] += success_times[index]
+            #nav_time[remainder] += success_times[index]
+            nav_time[remainder] += (success_times[index] + collision_times[index] + 
+                             timeout_times[index] + collision_wall_times[index])
             path_length[remainder] += robot_path_length_list[index]
             reward_sum[remainder] += cumulative_rewards[index]
             s_times_sum[remainder] += success_times[index]
@@ -241,13 +249,13 @@ class Explorer(object):
             t_times_sum[remainder] += timeout_times[index]
             cw_times_sum[remainder] += collision_wall_times[index]
 
-        for i in range(nos):
-            if success_number[i]:
-                avg_nav_time[i] += nav_time[i]/success_number[i]
-                avg_path_length[i] += path_length[i]/success_number[i]
-            else:
-                avg_nav_time[i] = 0
-                avg_path_length[i] = 0
+        # for i in range(nos):
+        #     if success_number[i]:
+        #         avg_nav_time[i] += nav_time[i]/success_number[i]
+        #         avg_path_length[i] += path_length[i]/success_number[i]
+        #     else:
+        #         avg_nav_time[i] = 0
+        #         avg_path_length[i] = 0
 	
         total_nav_time = 0
         total_path_length = 0
@@ -295,12 +303,14 @@ class Explorer(object):
             total_speed = total_path_length/total_nav_time
         else:
             total_speed = 0
+        
         avg_speed = [0]*nos
         for i in range(nos):
             if avg_nav_time[i]:
                 avg_speed[i] += avg_path_length[i]/avg_nav_time[i]
             else:
                 avg_speed[i] = 0
+        
         extra_info = '' if episode is None else 'in episode {} '.format(episode)
         logging.info('{:<5} {}has success rate: {:.2f}, collision rate: {:.2f}, timeout rate: {:.2f}, collisionwall rate: {:.2f}, nav time: {:.2f}, average speed: {:.2f}, path length: {:.2f}, total reward: {:.4f}'.
                      format(phase.upper(), extra_info, sum(success_number)/k, sum(collision_number)/k, sum(timeout_number)/k, sum(collision_wall_number)/k, total_nav_time, total_speed, total_path_length, average(cumulative_rewards)))
@@ -318,7 +328,7 @@ class Explorer(object):
             logging.info('Frequency in danger: %.2f and average min separate distance in danger: %.2f', too_close / total_time, average(min_dist))
             #logging.info('In each scenarios, Frequency in danger: %.2f %.2f %.2f %.2f %.2f %.2f and average min separate distance in danger: %.2f %.2f %.2f %.2f %.2f %.2f', each_too_close[0] / each_total_time[0], each_too_close[1] / each_total_time[1], each_too_close[2] / each_total_time[2], each_too_close[3] / each_total_time[3], each_too_close[4] / each_total_time[4], each_too_close[5] / each_total_time[5], avg_min_dist[0], avg_min_dist[1], avg_min_dist[2], avg_min_dist[3], avg_min_dist[4], avg_min_dist[5])
 
-            logging.info('In each scenarios, Frequency in danger: %.2f %.2f and average min separate distance in danger: %.2f %.2f', each_too_close[0] / each_total_time[0], each_too_close[1] / each_total_time[1], avg_min_dist[0], avg_min_dist[1])
+            logging.info('In each scenarios, Frequency in danger: %.2f %.2f %.2f and average min separate distance in danger: %.2f %.2f %.2f', each_too_close[0] / each_total_time[0], each_too_close[1] / each_total_time[1], each_too_close[2] / each_total_time[2], avg_min_dist[0], avg_min_dist[1], avg_min_dist[2])
 
         if print_failure:
             logging.info('Collision cases: ' + ' '.join([str(x) for x in collision_cases]))
