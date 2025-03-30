@@ -65,6 +65,7 @@ class Explorer(object):
                     length = length + 0.25*np.linalg.norm([action.vx,action.vy])
                 else:
                     length = length + 0.25*action.v
+                length = abs(length)
                 ob, reward, done, info, reward_values, end_dg, coordinates, is_stopped = self.env.step(action)
                 states.append(self.robot.policy.last_state)
                 actions.append(action)
@@ -250,14 +251,34 @@ class Explorer(object):
 	
         total_nav_time = 0
         total_path_length = 0
-        if sum(success_number) == 0:
+        # if sum(success_number) == 0:
+        #     total_nav_time = 0
+        #     total_path_length = 0
+        # else:
+        #     for i in range(nos):
+        #         total_nav_time += avg_nav_time[i]*success_number[i]/sum(success_number)
+        #         total_path_length += avg_path_length[i]*success_number[i]/sum(success_number)
+	    
+
+        for i in range(nos):
+            total_attempts = success_number[i] + collision_number[i] + timeout_number[i] + collision_wall_number[i]
+            
+            if total_attempts > 0:
+                avg_nav_time[i] = nav_time[i] / total_attempts
+                avg_path_length[i] = path_length[i] / total_attempts
+            else:
+                avg_nav_time[i] = 0
+                avg_path_length[i] = 0
+
+        # Compute total navigation time and path length, considering all attempts
+        sum_attempts = sum(success_number) + sum(collision_number) + sum(timeout_number) + sum(collision_wall_number)
+
+        if sum_attempts > 0:
+            total_nav_time = sum(avg_nav_time[i] * (success_number[i] + collision_number[i] + timeout_number[i] + collision_wall_number[i]) / sum_attempts for i in range(nos))
+            total_path_length = sum(avg_path_length[i] * (success_number[i] + collision_number[i] + timeout_number[i] + collision_wall_number[i]) / sum_attempts for i in range(nos))
+        else:
             total_nav_time = 0
             total_path_length = 0
-        else:
-            for i in range(nos):
-                total_nav_time += avg_nav_time[i]*success_number[i]/sum(success_number)
-                total_path_length += avg_path_length[i]*success_number[i]/sum(success_number)
-	     
 	     
         assert sum(success) + sum(collision) + sum(timeout) + sum(collision_wall) == k
         # avg_path_length = sum(self.robot_path_length_list) / len(self.robot_path_length_list)
@@ -283,7 +304,7 @@ class Explorer(object):
         extra_info = '' if episode is None else 'in episode {} '.format(episode)
         logging.info('{:<5} {}has success rate: {:.2f}, collision rate: {:.2f}, timeout rate: {:.2f}, collisionwall rate: {:.2f}, nav time: {:.2f}, average speed: {:.2f}, path length: {:.2f}, total reward: {:.4f}'.
                      format(phase.upper(), extra_info, sum(success_number)/k, sum(collision_number)/k, sum(timeout_number)/k, sum(collision_wall_number)/k, total_nav_time, total_speed, total_path_length, average(cumulative_rewards)))
-        logging.info('In each scenarios, {:<5} {}has success rate: {:.2f} {:.2f}, collision rate: {:.2f} {:.2f}, timeout rate: {:.2f} {:.2f}, collisionwall rate: {:.2f} {:.2f}, nav time: {:.2f} {:.2f}, average speed: {:.2f} {:.2f}, path length: {:.2f} {:.2f}, total reward: {:.4f} {:.4f}'.format(phase.upper(), extra_info, success_number[0]/divider[0], success_number[1]/divider[1], collision_number[0]/divider[0], collision_number[1]/divider[1], timeout_number[0]/divider[0], timeout_number[1]/divider[1], collision_wall_number[0]/divider[0], collision_wall_number[1]/divider[1], avg_nav_time[0], avg_nav_time[1], avg_speed[0], avg_speed[1], avg_path_length[0], avg_path_length[1], reward_sum[0]/divider[0], reward_sum[1]/divider[1]))
+        logging.info('In each scenarios, {:<5} {}has success rate: {:.2f} {:.2f} {:.2f}, collision rate: {:.2f} {:.2f} {:.2f}, timeout rate: {:.2f} {:.2f} {:.2f}, collisionwall rate: {:.2f} {:.2f} {:.2f}, nav time: {:.2f} {:.2f} {:.2f}, average speed: {:.2f} {:.2f} {:.2f}, path length: {:.2f} {:.2f} {:.2f}, total reward: {:.4f} {:.4f} {:.4f}'.format(phase.upper(), extra_info, success_number[0]/divider[0], success_number[1]/divider[1], success_number[2]/divider[2], collision_number[0]/divider[0], collision_number[1]/divider[1], collision_number[2]/divider[2], timeout_number[0]/divider[0], timeout_number[1]/divider[1], timeout_number[2]/divider[2], collision_wall_number[0]/divider[0], collision_wall_number[1]/divider[1], collision_wall_number[2]/divider[2], avg_nav_time[0], avg_nav_time[1], avg_nav_time[2], avg_speed[0], avg_speed[1], avg_speed[2], avg_path_length[0], avg_path_length[1], avg_path_length[2], reward_sum[0]/divider[0], reward_sum[1]/divider[1], reward_sum[2]/divider[2]))
         #logging.info('In each scenarios, {:<5} {}has success rate: {:.2f} {:.2f} {:.2f} {:.2f} {:.2f} {:.2f}, collision rate: {:.2f} {:.2f} {:.2f} {:.2f} {:.2f} {:.2f}, timeout rate: {:.2f} {:.2f} {:.2f} {:.2f} {:.2f} {:.2f}, collisionwall rate: {:.2f} {:.2f} {:.2f} {:.2f} {:.2f} {:.2f}, nav time: {:.2f} {:.2f} {:.2f} {:.2f} {:.2f} {:.2f}, average speed: {:.2f} {:.2f} {:.2f} {:.2f} {:.2f} {:.2f}, path length: {:.2f} {:.2f} {:.2f} {:.2f} {:.2f} {:.2f}, total reward: {:.4f} {:.4f} {:.4f} {:.4f} {:.4f} {:.4f}'.
         #             format(phase.upper(), extra_info, success_number[0]/divider[0], success_number[1]/divider[1], success_number[2]/divider[2], success_number[3]/divider[3], success_number[4]/divider[4], success_number[5]/divider[5], collision_number[0]/divider[0], collision_number[1]/divider[1], collision_number[2]/divider[2], collision_number[3]/divider[3], collision_number[4]/divider[4], collision_number[5]/divider[5], timeout_number[0]/divider[0], timeout_number[1]/divider[1], timeout_number[2]/divider[2], timeout_number[3]/divider[3], timeout_number[4]/divider[4], timeout_number[5]/divider[5], collision_wall_number[0]/divider[0], collision_wall_number[1]/divider[1], collision_wall_number[2]/divider[2], collision_wall_number[3]/divider[3], collision_wall_number[4]/divider[4], collision_wall_number[5]/divider[5], avg_nav_time[0], avg_nav_time[1], avg_nav_time[2], avg_nav_time[3], avg_nav_time[4], avg_nav_time[5], avg_speed[0], avg_speed[1], avg_speed[2], avg_speed[3], avg_speed[4], avg_speed[5], avg_path_length[0], avg_path_length[1], avg_path_length[2], avg_path_length[3], avg_path_length[4], avg_path_length[5], reward_sum[0]/divider[0], reward_sum[1]/divider[1], reward_sum[2]/divider[2], reward_sum[3]/divider[3], reward_sum[4]/divider[4], reward_sum[5]/divider[5]))
         avg_min_dist = [0]*nos

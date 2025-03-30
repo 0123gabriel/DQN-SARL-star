@@ -1,0 +1,1561 @@
+2025-03-27 17:03:32, INFO: Using device: cuda:0
+2025-03-27 17:03:32, INFO: Policy: SARL w/o global state
+2025-03-27 17:03:34, INFO: human number: 8
+2025-03-27 17:03:34, INFO: Randomize human's radius and preferred speed
+2025-03-27 17:03:34, INFO: Training simulation: circle_crossing, test simulation: circle_crossing
+2025-03-27 17:03:34, INFO: Square width: 10.0, circle width: 8.0
+2025-03-27 17:03:34, INFO: Current learning rate: 0.000010
+2025-03-27 17:03:36, INFO: human number: 8
+2025-03-27 17:03:36, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:03:37, INFO: 1/3 episode: Success! Total Reward: 19.522, R_dan: 5.3, R_goal: 10.0, R_col: 0, R_km: 3.1, R_col_wall: 0, R_wall_min_dist: -13.762, R_way_point_dist: 3.18, R_wp: 11.7
+2025-03-27 17:03:37, INFO: Path length: 72.55867934032906
+2025-03-27 17:03:37, INFO: Path left: 0
+2025-03-27 17:03:37, INFO: Actions: 106
+2025-03-27 17:03:37, INFO: Coordinates: -9.035543277859688 30.745487678796053
+2025-03-27 17:03:37, INFO: Stops times: 4
+
+2025-03-27 17:03:39, INFO: human number: 8
+2025-03-27 17:03:40, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:03:40, INFO: 2/3 episode: Collision! Total Reward: -24.316, R_dan: 0.49, R_goal: 0, R_col: -25.0, R_km: -0.45, R_col_wall: 0, R_wall_min_dist: 0.028, R_way_point_dist: 0.39, R_wp: 0.225
+2025-03-27 17:03:40, INFO: Path length: 7.821290849739442
+2025-03-27 17:03:40, INFO: Path left: 72.75211881892399
+2025-03-27 17:03:40, INFO: Actions: 13
+2025-03-27 17:03:40, INFO: Coordinates: 2.201612651348114 -9.225079406052828
+2025-03-27 17:03:40, INFO: Stops times: 0
+
+2025-03-27 17:03:42, INFO: human number: 8
+2025-03-27 17:03:42, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:03:44, INFO: 3/3 episode: Success! Total Reward: 24.8, R_dan: 4.37, R_goal: 10.0, R_col: 0, R_km: 4.25, R_col_wall: 0, R_wall_min_dist: -9.408, R_way_point_dist: 3.87, R_wp: 11.7
+2025-03-27 17:03:44, INFO: Path length: 73.82066573769234
+2025-03-27 17:03:44, INFO: Path left: 0
+2025-03-27 17:03:44, INFO: Actions: 129
+2025-03-27 17:03:44, INFO: Coordinates: -9.327674623578787 30.82396734878421
+2025-03-27 17:03:44, INFO: Stops times: 1
+
+2025-03-27 17:03:44, INFO: TRAIN has success rate: 0.67, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.00, nav time: 19.58, average speed: 2.49, path length: 48.79, total reward: -1.3792
+2025-03-27 17:03:44, INFO: In each scenarios, TRAIN has success rate: 1.00 0.00 1.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 0.00 0.00 0.00, nav time: 26.50 0.00 32.25, average speed: 2.74 0.00 2.29, path length: 72.56 0.00 73.82, total reward: 0.4167 -4.4651 -0.0892
+2025-03-27 17:03:46, INFO: Finish imitation learning. Weights saved.
+2025-03-27 17:03:46, INFO: Experience set size: 248/100000
+2025-03-27 17:03:46, INFO: Agent is invisible and has unicycle kinematic constraint
+2025-03-27 17:03:46, INFO: Current learning rate: 0.000010
+2025-03-27 17:03:48, INFO: human number: 8
+2025-03-27 17:03:48, INFO: running 1/4 episode, simulation environment: no
+2025-03-27 17:04:22, INFO: 1/4 episode: Timeout! Total Reward: -24.948, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: 12.85, R_col_wall: 0, R_wall_min_dist: -51.918, R_way_point_dist: 0.85, R_wp: 0.42
+2025-03-27 17:04:22, INFO: Path length: 1.2734641205284518
+2025-03-27 17:04:22, INFO: Path left: 69.90827526474953
+2025-03-27 17:04:22, INFO: Actions: 257
+2025-03-27 17:04:22, INFO: Coordinates: -3.499717499863821 -12.602814810466475
+2025-03-27 17:04:22, INFO: Stops times: 159
+
+2025-03-27 17:04:24, INFO: human number: 8
+2025-03-27 17:04:25, INFO: running 2/4 episode, simulation environment: circle_crossing
+2025-03-27 17:04:26, INFO: 2/4 episode: Collision Wall! Total Reward: -25.155, R_dan: 0.04, R_goal: 0, R_col: 0, R_km: 0.2, R_col_wall: -25.0, R_wall_min_dist: -0.32, R_way_point_dist: -0.09, R_wp: 0.015
+2025-03-27 17:04:26, INFO: Path length: 5.56
+2025-03-27 17:04:26, INFO: Path left: 81.91129890877704
+2025-03-27 17:04:26, INFO: Actions: 4
+2025-03-27 17:04:26, INFO: Coordinates: 10.75980177593538 -7.512749911275341
+2025-03-27 17:04:26, INFO: Stops times: 0
+
+2025-03-27 17:04:28, INFO: human number: 8
+2025-03-27 17:04:29, INFO: running 3/4 episode, simulation environment: circle_static
+2025-03-27 17:06:19, INFO: 3/4 episode: Timeout! Total Reward: 29.768, R_dan: 12.61, R_goal: 0, R_col: 0, R_km: 12.85, R_col_wall: 0, R_wall_min_dist: -1.18, R_way_point_dist: 5.4, R_wp: 0.015
+2025-03-27 17:06:19, INFO: Path length: 4.147517418689969
+2025-03-27 17:06:19, INFO: Path left: 84.01389398541677
+2025-03-27 17:06:19, INFO: Actions: 257
+2025-03-27 17:06:19, INFO: Coordinates: 13.384500258500353 -10.07152508528295
+2025-03-27 17:06:19, INFO: Stops times: 141
+
+2025-03-27 17:06:21, INFO: human number: 8
+2025-03-27 17:06:21, INFO: running 4/4 episode, simulation environment: no
+2025-03-27 17:06:54, INFO: 4/4 episode: Timeout! Total Reward: -25.671, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: 12.85, R_col_wall: 0, R_wall_min_dist: -51.731, R_way_point_dist: -0.06, R_wp: 0.42
+2025-03-27 17:06:54, INFO: Path length: 0.4375066052895566
+2025-03-27 17:06:54, INFO: Path left: 69.91189164095181
+2025-03-27 17:06:54, INFO: Actions: 257
+2025-03-27 17:06:54, INFO: Coordinates: -3.5236045832685114 -12.61719486054564
+2025-03-27 17:06:54, INFO: Stops times: 146
+
+2025-03-27 17:06:54, INFO: VAL   in episode 0 has success rate: 0.00, collision rate: 0.00, timeout rate: 0.75, collisionwall rate: 0.25, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -3.9817
+2025-03-27 17:06:54, INFO: In each scenarios, VAL   in episode 0 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 0.00, timeout rate: 1.00 0.00 1.00, collisionwall rate: 0.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.1948 -16.1591 -0.1574
+2025-03-27 17:06:54, INFO: Frequency in danger: 0.00 and average min separate distance in danger: 0.00
+2025-03-27 17:06:54, INFO: In each scenarios, Frequency in danger: 0.00 0.00 and average min separate distance in danger: 0.00 0.00
+2025-03-27 17:06:56, INFO: human number: 8
+2025-03-27 17:06:56, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:06:58, INFO: 1/3 episode: Collision Wall! Total Reward: -29.016, R_dan: 1.5, R_goal: 0, R_col: 0, R_km: -1.8, R_col_wall: -25.0, R_wall_min_dist: -3.867, R_way_point_dist: 0.06, R_wp: 0.09
+2025-03-27 17:06:58, INFO: Path length: 0.7215804564982313
+2025-03-27 17:06:58, INFO: Path left: 77.8554464247885
+2025-03-27 17:06:58, INFO: Actions: 30
+2025-03-27 17:06:58, INFO: Coordinates: 6.082006020437493 -13.04705964285264
+2025-03-27 17:06:58, INFO: Stops times: 21
+
+2025-03-27 17:07:00, INFO: human number: 8
+2025-03-27 17:07:01, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:07:02, INFO: 2/3 episode: Collision! Total Reward: -24.409, R_dan: 0.22, R_goal: 0, R_col: -25.0, R_km: 0.3, R_col_wall: 0, R_wall_min_dist: 0.013, R_way_point_dist: 0.04, R_wp: 0.015
+2025-03-27 17:07:02, INFO: Path length: 2.382119260174643
+2025-03-27 17:07:02, INFO: Path left: 80.25911084930148
+2025-03-27 17:07:02, INFO: Actions: 6
+2025-03-27 17:07:02, INFO: Coordinates: 9.625680589699115 -9.801632565000784
+2025-03-27 17:07:02, INFO: Stops times: 2
+
+2025-03-27 17:07:04, INFO: human number: 8
+2025-03-27 17:07:04, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:07:13, INFO: 3/3 episode: Collision! Total Reward: -27.272, R_dan: 1.49, R_goal: 0, R_col: -25.0, R_km: -2.2, R_col_wall: 0, R_wall_min_dist: -2.888, R_way_point_dist: 0.5, R_wp: 0.825
+2025-03-27 17:07:13, INFO: Path length: 14.921599273895456
+2025-03-27 17:07:13, INFO: Path left: 62.981924293533886
+2025-03-27 17:07:13, INFO: Actions: 33
+2025-03-27 17:07:13, INFO: Coordinates: -7.372653348332459 -6.983311248356231
+2025-03-27 17:07:13, INFO: Stops times: 13
+
+2025-03-27 17:07:13, INFO: TRAIN in episode 0 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -4.3783
+2025-03-27 17:07:13, INFO: In each scenarios, TRAIN in episode 0 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -1.3991 -11.5905 -0.1451
+2025-03-27 17:07:15, INFO: human number: 8
+2025-03-27 17:07:15, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:07:17, INFO: 1/3 episode: Collision Wall! Total Reward: -29.463, R_dan: 1.65, R_goal: 0, R_col: 0, R_km: -2.75, R_col_wall: -25.0, R_wall_min_dist: -3.35, R_way_point_dist: -0.06, R_wp: 0.045
+2025-03-27 17:07:17, INFO: Path length: 1.016175275039906
+2025-03-27 17:07:17, INFO: Path left: 79.83342889174233
+2025-03-27 17:07:17, INFO: Actions: 33
+2025-03-27 17:07:17, INFO: Coordinates: 8.066660580877764 -13.098566425197953
+2025-03-27 17:07:17, INFO: Stops times: 23
+
+2025-03-27 17:07:19, INFO: human number: 8
+2025-03-27 17:07:20, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:07:22, INFO: 2/3 episode: Collision Wall! Total Reward: -24.242, R_dan: 0.45, R_goal: 0, R_col: 0, R_km: 0.45, R_col_wall: -25.0, R_wall_min_dist: -0.012, R_way_point_dist: -0.15, R_wp: 0.015
+2025-03-27 17:07:22, INFO: Path length: 6.49260209805643
+2025-03-27 17:07:22, INFO: Path left: 83.6889575019262
+2025-03-27 17:07:22, INFO: Actions: 9
+2025-03-27 17:07:22, INFO: Coordinates: 13.030041240318297 -9.311511363673276
+2025-03-27 17:07:22, INFO: Stops times: 3
+
+2025-03-27 17:07:24, INFO: human number: 8
+2025-03-27 17:07:24, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:07:26, INFO: 3/3 episode: Collision Wall! Total Reward: -25.278, R_dan: 0.14, R_goal: 0, R_col: 0, R_km: -0.25, R_col_wall: -25.0, R_wall_min_dist: -0.255, R_way_point_dist: 0.04, R_wp: 0.045
+2025-03-27 17:07:26, INFO: Path length: 4.349463654706793
+2025-03-27 17:07:26, INFO: Path left: 78.68536800996391
+2025-03-27 17:07:26, INFO: Actions: 6
+2025-03-27 17:07:26, INFO: Coordinates: 7.9518413737214795 -8.221107436313813
+2025-03-27 17:07:26, INFO: Stops times: 1
+
+2025-03-27 17:07:26, INFO: TRAIN in episode 1 has success rate: 0.00, collision rate: 0.00, timeout rate: 0.00, collisionwall rate: 1.00, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -6.8088
+2025-03-27 17:07:26, INFO: In each scenarios, TRAIN in episode 1 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -1.1237 -7.2638 -12.0388
+2025-03-27 17:07:28, INFO: human number: 8
+2025-03-27 17:07:28, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:07:44, INFO: 1/3 episode: Timeout! Total Reward: -12.556, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: -18.5, R_col_wall: 0, R_wall_min_dist: -0.246, R_way_point_dist: -6.78, R_wp: 0.09
+2025-03-27 17:07:44, INFO: Path length: 197.63792696281453
+2025-03-27 17:07:44, INFO: Path left: 261.3429673773847
+2025-03-27 17:07:44, INFO: Actions: 257
+2025-03-27 17:07:44, INFO: Coordinates: 6.6166417345240065 -198.71286781502138
+2025-03-27 17:07:44, INFO: Stops times: 64
+
+2025-03-27 17:07:46, INFO: human number: 8
+2025-03-27 17:07:47, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:07:48, INFO: 2/3 episode: Collision! Total Reward: -25.38, R_dan: 0.09, R_goal: 0, R_col: -25.0, R_km: -0.3, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: -0.2, R_wp: 0.015
+2025-03-27 17:07:48, INFO: Path length: 3.3978604198674733
+2025-03-27 17:07:48, INFO: Path left: 81.27430226829746
+2025-03-27 17:07:48, INFO: Actions: 5
+2025-03-27 17:07:48, INFO: Coordinates: 10.609234925780664 -9.36931356146565
+2025-03-27 17:07:48, INFO: Stops times: 2
+
+2025-03-27 17:07:50, INFO: human number: 8
+2025-03-27 17:07:50, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:07:52, INFO: 3/3 episode: Collision Wall! Total Reward: -24.763, R_dan: 0.2, R_goal: 0, R_col: 0, R_km: 0.2, R_col_wall: -25.0, R_wall_min_dist: -0.328, R_way_point_dist: 0.12, R_wp: 0.045
+2025-03-27 17:07:52, INFO: Path length: 4.16925884030717
+2025-03-27 17:07:52, INFO: Path left: 78.6180014587202
+2025-03-27 17:07:52, INFO: Actions: 4
+2025-03-27 17:07:52, INFO: Coordinates: 7.645962412898843 -7.565489229525856
+2025-03-27 17:07:52, INFO: Stops times: 0
+
+2025-03-27 17:07:52, INFO: TRAIN in episode 2 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.33, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -10.3059
+2025-03-27 17:07:52, INFO: In each scenarios, TRAIN in episode 2 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 1.00 0.00 0.00, collisionwall rate: 0.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.7311 -14.3093 -15.8773
+2025-03-27 17:07:54, INFO: human number: 8
+2025-03-27 17:07:54, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:08:12, INFO: 1/3 episode: Timeout! Total Reward: -10.528, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: -14.1, R_col_wall: 0, R_wall_min_dist: -2.49, R_way_point_dist: -7.34, R_wp: 0.54
+2025-03-27 17:08:12, INFO: Path length: 231.89131394901918
+2025-03-27 17:08:12, INFO: Path left: 275.339313207033
+2025-03-27 17:08:12, INFO: Actions: 257
+2025-03-27 17:08:12, INFO: Coordinates: 6.524871179989264 -218.7756897314221
+2025-03-27 17:08:12, INFO: Stops times: 49
+
+2025-03-27 17:08:14, INFO: human number: 8
+2025-03-27 17:08:15, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:08:16, INFO: 2/3 episode: Collision! Total Reward: -25.597, R_dan: 0.19, R_goal: 0, R_col: -25.0, R_km: -0.75, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: -0.07, R_wp: 0.015
+2025-03-27 17:08:16, INFO: Path length: 1.520450606250801
+2025-03-27 17:08:16, INFO: Path left: 80.47781630796509
+2025-03-27 17:08:16, INFO: Actions: 7
+2025-03-27 17:08:16, INFO: Coordinates: 9.730569311629116 -11.052747425135768
+2025-03-27 17:08:16, INFO: Stops times: 4
+
+2025-03-27 17:08:18, INFO: human number: 8
+2025-03-27 17:08:19, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:08:20, INFO: 3/3 episode: Collision! Total Reward: -25.162, R_dan: 0.17, R_goal: 0, R_col: -25.0, R_km: -0.3, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: -0.06, R_wp: 0.015
+2025-03-27 17:08:20, INFO: Path length: 3.0295147037350083
+2025-03-27 17:08:20, INFO: Path left: 80.16227717784456
+2025-03-27 17:08:20, INFO: Actions: 5
+2025-03-27 17:08:20, INFO: Coordinates: 9.429010833379238 -9.044563801773519
+2025-03-27 17:08:20, INFO: Stops times: 1
+
+2025-03-27 17:08:20, INFO: TRAIN in episode 3 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.33, collisionwall rate: 0.00, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -8.6493
+2025-03-27 17:08:20, INFO: In each scenarios, TRAIN in episode 3 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 1.00 0.00 0.00, collisionwall rate: 0.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -1.2098 -10.8367 -13.9013
+2025-03-27 17:08:22, INFO: human number: 8
+2025-03-27 17:08:22, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:08:40, INFO: 1/3 episode: Timeout! Total Reward: -8.194, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: -13.55, R_col_wall: 0, R_wall_min_dist: -0.686, R_way_point_dist: -6.92, R_wp: 0.09
+2025-03-27 17:08:40, INFO: Path length: 224.67172419610523
+2025-03-27 17:08:40, INFO: Path left: 282.5693597493191
+2025-03-27 17:08:40, INFO: Actions: 257
+2025-03-27 17:08:40, INFO: Coordinates: 12.76162539561829 -219.70698002335124
+2025-03-27 17:08:40, INFO: Stops times: 53
+
+2025-03-27 17:08:42, INFO: human number: 8
+2025-03-27 17:08:43, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:08:44, INFO: 2/3 episode: Collision! Total Reward: -25.666, R_dan: 0.19, R_goal: 0, R_col: -25.0, R_km: -0.75, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: -0.14, R_wp: 0.015
+2025-03-27 17:08:44, INFO: Path length: 2.1042053328957495
+2025-03-27 17:08:44, INFO: Path left: 81.51456626579943
+2025-03-27 17:08:44, INFO: Actions: 7
+2025-03-27 17:08:44, INFO: Coordinates: 10.884290443488084 -10.117379102881856
+2025-03-27 17:08:44, INFO: Stops times: 3
+
+2025-03-27 17:08:46, INFO: human number: 8
+2025-03-27 17:08:47, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:08:47, INFO: 3/3 episode: Collision Wall! Total Reward: -24.806, R_dan: 0.15, R_goal: 0, R_col: 0, R_km: 0.15, R_col_wall: -25.0, R_wall_min_dist: -0.071, R_way_point_dist: -0.05, R_wp: 0.015
+2025-03-27 17:08:47, INFO: Path length: 3.771398420439696
+2025-03-27 17:08:47, INFO: Path left: 79.78919809289633
+2025-03-27 17:08:47, INFO: Actions: 3
+2025-03-27 17:08:47, INFO: Coordinates: 8.930783562094193 -8.65478037253996
+2025-03-27 17:08:47, INFO: Stops times: 0
+
+2025-03-27 17:08:47, INFO: TRAIN in episode 4 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.33, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -9.6478
+2025-03-27 17:08:47, INFO: In each scenarios, TRAIN in episode 4 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 1.00 0.00 0.00, collisionwall rate: 0.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.3835 -10.8640 -18.4628
+2025-03-27 17:08:50, INFO: human number: 8
+2025-03-27 17:08:50, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:08:54, INFO: 1/3 episode: Collision Wall! Total Reward: -29.922, R_dan: 3.1, R_goal: 0, R_col: 0, R_km: -1.3, R_col_wall: -25.0, R_wall_min_dist: -6.955, R_way_point_dist: 0.18, R_wp: 0.045
+2025-03-27 17:08:54, INFO: Path length: 0.5948830454901987
+2025-03-27 17:08:54, INFO: Path left: 79.60647441661611
+2025-03-27 17:08:54, INFO: Actions: 62
+2025-03-27 17:08:54, INFO: Coordinates: 7.806456418751392 -13.06414392976364
+2025-03-27 17:08:54, INFO: Stops times: 41
+
+2025-03-27 17:08:56, INFO: human number: 8
+2025-03-27 17:08:57, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:08:58, INFO: 2/3 episode: Collision! Total Reward: -25.304, R_dan: 0.04, R_goal: 0, R_col: -25.0, R_km: -0.35, R_col_wall: 0, R_wall_min_dist: 0.009, R_way_point_dist: -0.02, R_wp: 0.015
+2025-03-27 17:08:58, INFO: Path length: 3.0
+2025-03-27 17:08:58, INFO: Path left: 82.05750206321207
+2025-03-27 17:08:58, INFO: Actions: 4
+2025-03-27 17:08:58, INFO: Coordinates: 11.395025311260369 -10.649245098004315
+2025-03-27 17:08:58, INFO: Stops times: 2
+
+2025-03-27 17:09:00, INFO: human number: 8
+2025-03-27 17:09:01, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:09:01, INFO: 3/3 episode: Collision! Total Reward: -24.799, R_dan: 0.02, R_goal: 0, R_col: -25.0, R_km: 0.1, R_col_wall: 0, R_wall_min_dist: 0.005, R_way_point_dist: 0.06, R_wp: 0.015
+2025-03-27 17:09:01, INFO: Path length: 2.78
+2025-03-27 17:09:01, INFO: Path left: 79.40626336205598
+2025-03-27 17:09:01, INFO: Actions: 2
+2025-03-27 17:09:01, INFO: Coordinates: 8.758629033042967 -9.63111722331303
+2025-03-27 17:09:01, INFO: Stops times: 0
+
+2025-03-27 17:09:01, INFO: TRAIN in episode 5 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -12.3718
+2025-03-27 17:09:01, INFO: In each scenarios, TRAIN in episode 5 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.5295 -16.2435 -21.4014
+2025-03-27 17:09:04, INFO: human number: 8
+2025-03-27 17:09:04, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:09:05, INFO: 1/3 episode: Collision Wall! Total Reward: -23.835, R_dan: 0.8, R_goal: 0, R_col: 0, R_km: 0.8, R_col_wall: -25.0, R_wall_min_dist: -0.367, R_way_point_dist: -0.08, R_wp: 0.015
+2025-03-27 17:09:05, INFO: Path length: 7.752272407259287
+2025-03-27 17:09:05, INFO: Path left: 82.16744992820222
+2025-03-27 17:09:05, INFO: Actions: 16
+2025-03-27 17:09:05, INFO: Coordinates: 11.03979130750769 -7.515765204611675
+2025-03-27 17:09:05, INFO: Stops times: 6
+
+2025-03-27 17:09:07, INFO: human number: 8
+2025-03-27 17:09:07, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:09:14, INFO: 2/3 episode: Collision Wall! Total Reward: -24.131, R_dan: 1.0, R_goal: 0, R_col: 0, R_km: -0.1, R_col_wall: -25.0, R_wall_min_dist: 0.046, R_way_point_dist: -0.1, R_wp: 0.015
+2025-03-27 17:09:14, INFO: Path length: 6.181551567524342
+2025-03-27 17:09:14, INFO: Path left: 83.8334392552955
+2025-03-27 17:09:14, INFO: Actions: 20
+2025-03-27 17:09:14, INFO: Coordinates: 13.20410106891628 -10.064064002955805
+2025-03-27 17:09:14, INFO: Stops times: 11
+
+2025-03-27 17:09:16, INFO: human number: 8
+2025-03-27 17:09:16, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:09:18, INFO: 3/3 episode: Collision! Total Reward: -25.413, R_dan: 0.14, R_goal: 0, R_col: -25.0, R_km: -0.25, R_col_wall: 0, R_wall_min_dist: -0.459, R_way_point_dist: 0.11, R_wp: 0.045
+2025-03-27 17:09:18, INFO: Path length: 4.170360419867474
+2025-03-27 17:09:18, INFO: Path left: 78.07067684880198
+2025-03-27 17:09:18, INFO: Actions: 6
+2025-03-27 17:09:18, INFO: Coordinates: 7.015879755703748 -7.521566426658555
+2025-03-27 17:09:18, INFO: Stops times: 2
+
+2025-03-27 17:09:18, INFO: TRAIN in episode 6 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -5.0951
+2025-03-27 17:09:18, INFO: In each scenarios, TRAIN in episode 6 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -2.1593 -1.0641 -12.0618
+2025-03-27 17:09:21, INFO: human number: 8
+2025-03-27 17:09:21, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:09:26, INFO: 1/3 episode: Collision Wall! Total Reward: -25.683, R_dan: 3.95, R_goal: 0, R_col: 0, R_km: -2.1, R_col_wall: -25.0, R_wall_min_dist: -3.039, R_way_point_dist: 0.34, R_wp: 0.15
+2025-03-27 17:09:26, INFO: Path length: 7.369775898777657
+2025-03-27 17:09:26, INFO: Path left: 78.88159888748073
+2025-03-27 17:09:26, INFO: Actions: 79
+2025-03-27 17:09:26, INFO: Coordinates: 7.743131367001962 -12.602250154524535
+2025-03-27 17:09:26, INFO: Stops times: 51
+
+2025-03-27 17:09:28, INFO: human number: 8
+2025-03-27 17:09:29, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:09:30, INFO: 2/3 episode: Collision! Total Reward: -25.384, R_dan: -0.04, R_goal: 0, R_col: -25.0, R_km: -0.35, R_col_wall: 0, R_wall_min_dist: 0.009, R_way_point_dist: -0.02, R_wp: 0.015
+2025-03-27 17:09:30, INFO: Path length: 1.5691032348393197
+2025-03-27 17:09:30, INFO: Path left: 79.85911482676539
+2025-03-27 17:09:30, INFO: Actions: 4
+2025-03-27 17:09:30, INFO: Coordinates: 9.207632848600074 -10.429533436934255
+2025-03-27 17:09:30, INFO: Stops times: 2
+
+2025-03-27 17:09:32, INFO: human number: 8
+2025-03-27 17:09:32, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:09:33, INFO: 3/3 episode: Collision Wall! Total Reward: -25.894, R_dan: 0.14, R_goal: 0, R_col: 0, R_km: -0.8, R_col_wall: -25.0, R_wall_min_dist: -0.151, R_way_point_dist: -0.1, R_wp: 0.015
+2025-03-27 17:09:33, INFO: Path length: 3.9917588403071695
+2025-03-27 17:09:33, INFO: Path left: 80.29358641283524
+2025-03-27 17:09:33, INFO: Actions: 6
+2025-03-27 17:09:33, INFO: Coordinates: 9.234140421438711 -8.06517278048773
+2025-03-27 17:09:33, INFO: Stops times: 2
+
+2025-03-27 17:09:33, INFO: TRAIN in episode 7 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -9.4792
+2025-03-27 17:09:33, INFO: In each scenarios, TRAIN in episode 7 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.4098 -16.3055 -12.5418
+2025-03-27 17:09:36, INFO: human number: 8
+2025-03-27 17:09:36, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:09:44, INFO: 1/3 episode: Collision Wall! Total Reward: -37.627, R_dan: 5.4, R_goal: 0, R_col: 0, R_km: -9.45, R_col_wall: -25.0, R_wall_min_dist: -9.314, R_way_point_dist: 0.3, R_wp: 0.42
+2025-03-27 17:09:44, INFO: Path length: 11.723396765160674
+2025-03-27 17:09:44, INFO: Path left: 68.69567990358756
+2025-03-27 17:09:44, INFO: Actions: 108
+2025-03-27 17:09:44, INFO: Coordinates: -5.4347914322599085 -11.844417447839435
+2025-03-27 17:09:44, INFO: Stops times: 72
+
+2025-03-27 17:09:46, INFO: human number: 8
+2025-03-27 17:09:46, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:09:48, INFO: 2/3 episode: Collision! Total Reward: -26.714, R_dan: 0.34, R_goal: 0, R_col: -25.0, R_km: -1.7, R_col_wall: 0, R_wall_min_dist: -0.183, R_way_point_dist: -0.19, R_wp: 0.015
+2025-03-27 17:09:48, INFO: Path length: 2.756158916025882
+2025-03-27 17:09:48, INFO: Path left: 79.88552086506657
+2025-03-27 17:09:48, INFO: Actions: 10
+2025-03-27 17:09:48, INFO: Coordinates: 8.692085306745657 -7.908856180635464
+2025-03-27 17:09:48, INFO: Stops times: 5
+
+2025-03-27 17:09:50, INFO: human number: 8
+2025-03-27 17:09:50, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:09:52, INFO: 3/3 episode: Collision Wall! Total Reward: -25.377, R_dan: 0.25, R_goal: 0, R_col: 0, R_km: -0.3, R_col_wall: -25.0, R_wall_min_dist: -0.522, R_way_point_dist: 0.15, R_wp: 0.045
+2025-03-27 17:09:52, INFO: Path length: 4.941900075718712
+2025-03-27 17:09:52, INFO: Path left: 78.30461270477429
+2025-03-27 17:09:52, INFO: Actions: 5
+2025-03-27 17:09:52, INFO: Coordinates: 7.274724342839902 -7.51307392311092
+2025-03-27 17:09:52, INFO: Stops times: 0
+
+2025-03-27 17:09:52, INFO: TRAIN in episode 8 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -7.2026
+2025-03-27 17:09:52, INFO: In each scenarios, TRAIN in episode 8 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.2557 -7.7964 -14.0672
+2025-03-27 17:09:55, INFO: human number: 8
+2025-03-27 17:09:55, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:10:00, INFO: 1/3 episode: Collision Wall! Total Reward: -27.266, R_dan: 3.95, R_goal: 0, R_col: 0, R_km: -2.65, R_col_wall: -25.0, R_wall_min_dist: -4.174, R_way_point_dist: 0.55, R_wp: 0.045
+2025-03-27 17:10:00, INFO: Path length: 2.330982372313385
+2025-03-27 17:10:00, INFO: Path left: 79.29678337725892
+2025-03-27 17:10:00, INFO: Actions: 79
+2025-03-27 17:10:00, INFO: Coordinates: 7.404198904621624 -13.064273355274443
+2025-03-27 17:10:00, INFO: Stops times: 57
+
+2025-03-27 17:10:02, INFO: human number: 8
+2025-03-27 17:10:03, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:10:04, INFO: 2/3 episode: Collision! Total Reward: -24.727, R_dan: 0.27, R_goal: 0, R_col: -25.0, R_km: -0.2, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: 0.14, R_wp: 0.045
+2025-03-27 17:10:04, INFO: Path length: 0.6875510490282151
+2025-03-27 17:10:04, INFO: Path left: 78.05321082885636
+2025-03-27 17:10:04, INFO: Actions: 7
+2025-03-27 17:10:04, INFO: Coordinates: 7.361352242978662 -10.539533436934256
+2025-03-27 17:10:04, INFO: Stops times: 5
+
+2025-03-27 17:10:06, INFO: human number: 8
+2025-03-27 17:10:07, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:10:12, INFO: 3/3 episode: Collision Wall! Total Reward: -24.221, R_dan: 1.1, R_goal: 0, R_col: 0, R_km: 0.0, R_col_wall: -25.0, R_wall_min_dist: -0.335, R_way_point_dist: -0.04, R_wp: 0.045
+2025-03-27 17:10:12, INFO: Path length: 11.494637459285107
+2025-03-27 17:10:12, INFO: Path left: 77.74394002782411
+2025-03-27 17:10:12, INFO: Actions: 22
+2025-03-27 17:10:12, INFO: Coordinates: 6.672288025075218 -7.5750495826156365
+2025-03-27 17:10:12, INFO: Stops times: 7
+
+2025-03-27 17:10:12, INFO: TRAIN in episode 9 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -4.0427
+2025-03-27 17:10:12, INFO: In each scenarios, TRAIN in episode 9 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.8334 -10.0544 -1.2404
+2025-03-27 17:10:14, INFO: human number: 8
+2025-03-27 17:10:14, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:10:21, INFO: 1/3 episode: Collision Wall! Total Reward: -27.633, R_dan: 4.8, R_goal: 0, R_col: 0, R_km: -4.55, R_col_wall: -25.0, R_wall_min_dist: -2.925, R_way_point_dist: -0.06, R_wp: 0.09
+2025-03-27 17:10:21, INFO: Path length: 9.544468854431901
+2025-03-27 17:10:21, INFO: Path left: 83.01035435662125
+2025-03-27 17:10:21, INFO: Actions: 96
+2025-03-27 17:10:21, INFO: Coordinates: 12.315961424021804 -7.795636596258258
+2025-03-27 17:10:21, INFO: Stops times: 63
+
+2025-03-27 17:10:23, INFO: human number: 8
+2025-03-27 17:10:24, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:10:26, INFO: 2/3 episode: Collision! Total Reward: -25.666, R_dan: 0.19, R_goal: 0, R_col: -25.0, R_km: -0.75, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: -0.14, R_wp: 0.015
+2025-03-27 17:10:26, INFO: Path length: 0.665771888763162
+2025-03-27 17:10:26, INFO: Path left: 79.56940165018578
+2025-03-27 17:10:26, INFO: Actions: 7
+2025-03-27 17:10:26, INFO: Coordinates: 8.932859718115596 -10.239204016925386
+2025-03-27 17:10:26, INFO: Stops times: 4
+
+2025-03-27 17:10:28, INFO: human number: 8
+2025-03-27 17:10:28, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:10:30, INFO: 3/3 episode: Collision Wall! Total Reward: -26.129, R_dan: 0.11, R_goal: 0, R_col: 0, R_km: -0.75, R_col_wall: -25.0, R_wall_min_dist: -0.72, R_way_point_dist: 0.14, R_wp: 0.09
+2025-03-27 17:10:30, INFO: Path length: 5.560862075146488
+2025-03-27 17:10:30, INFO: Path left: 77.32735900503654
+2025-03-27 17:10:30, INFO: Actions: 7
+2025-03-27 17:10:30, INFO: Coordinates: 6.378686975396388 -7.516649452484132
+2025-03-27 17:10:30, INFO: Stops times: 1
+
+2025-03-27 17:10:30, INFO: TRAIN in episode 10 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -7.2782
+2025-03-27 17:10:30, INFO: In each scenarios, TRAIN in episode 10 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.0249 -10.7002 -11.1594
+2025-03-27 17:10:32, INFO: human number: 8
+2025-03-27 17:10:32, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:10:36, INFO: 1/3 episode: Collision Wall! Total Reward: -25.301, R_dan: 1.9, R_goal: 0, R_col: 0, R_km: 0.25, R_col_wall: -25.0, R_wall_min_dist: -2.869, R_way_point_dist: 0.37, R_wp: 0.045
+2025-03-27 17:10:36, INFO: Path length: 1.3201594345220078
+2025-03-27 17:10:36, INFO: Path left: 78.7594353809233
+2025-03-27 17:10:36, INFO: Actions: 38
+2025-03-27 17:10:36, INFO: Coordinates: 6.63992828412541 -13.083326129239348
+2025-03-27 17:10:36, INFO: Stops times: 28
+
+2025-03-27 17:10:38, INFO: human number: 8
+2025-03-27 17:10:38, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:10:40, INFO: 2/3 episode: Collision! Total Reward: -25.668, R_dan: 0.19, R_goal: 0, R_col: -25.0, R_km: -0.75, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: -0.14, R_wp: 0.015
+2025-03-27 17:10:40, INFO: Path length: 1.4800510490282148
+2025-03-27 17:10:40, INFO: Path left: 79.73818510939596
+2025-03-27 17:10:40, INFO: Actions: 7
+2025-03-27 17:10:40, INFO: Coordinates: 8.77668988989545 -11.598385234090687
+2025-03-27 17:10:40, INFO: Stops times: 5
+
+2025-03-27 17:10:42, INFO: human number: 8
+2025-03-27 17:10:43, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:10:46, INFO: 3/3 episode: Collision Wall! Total Reward: -25.762, R_dan: 0.24, R_goal: 0, R_col: 0, R_km: -0.15, R_col_wall: -25.0, R_wall_min_dist: -0.857, R_way_point_dist: -0.04, R_wp: 0.045
+2025-03-27 17:10:46, INFO: Path length: 5.233271888763161
+2025-03-27 17:10:46, INFO: Path left: 79.28240108266614
+2025-03-27 17:10:46, INFO: Actions: 8
+2025-03-27 17:10:46, INFO: Coordinates: 8.340656884105508 -7.503974408784588
+2025-03-27 17:10:46, INFO: Stops times: 2
+
+2025-03-27 17:10:46, INFO: TRAIN in episode 11 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -6.5321
+2025-03-27 17:10:46, INFO: In each scenarios, TRAIN in episode 11 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.5571 -10.7760 -9.3774
+2025-03-27 17:10:48, INFO: human number: 8
+2025-03-27 17:10:48, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:10:51, INFO: 1/3 episode: Collision Wall! Total Reward: -26.405, R_dan: 1.55, R_goal: 0, R_col: 0, R_km: -0.65, R_col_wall: -25.0, R_wall_min_dist: -2.583, R_way_point_dist: 0.23, R_wp: 0.045
+2025-03-27 17:10:51, INFO: Path length: 0.9993772973776234
+2025-03-27 17:10:51, INFO: Path left: 79.25707397530513
+2025-03-27 17:10:51, INFO: Actions: 31
+2025-03-27 17:10:51, INFO: Coordinates: 7.320860861904925 -13.098755209238812
+2025-03-27 17:10:51, INFO: Stops times: 21
+
+2025-03-27 17:10:53, INFO: human number: 8
+2025-03-27 17:10:53, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:11:00, INFO: 2/3 episode: Collision Wall! Total Reward: -25.162, R_dan: 1.35, R_goal: 0, R_col: 0, R_km: -0.85, R_col_wall: -25.0, R_wall_min_dist: -0.308, R_way_point_dist: -0.38, R_wp: 0.015
+2025-03-27 17:11:00, INFO: Path length: 10.777083951873687
+2025-03-27 17:11:00, INFO: Path left: 84.17925339367685
+2025-03-27 17:11:00, INFO: Actions: 27
+2025-03-27 17:11:00, INFO: Coordinates: 13.549558549402326 -9.898478294462917
+2025-03-27 17:11:00, INFO: Stops times: 11
+
+2025-03-27 17:11:02, INFO: human number: 8
+2025-03-27 17:11:02, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:11:12, INFO: 3/3 episode: Collision Wall! Total Reward: -24.547, R_dan: 1.77, R_goal: 0, R_col: 0, R_km: -0.35, R_col_wall: -25.0, R_wall_min_dist: -1.111, R_way_point_dist: -0.01, R_wp: 0.15
+2025-03-27 17:11:12, INFO: Path length: 10.678218718887527
+2025-03-27 17:11:12, INFO: Path left: 75.1977861297966
+2025-03-27 17:11:12, INFO: Actions: 37
+2025-03-27 17:11:12, INFO: Coordinates: 4.226512157234951 -7.529409174964594
+2025-03-27 17:11:12, INFO: Stops times: 18
+
+2025-03-27 17:11:12, INFO: TRAIN in episode 12 has success rate: 0.00, collision rate: 0.00, timeout rate: 0.00, collisionwall rate: 1.00, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -0.1233
+2025-03-27 17:11:12, INFO: In each scenarios, TRAIN in episode 12 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.0721 -0.5493 0.1072
+2025-03-27 17:11:14, INFO: human number: 8
+2025-03-27 17:11:14, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:11:16, INFO: 1/3 episode: Collision Wall! Total Reward: -26.871, R_dan: 0.95, R_goal: 0, R_col: 0, R_km: -0.7, R_col_wall: -25.0, R_wall_min_dist: -2.362, R_way_point_dist: 0.15, R_wp: 0.09
+2025-03-27 17:11:16, INFO: Path length: 1.8539494694679113
+2025-03-27 17:11:16, INFO: Path left: 78.21803650035658
+2025-03-27 17:11:16, INFO: Actions: 19
+2025-03-27 17:11:16, INFO: Coordinates: 6.508141115541945 -13.081685793694035
+2025-03-27 17:11:16, INFO: Stops times: 14
+
+2025-03-27 17:11:18, INFO: human number: 8
+2025-03-27 17:11:18, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:11:21, INFO: 2/3 episode: Collision! Total Reward: -25.001, R_dan: 0.24, R_goal: 0, R_col: -25.0, R_km: -0.15, R_col_wall: 0, R_wall_min_dist: -0.138, R_way_point_dist: 0.03, R_wp: 0.015
+2025-03-27 17:11:21, INFO: Path length: 0.9716032348393195
+2025-03-27 17:11:21, INFO: Path left: 79.11271690181853
+2025-03-27 17:11:21, INFO: Actions: 8
+2025-03-27 17:11:21, INFO: Coordinates: 8.336162901218364 -9.011964218276898
+2025-03-27 17:11:21, INFO: Stops times: 5
+
+2025-03-27 17:11:23, INFO: human number: 8
+2025-03-27 17:11:23, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:11:25, INFO: 3/3 episode: Collision Wall! Total Reward: -26.071, R_dan: 0.44, R_goal: 0, R_col: 0, R_km: -1.05, R_col_wall: -25.0, R_wall_min_dist: -0.634, R_way_point_dist: 0.08, R_wp: 0.09
+2025-03-27 17:11:25, INFO: Path length: 6.641809889335384
+2025-03-27 17:11:25, INFO: Path left: 75.89155145648404
+2025-03-27 17:11:25, INFO: Actions: 12
+2025-03-27 17:11:25, INFO: Coordinates: 4.792890762227278 -7.542827291113327
+2025-03-27 17:11:25, INFO: Stops times: 5
+
+2025-03-27 17:11:25, INFO: TRAIN in episode 13 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -5.5136
+2025-03-27 17:11:25, INFO: In each scenarios, TRAIN in episode 13 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -1.8963 -9.0786 -5.5660
+2025-03-27 17:11:27, INFO: human number: 8
+2025-03-27 17:11:27, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:11:34, INFO: 1/3 episode: Collision Wall! Total Reward: -27.885, R_dan: 4.6, R_goal: 0, R_col: 0, R_km: -4.75, R_col_wall: -25.0, R_wall_min_dist: -3.783, R_way_point_dist: 0.73, R_wp: 0.315
+2025-03-27 17:11:34, INFO: Path length: 3.1138722994415122
+2025-03-27 17:11:34, INFO: Path left: 72.68073374798105
+2025-03-27 17:11:34, INFO: Actions: 92
+2025-03-27 17:11:34, INFO: Coordinates: 0.6667657854448643 -12.7865702315451
+2025-03-27 17:11:34, INFO: Stops times: 69
+
+2025-03-27 17:11:37, INFO: human number: 8
+2025-03-27 17:11:37, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:11:38, INFO: 2/3 episode: Collision! Total Reward: -26.819, R_dan: 0.22, R_goal: 0, R_col: -25.0, R_km: -1.9, R_col_wall: 0, R_wall_min_dist: 0.013, R_way_point_dist: -0.17, R_wp: 0.015
+2025-03-27 17:11:38, INFO: Path length: 1.243617938574328
+2025-03-27 17:11:38, INFO: Path left: 80.27727352603422
+2025-03-27 17:11:38, INFO: Actions: 6
+2025-03-27 17:11:38, INFO: Coordinates: 9.647809223797013 -9.941260088679073
+2025-03-27 17:11:38, INFO: Stops times: 2
+
+2025-03-27 17:11:40, INFO: human number: 8
+2025-03-27 17:11:40, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:11:42, INFO: 3/3 episode: Collision Wall! Total Reward: -28.927, R_dan: 0.27, R_goal: 0, R_col: 0, R_km: -3.1, R_col_wall: -25.0, R_wall_min_dist: -0.865, R_way_point_dist: -0.25, R_wp: 0.015
+2025-03-27 17:11:42, INFO: Path length: 4.528103753335445
+2025-03-27 17:11:42, INFO: Path left: 82.0771898551033
+2025-03-27 17:11:42, INFO: Actions: 15
+2025-03-27 17:11:42, INFO: Coordinates: 10.95209671841269 -7.540040733766666
+2025-03-27 17:11:42, INFO: Stops times: 9
+
+2025-03-27 17:11:42, INFO: TRAIN in episode 14 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -5.9142
+2025-03-27 17:11:42, INFO: In each scenarios, TRAIN in episode 14 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.3186 -13.2350 -4.8261
+2025-03-27 17:11:44, INFO: human number: 8
+2025-03-27 17:11:44, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:11:48, INFO: 1/3 episode: Collision Wall! Total Reward: -25.59, R_dan: 2.85, R_goal: 0, R_col: 0, R_km: -3.75, R_col_wall: -25.0, R_wall_min_dist: -0.448, R_way_point_dist: 0.52, R_wp: 0.225
+2025-03-27 17:11:48, INFO: Path length: 3.6232371987489715
+2025-03-27 17:11:48, INFO: Path left: 74.01583984265767
+2025-03-27 17:11:48, INFO: Actions: 57
+2025-03-27 17:11:48, INFO: Coordinates: 2.028437612882548 -13.033122522536193
+2025-03-27 17:11:48, INFO: Stops times: 41
+
+2025-03-27 17:11:50, INFO: human number: 8
+2025-03-27 17:11:51, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:11:53, INFO: 2/3 episode: Collision! Total Reward: -24.426, R_dan: 0.19, R_goal: 0, R_col: -25.0, R_km: 0.35, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: 0.0, R_wp: 0.015
+2025-03-27 17:11:53, INFO: Path length: 1.259309889335385
+2025-03-27 17:11:53, INFO: Path left: 79.43708898924864
+2025-03-27 17:11:53, INFO: Actions: 7
+2025-03-27 17:11:53, INFO: Coordinates: 8.753954112215533 -10.630803558768614
+2025-03-27 17:11:53, INFO: Stops times: 4
+
+2025-03-27 17:11:55, INFO: human number: 8
+2025-03-27 17:11:55, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:11:55, INFO: 3/3 episode: Collision! Total Reward: -25.002, R_dan: -0.03, R_goal: 0, R_col: -25.0, R_km: 0.05, R_col_wall: 0, R_wall_min_dist: 0.003, R_way_point_dist: -0.04, R_wp: 0.015
+2025-03-27 17:11:55, INFO: Path length: 1.39
+2025-03-27 17:11:55, INFO: Path left: 79.75524940091823
+2025-03-27 17:11:55, INFO: Actions: 1
+2025-03-27 17:11:55, INFO: Coordinates: 9.0 -11.0
+2025-03-27 17:11:55, INFO: Stops times: 0
+
+2025-03-27 17:11:55, INFO: TRAIN in episode 15 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -11.5511
+2025-03-27 17:11:55, INFO: In each scenarios, TRAIN in episode 15 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.3093 -9.9602 -25.0025
+2025-03-27 17:11:58, INFO: human number: 8
+2025-03-27 17:11:58, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:12:04, INFO: 1/3 episode: Collision Wall! Total Reward: -27.637, R_dan: 4.85, R_goal: 0, R_col: 0, R_km: -1.75, R_col_wall: -25.0, R_wall_min_dist: -5.973, R_way_point_dist: 0.18, R_wp: 0.045
+2025-03-27 17:12:04, INFO: Path length: 6.656374891922145
+2025-03-27 17:12:04, INFO: Path left: 82.44863943937554
+2025-03-27 17:12:04, INFO: Actions: 97
+2025-03-27 17:12:04, INFO: Coordinates: 11.196926749659623 -12.874505522170496
+2025-03-27 17:12:04, INFO: Stops times: 62
+
+2025-03-27 17:12:06, INFO: human number: 8
+2025-03-27 17:12:07, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:12:09, INFO: 2/3 episode: Collision! Total Reward: -24.762, R_dan: 0.09, R_goal: 0, R_col: -25.0, R_km: 0.25, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: -0.13, R_wp: 0.015
+2025-03-27 17:12:09, INFO: Path length: 3.3140005184961256
+2025-03-27 17:12:09, INFO: Path left: 81.96703715971893
+2025-03-27 17:12:09, INFO: Actions: 5
+2025-03-27 17:12:09, INFO: Coordinates: 11.236856643882335 -11.118498106947925
+2025-03-27 17:12:09, INFO: Stops times: 1
+
+2025-03-27 17:12:11, INFO: human number: 8
+2025-03-27 17:12:11, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:13:26, INFO: 3/3 episode: Timeout! Total Reward: -2.608, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: -7.5, R_col_wall: 0, R_wall_min_dist: -0.562, R_way_point_dist: -7.48, R_wp: 0.045
+2025-03-27 17:13:26, INFO: Path length: 234.54548216146082
+2025-03-27 17:13:26, INFO: Path left: 293.5278502189677
+2025-03-27 17:13:26, INFO: Actions: 257
+2025-03-27 17:13:26, INFO: Coordinates: 13.44923997941053 -228.93233219643656
+2025-03-27 17:13:26, INFO: Stops times: 48
+
+2025-03-27 17:13:26, INFO: TRAIN in episode 16 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.33, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -4.3987
+2025-03-27 17:13:26, INFO: In each scenarios, TRAIN in episode 16 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 1.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.4417 -13.6989 0.0611
+2025-03-27 17:13:28, INFO: human number: 8
+2025-03-27 17:13:28, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:13:32, INFO: 1/3 episode: Collision Wall! Total Reward: -27.663, R_dan: 3.2, R_goal: 0, R_col: 0, R_km: -5.05, R_col_wall: -25.0, R_wall_min_dist: -1.441, R_way_point_dist: 0.31, R_wp: 0.315
+2025-03-27 17:13:32, INFO: Path length: 20.93832875580325
+2025-03-27 17:13:32, INFO: Path left: 71.6260310783321
+2025-03-27 17:13:32, INFO: Actions: 64
+2025-03-27 17:13:32, INFO: Coordinates: -8.060885399287312 -11.603081187471242
+2025-03-27 17:13:32, INFO: Stops times: 34
+
+2025-03-27 17:13:34, INFO: human number: 8
+2025-03-27 17:13:35, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:13:35, INFO: 2/3 episode: Collision! Total Reward: -25.002, R_dan: -0.03, R_goal: 0, R_col: -25.0, R_km: 0.05, R_col_wall: 0, R_wall_min_dist: 0.003, R_way_point_dist: -0.04, R_wp: 0.015
+2025-03-27 17:13:35, INFO: Path length: 1.39
+2025-03-27 17:13:35, INFO: Path left: 79.75524940091823
+2025-03-27 17:13:35, INFO: Actions: 1
+2025-03-27 17:13:35, INFO: Coordinates: 9.0 -11.0
+2025-03-27 17:13:35, INFO: Stops times: 0
+
+2025-03-27 17:13:37, INFO: human number: 8
+2025-03-27 17:13:38, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:13:39, INFO: 3/3 episode: Collision! Total Reward: -25.652, R_dan: 0.09, R_goal: 0, R_col: -25.0, R_km: -0.85, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: 0.08, R_wp: 0.015
+2025-03-27 17:13:39, INFO: Path length: 1.5691032348393197
+2025-03-27 17:13:39, INFO: Path left: 79.44873856639391
+2025-03-27 17:13:39, INFO: Actions: 5
+2025-03-27 17:13:39, INFO: Coordinates: 8.818213842450735 -10.103482733197811
+2025-03-27 17:13:39, INFO: Stops times: 3
+
+2025-03-27 17:13:39, INFO: TRAIN in episode 17 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -12.8921
+2025-03-27 17:13:39, INFO: In each scenarios, TRAIN in episode 17 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.6390 -25.0025 -14.3128
+2025-03-27 17:13:41, INFO: human number: 8
+2025-03-27 17:13:41, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:13:42, INFO: 1/3 episode: Collision Wall! Total Reward: -25.9, R_dan: 0.5, R_goal: 0, R_col: 0, R_km: -1.15, R_col_wall: -25.0, R_wall_min_dist: -0.387, R_way_point_dist: 0.09, R_wp: 0.045
+2025-03-27 17:13:42, INFO: Path length: 2.5616032348393194
+2025-03-27 17:13:42, INFO: Path left: 78.83961482706253
+2025-03-27 17:13:42, INFO: Actions: 10
+2025-03-27 17:13:42, INFO: Coordinates: 7.438052792652173 -12.268359385664603
+2025-03-27 17:13:42, INFO: Stops times: 7
+
+2025-03-27 17:13:44, INFO: human number: 8
+2025-03-27 17:13:44, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:14:42, INFO: 2/3 episode: Timeout! Total Reward: -12.216, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: -17.95, R_col_wall: 0, R_wall_min_dist: 0.119, R_way_point_dist: -7.27, R_wp: 0.045
+2025-03-27 17:14:42, INFO: Path length: 210.73187871386102
+2025-03-27 17:14:42, INFO: Path left: 268.04061286547756
+2025-03-27 17:14:42, INFO: Actions: 257
+2025-03-27 17:14:42, INFO: Coordinates: 5.669226089301304 -203.66522781716554
+2025-03-27 17:14:42, INFO: Stops times: 54
+
+2025-03-27 17:14:44, INFO: human number: 8
+2025-03-27 17:14:45, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:14:53, INFO: 3/3 episode: Collision Wall! Total Reward: -26.203, R_dan: 1.06, R_goal: 0, R_col: 0, R_km: -0.9, R_col_wall: -25.0, R_wall_min_dist: -1.875, R_way_point_dist: 0.36, R_wp: 0.15
+2025-03-27 17:14:53, INFO: Path length: 0.147604556439635
+2025-03-27 17:14:53, INFO: Path left: 76.25689272103604
+2025-03-27 17:14:53, INFO: Actions: 26
+2025-03-27 17:14:53, INFO: Coordinates: 4.523702509459523 -13.061383637374293
+2025-03-27 17:14:53, INFO: Stops times: 22
+
+2025-03-27 17:14:53, INFO: TRAIN in episode 18 has success rate: 0.00, collision rate: 0.00, timeout rate: 0.33, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -2.7143
+2025-03-27 17:14:53, INFO: In each scenarios, TRAIN in episode 18 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 0.00, timeout rate: 0.00 1.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -7.0955 -0.4479 -0.5995
+2025-03-27 17:14:55, INFO: human number: 8
+2025-03-27 17:14:55, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:14:56, INFO: 1/3 episode: Collision Wall! Total Reward: -27.281, R_dan: 1.0, R_goal: 0, R_col: 0, R_km: -1.75, R_col_wall: -25.0, R_wall_min_dist: -1.307, R_way_point_dist: -0.24, R_wp: 0.015
+2025-03-27 17:14:56, INFO: Path length: 12.75186722580096
+2025-03-27 17:14:56, INFO: Path left: 83.38130019982981
+2025-03-27 17:14:56, INFO: Actions: 20
+2025-03-27 17:14:56, INFO: Coordinates: 12.254980757234218 -12.713420026484787
+2025-03-27 17:14:56, INFO: Stops times: 6
+
+2025-03-27 17:14:58, INFO: human number: 8
+2025-03-27 17:14:59, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:15:04, INFO: 2/3 episode: Collision Wall! Total Reward: -25.111, R_dan: 0.94, R_goal: 0, R_col: 0, R_km: 0.0, R_col_wall: -25.0, R_wall_min_dist: -0.572, R_way_point_dist: -0.53, R_wp: 0.045
+2025-03-27 17:15:04, INFO: Path length: 13.638980198538244
+2025-03-27 17:15:04, INFO: Path left: 88.43060580711867
+2025-03-27 17:15:04, INFO: Actions: 22
+2025-03-27 17:15:04, INFO: Coordinates: 13.488455535768113 -19.914931756689285
+2025-03-27 17:15:04, INFO: Stops times: 7
+
+2025-03-27 17:15:06, INFO: human number: 8
+2025-03-27 17:15:06, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:15:07, INFO: 3/3 episode: Collision! Total Reward: -26.151, R_dan: 0.37, R_goal: 0, R_col: -25.0, R_km: -1.2, R_col_wall: 0, R_wall_min_dist: -0.359, R_way_point_dist: -0.01, R_wp: 0.045
+2025-03-27 17:15:07, INFO: Path length: 3.6237735440421774
+2025-03-27 17:15:07, INFO: Path left: 78.16279620166303
+2025-03-27 17:15:07, INFO: Actions: 9
+2025-03-27 17:15:07, INFO: Coordinates: 7.4149379290375625 -8.245674786567076
+2025-03-27 17:15:07, INFO: Stops times: 3
+
+2025-03-27 17:15:07, INFO: TRAIN in episode 19 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -3.5564
+2025-03-27 17:15:07, INFO: In each scenarios, TRAIN in episode 19 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -1.6947 -0.9283 -8.0463
+2025-03-27 17:15:09, INFO: human number: 8
+2025-03-27 17:15:09, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:15:13, INFO: 1/3 episode: Collision Wall! Total Reward: -28.591, R_dan: 2.75, R_goal: 0, R_col: 0, R_km: -4.95, R_col_wall: -25.0, R_wall_min_dist: -1.721, R_way_point_dist: 0.18, R_wp: 0.15
+2025-03-27 17:15:13, INFO: Path length: 11.298212138829237
+2025-03-27 17:15:13, INFO: Path left: 76.02419549227542
+2025-03-27 17:15:13, INFO: Actions: 55
+2025-03-27 17:15:13, INFO: Coordinates: 4.237302651008783 -13.053604440843007
+2025-03-27 17:15:13, INFO: Stops times: 35
+
+2025-03-27 17:15:15, INFO: human number: 8
+2025-03-27 17:15:15, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:15:18, INFO: 2/3 episode: Collision Wall! Total Reward: -25.898, R_dan: 0.39, R_goal: 0, R_col: 0, R_km: -0.55, R_col_wall: -25.0, R_wall_min_dist: -0.524, R_way_point_dist: -0.23, R_wp: 0.015
+2025-03-27 17:15:18, INFO: Path length: 5.478103753335445
+2025-03-27 17:15:18, INFO: Path left: 83.08168916113091
+2025-03-27 17:15:18, INFO: Actions: 11
+2025-03-27 17:15:18, INFO: Coordinates: 11.829199043199042 -12.962881803780107
+2025-03-27 17:15:18, INFO: Stops times: 4
+
+2025-03-27 17:15:20, INFO: human number: 8
+2025-03-27 17:15:20, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:15:22, INFO: 3/3 episode: Collision! Total Reward: -24.622, R_dan: 0.09, R_goal: 0, R_col: -25.0, R_km: 0.25, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: 0.01, R_wp: 0.015
+2025-03-27 17:15:22, INFO: Path length: 2.2514494694679112
+2025-03-27 17:15:22, INFO: Path left: 79.45828908124888
+2025-03-27 17:15:22, INFO: Actions: 5
+2025-03-27 17:15:22, INFO: Coordinates: 8.829072503681274 -10.031329581567968
+2025-03-27 17:15:22, INFO: Stops times: 2
+
+2025-03-27 17:15:22, INFO: TRAIN in episode 20 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -6.8372
+2025-03-27 17:15:22, INFO: In each scenarios, TRAIN in episode 20 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.5392 -6.3957 -13.5767
+2025-03-27 17:15:24, INFO: human number: 8
+2025-03-27 17:15:24, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:15:27, INFO: 1/3 episode: Collision Wall! Total Reward: -25.17, R_dan: 2.55, R_goal: 0, R_col: 0, R_km: -1.85, R_col_wall: -25.0, R_wall_min_dist: -1.19, R_way_point_dist: 0.27, R_wp: 0.045
+2025-03-27 17:15:27, INFO: Path length: 5.015615665008548
+2025-03-27 17:15:27, INFO: Path left: 79.65916627640217
+2025-03-27 17:15:27, INFO: Actions: 51
+2025-03-27 17:15:27, INFO: Coordinates: 8.954957779571721 -8.218989810187812
+2025-03-27 17:15:27, INFO: Stops times: 34
+
+2025-03-27 17:15:29, INFO: human number: 8
+2025-03-27 17:15:29, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:15:33, INFO: 2/3 episode: Collision Wall! Total Reward: -24.932, R_dan: 0.29, R_goal: 0, R_col: 0, R_km: 0.45, R_col_wall: -25.0, R_wall_min_dist: -0.47, R_way_point_dist: -0.22, R_wp: 0.015
+2025-03-27 17:15:33, INFO: Path length: 8.737860419867474
+2025-03-27 17:15:33, INFO: Path left: 86.6437167094118
+2025-03-27 17:15:33, INFO: Actions: 9
+2025-03-27 17:15:33, INFO: Coordinates: 13.472876420020429 -17.00172310183961
+2025-03-27 17:15:33, INFO: Stops times: 2
+
+2025-03-27 17:15:35, INFO: human number: 8
+2025-03-27 17:15:35, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:15:36, INFO: 3/3 episode: Collision! Total Reward: -25.988, R_dan: -0.01, R_goal: 0, R_col: -25.0, R_km: -0.95, R_col_wall: 0, R_wall_min_dist: 0.007, R_way_point_dist: -0.05, R_wp: 0.015
+2025-03-27 17:15:36, INFO: Path length: 0.8441542838675348
+2025-03-27 17:15:36, INFO: Path left: 79.75936787636975
+2025-03-27 17:15:36, INFO: Actions: 3
+2025-03-27 17:15:36, INFO: Coordinates: 9.11548490271923 -10.345052570768111
+2025-03-27 17:15:36, INFO: Stops times: 1
+
+2025-03-27 17:15:36, INFO: TRAIN in episode 21 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -8.8982
+2025-03-27 17:15:36, INFO: In each scenarios, TRAIN in episode 21 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.3337 -7.5919 -19.4362
+2025-03-27 17:15:38, INFO: human number: 8
+2025-03-27 17:15:38, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:15:41, INFO: 1/3 episode: Collision Wall! Total Reward: -23.035, R_dan: 1.85, R_goal: 0, R_col: 0, R_km: 0.2, R_col_wall: -25.0, R_wall_min_dist: -0.507, R_way_point_dist: 0.27, R_wp: 0.15
+2025-03-27 17:15:41, INFO: Path length: 3.6470147037350076
+2025-03-27 17:15:41, INFO: Path left: 74.88638388212215
+2025-03-27 17:15:41, INFO: Actions: 37
+2025-03-27 17:15:41, INFO: Coordinates: 3.0167914760388155 -12.723927803744518
+2025-03-27 17:15:41, INFO: Stops times: 25
+
+2025-03-27 17:15:43, INFO: human number: 8
+2025-03-27 17:15:44, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:15:47, INFO: 2/3 episode: Collision Wall! Total Reward: -25.097, R_dan: 0.42, R_goal: 0, R_col: 0, R_km: -0.05, R_col_wall: -25.0, R_wall_min_dist: -0.506, R_way_point_dist: 0.02, R_wp: 0.015
+2025-03-27 17:15:47, INFO: Path length: 3.7917588403071694
+2025-03-27 17:15:47, INFO: Path left: 81.05642721810659
+2025-03-27 17:15:47, INFO: Actions: 10
+2025-03-27 17:15:47, INFO: Coordinates: 10.015717918331454 -12.053361327933619
+2025-03-27 17:15:47, INFO: Stops times: 5
+
+2025-03-27 17:15:49, INFO: human number: 8
+2025-03-27 17:15:49, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:15:51, INFO: 3/3 episode: Collision! Total Reward: -24.591, R_dan: 0.09, R_goal: 0, R_col: -25.0, R_km: 0.25, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: 0.01, R_wp: 0.045
+2025-03-27 17:15:51, INFO: Path length: 3.445411468895688
+2025-03-27 17:15:51, INFO: Path left: 77.3977205838406
+2025-03-27 17:15:51, INFO: Actions: 5
+2025-03-27 17:15:51, INFO: Coordinates: 6.812072053133506 -9.082589121570017
+2025-03-27 17:15:51, INFO: Stops times: 1
+
+2025-03-27 17:15:51, INFO: TRAIN in episode 22 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -6.6147
+2025-03-27 17:15:51, INFO: In each scenarios, TRAIN in episode 22 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.4557 -6.7272 -13.5727
+2025-03-27 17:15:53, INFO: human number: 8
+2025-03-27 17:15:53, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:15:54, INFO: 1/3 episode: Collision Wall! Total Reward: -25.527, R_dan: 0.9, R_goal: 0, R_col: 0, R_km: -1.3, R_col_wall: -25.0, R_wall_min_dist: -0.154, R_way_point_dist: -0.02, R_wp: 0.045
+2025-03-27 17:15:54, INFO: Path length: 4.200153147084644
+2025-03-27 17:15:54, INFO: Path left: 79.9531265341079
+2025-03-27 17:15:54, INFO: Actions: 18
+2025-03-27 17:15:54, INFO: Coordinates: 8.797769404528903 -12.124762920794232
+2025-03-27 17:15:54, INFO: Stops times: 11
+
+2025-03-27 17:15:56, INFO: human number: 8
+2025-03-27 17:15:57, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:16:00, INFO: 2/3 episode: Collision! Total Reward: -25.54, R_dan: 0.39, R_goal: 0, R_col: -25.0, R_km: 0.0, R_col_wall: 0, R_wall_min_dist: -1.505, R_way_point_dist: 0.26, R_wp: 0.315
+2025-03-27 17:16:00, INFO: Path length: 12.051500518496127
+2025-03-27 17:16:00, INFO: Path left: 70.85533696982084
+2025-03-27 17:16:00, INFO: Actions: 11
+2025-03-27 17:16:00, INFO: Coordinates: 0.3255422567043663 -7.888021583103366
+2025-03-27 17:16:00, INFO: Stops times: 1
+
+2025-03-27 17:16:02, INFO: human number: 8
+2025-03-27 17:16:02, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:16:12, INFO: 3/3 episode: Collision Wall! Total Reward: -27.681, R_dan: 1.85, R_goal: 0, R_col: 0, R_km: -2.0, R_col_wall: -25.0, R_wall_min_dist: -1.979, R_way_point_dist: -0.57, R_wp: 0.015
+2025-03-27 17:16:12, INFO: Path length: 14.087114680944016
+2025-03-27 17:16:12, INFO: Path left: 83.73675973100573
+2025-03-27 17:16:12, INFO: Actions: 37
+2025-03-27 17:16:12, INFO: Coordinates: 12.993805668551726 -11.345617737651175
+2025-03-27 17:16:12, INFO: Stops times: 15
+
+2025-03-27 17:16:12, INFO: TRAIN in episode 23 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -3.0192
+2025-03-27 17:16:12, INFO: In each scenarios, TRAIN in episode 23 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -2.5396 -5.7942 -0.7239
+2025-03-27 17:16:14, INFO: human number: 8
+2025-03-27 17:16:14, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:16:32, INFO: 1/3 episode: Collision Wall! Total Reward: -24.879, R_dan: 12.5, R_goal: 0, R_col: 0, R_km: -13.35, R_col_wall: -25.0, R_wall_min_dist: -0.874, R_way_point_dist: 1.13, R_wp: 0.675
+2025-03-27 17:16:32, INFO: Path length: 5.5659555011387365
+2025-03-27 17:16:32, INFO: Path left: 68.30558886456244
+2025-03-27 17:16:32, INFO: Actions: 250
+2025-03-27 17:16:32, INFO: Coordinates: -5.069599612215816 -11.778491639552525
+2025-03-27 17:16:32, INFO: Stops times: 176
+
+2025-03-27 17:16:34, INFO: human number: 8
+2025-03-27 17:16:35, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:16:35, INFO: 2/3 episode: Collision! Total Reward: -25.232, R_dan: 0.17, R_goal: 0, R_col: -25.0, R_km: -0.3, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: -0.13, R_wp: 0.015
+2025-03-27 17:16:35, INFO: Path length: 1.8779114688956884
+2025-03-27 17:16:35, INFO: Path left: 80.16947888484634
+2025-03-27 17:16:35, INFO: Actions: 5
+2025-03-27 17:16:35, INFO: Coordinates: 9.52415427633295 -9.620583301807201
+2025-03-27 17:16:35, INFO: Stops times: 2
+
+2025-03-27 17:16:37, INFO: human number: 8
+2025-03-27 17:16:38, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:16:41, INFO: 3/3 episode: Collision! Total Reward: -24.558, R_dan: 0.14, R_goal: 0, R_col: -25.0, R_km: 0.3, R_col_wall: 0, R_wall_min_dist: 0.013, R_way_point_dist: -0.03, R_wp: 0.015
+2025-03-27 17:16:41, INFO: Path length: 1.5195885311043114
+2025-03-27 17:16:41, INFO: Path left: 78.84409359179196
+2025-03-27 17:16:41, INFO: Actions: 6
+2025-03-27 17:16:41, INFO: Coordinates: 8.214774670587621 -10.038176512718394
+2025-03-27 17:16:41, INFO: Stops times: 3
+
+2025-03-27 17:16:41, INFO: TRAIN in episode 24 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -8.5940
+2025-03-27 17:16:41, INFO: In each scenarios, TRAIN in episode 24 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.0403 -14.0577 -11.6840
+2025-03-27 17:16:43, INFO: human number: 8
+2025-03-27 17:16:43, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:16:46, INFO: 1/3 episode: Collision Wall! Total Reward: -27.427, R_dan: 2.55, R_goal: 0, R_col: 0, R_km: -3.5, R_col_wall: -25.0, R_wall_min_dist: -1.288, R_way_point_dist: -0.22, R_wp: 0.015
+2025-03-27 17:16:46, INFO: Path length: 6.313537868682522
+2025-03-27 17:16:46, INFO: Path left: 83.2883859583302
+2025-03-27 17:16:46, INFO: Actions: 51
+2025-03-27 17:16:46, INFO: Coordinates: 12.630330963567046 -9.338829095644227
+2025-03-27 17:16:46, INFO: Stops times: 31
+
+2025-03-27 17:16:48, INFO: human number: 8
+2025-03-27 17:16:49, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:16:51, INFO: 2/3 episode: Collision! Total Reward: -24.7, R_dan: 0.37, R_goal: 0, R_col: -25.0, R_km: -0.1, R_col_wall: 0, R_wall_min_dist: 0.019, R_way_point_dist: -0.01, R_wp: 0.015
+2025-03-27 17:16:51, INFO: Path length: 0.46541146889568846
+2025-03-27 17:16:51, INFO: Path left: 79.27453217433991
+2025-03-27 17:16:51, INFO: Actions: 9
+2025-03-27 17:16:51, INFO: Coordinates: 8.597470440434899 -9.418711452706445
+2025-03-27 17:16:51, INFO: Stops times: 6
+
+2025-03-27 17:16:53, INFO: human number: 8
+2025-03-27 17:16:53, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:16:58, INFO: 3/3 episode: Collision Wall! Total Reward: -25.669, R_dan: 0.62, R_goal: 0, R_col: 0, R_km: -0.4, R_col_wall: -25.0, R_wall_min_dist: -1.192, R_way_point_dist: 0.21, R_wp: 0.09
+2025-03-27 17:16:58, INFO: Path length: 0.0
+2025-03-27 17:16:58, INFO: Path left: 77.24317393596115
+2025-03-27 17:16:58, INFO: Actions: 14
+2025-03-27 17:16:58, INFO: Coordinates: 5.252127858030957 -13.074518207714487
+2025-03-27 17:16:58, INFO: Stops times: 14
+
+2025-03-27 17:16:58, INFO: TRAIN in episode 25 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -3.8152
+2025-03-27 17:16:58, INFO: In each scenarios, TRAIN in episode 25 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.0486 -7.4119 -3.9851
+2025-03-27 17:17:00, INFO: human number: 8
+2025-03-27 17:17:00, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:17:06, INFO: 1/3 episode: Collision Wall! Total Reward: -28.237, R_dan: 4.9, R_goal: 0, R_col: 0, R_km: -6.1, R_col_wall: -25.0, R_wall_min_dist: -1.984, R_way_point_dist: -0.14, R_wp: 0.09
+2025-03-27 17:17:06, INFO: Path length: 9.95213532656774
+2025-03-27 17:17:06, INFO: Path left: 83.98049352165164
+2025-03-27 17:17:06, INFO: Actions: 98
+2025-03-27 17:17:06, INFO: Coordinates: 13.41878558144233 -9.636108953289835
+2025-03-27 17:17:06, INFO: Stops times: 63
+
+2025-03-27 17:17:08, INFO: human number: 8
+2025-03-27 17:17:09, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:17:10, INFO: 2/3 episode: Collision! Total Reward: -26.419, R_dan: 0.19, R_goal: 0, R_col: -25.0, R_km: -1.3, R_col_wall: 0, R_wall_min_dist: -0.255, R_way_point_dist: -0.07, R_wp: 0.015
+2025-03-27 17:17:10, INFO: Path length: 0.7957208397349471
+2025-03-27 17:17:10, INFO: Path left: 80.51084318943467
+2025-03-27 17:17:10, INFO: Actions: 7
+2025-03-27 17:17:10, INFO: Coordinates: 9.461802071318356 -11.959564831877278
+2025-03-27 17:17:10, INFO: Stops times: 5
+
+2025-03-27 17:17:12, INFO: human number: 8
+2025-03-27 17:17:13, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:17:15, INFO: 3/3 episode: Collision! Total Reward: -24.276, R_dan: 0.27, R_goal: 0, R_col: -25.0, R_km: 0.35, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: 0.07, R_wp: 0.015
+2025-03-27 17:17:15, INFO: Path length: 1.6571906291607417
+2025-03-27 17:17:15, INFO: Path left: 80.16539554809044
+2025-03-27 17:17:15, INFO: Actions: 7
+2025-03-27 17:17:15, INFO: Coordinates: 9.462210423189791 -10.80744767123011
+2025-03-27 17:17:15, INFO: Stops times: 4
+
+2025-03-27 17:17:15, INFO: TRAIN in episode 26 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -7.0514
+2025-03-27 17:17:15, INFO: In each scenarios, TRAIN in episode 26 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.0165 -11.2780 -9.8926
+2025-03-27 17:17:18, INFO: human number: 8
+2025-03-27 17:17:18, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:17:19, INFO: 1/3 episode: Collision Wall! Total Reward: -24.861, R_dan: 0.8, R_goal: 0, R_col: 0, R_km: -0.3, R_col_wall: -25.0, R_wall_min_dist: -0.23, R_way_point_dist: -0.15, R_wp: 0.015
+2025-03-27 17:17:19, INFO: Path length: 5.716860938363599
+2025-03-27 17:17:19, INFO: Path left: 83.89445736884227
+2025-03-27 17:17:19, INFO: Actions: 16
+2025-03-27 17:17:19, INFO: Coordinates: 13.16794387974896 -11.257611988936953
+2025-03-27 17:17:19, INFO: Stops times: 8
+
+2025-03-27 17:17:21, INFO: human number: 8
+2025-03-27 17:17:21, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:17:23, INFO: 2/3 episode: Collision! Total Reward: -25.135, R_dan: 0.22, R_goal: 0, R_col: -25.0, R_km: -0.25, R_col_wall: 0, R_wall_min_dist: -0.023, R_way_point_dist: -0.1, R_wp: 0.015
+2025-03-27 17:17:23, INFO: Path length: 2.185
+2025-03-27 17:17:23, INFO: Path left: 80.48390462162823
+2025-03-27 17:17:23, INFO: Actions: 6
+2025-03-27 17:17:23, INFO: Coordinates: 9.5219868878648 -11.747667546698715
+2025-03-27 17:17:23, INFO: Stops times: 3
+
+2025-03-27 17:17:25, INFO: human number: 8
+2025-03-27 17:17:25, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:17:27, INFO: 3/3 episode: Collision! Total Reward: -25.403, R_dan: -0.07, R_goal: 0, R_col: -25.0, R_km: -0.3, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: -0.06, R_wp: 0.015
+2025-03-27 17:17:27, INFO: Path length: 1.5976531470846451
+2025-03-27 17:17:27, INFO: Path left: 79.44975704686446
+2025-03-27 17:17:27, INFO: Actions: 5
+2025-03-27 17:17:27, INFO: Coordinates: 8.81899889698911 -10.111570089372723
+2025-03-27 17:17:27, INFO: Stops times: 2
+
+2025-03-27 17:17:27, INFO: TRAIN in episode 27 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -9.6206
+2025-03-27 17:17:27, INFO: In each scenarios, TRAIN in episode 27 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -2.6967 -12.0352 -14.1299
+2025-03-27 17:17:29, INFO: human number: 8
+2025-03-27 17:17:29, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:17:30, INFO: 1/3 episode: Collision Wall! Total Reward: -25.652, R_dan: 0.6, R_goal: 0, R_col: 0, R_km: 0.05, R_col_wall: -25.0, R_wall_min_dist: -1.257, R_way_point_dist: -0.06, R_wp: 0.015
+2025-03-27 17:17:30, INFO: Path length: 4.164555681186561
+2025-03-27 17:17:30, INFO: Path left: 80.25509112096138
+2025-03-27 17:17:30, INFO: Actions: 12
+2025-03-27 17:17:30, INFO: Coordinates: 9.11346989891521 -7.907921841523877
+2025-03-27 17:17:30, INFO: Stops times: 6
+
+2025-03-27 17:17:32, INFO: human number: 8
+2025-03-27 17:17:32, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:17:34, INFO: 2/3 episode: Collision! Total Reward: -24.421, R_dan: 0.08, R_goal: 0, R_col: -25.0, R_km: 0.4, R_col_wall: 0, R_wall_min_dist: 0.017, R_way_point_dist: 0.03, R_wp: 0.045
+2025-03-27 17:17:34, INFO: Path length: 3.0479114688956885
+2025-03-27 17:17:34, INFO: Path left: 79.55137524260026
+2025-03-27 17:17:34, INFO: Actions: 8
+2025-03-27 17:17:34, INFO: Coordinates: 8.781263236033183 -11.028695930456474
+2025-03-27 17:17:34, INFO: Stops times: 4
+
+2025-03-27 17:17:36, INFO: human number: 8
+2025-03-27 17:17:37, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:17:46, INFO: 3/3 episode: Collision Wall! Total Reward: -26.525, R_dan: 1.55, R_goal: 0, R_col: 0, R_km: -1.2, R_col_wall: -25.0, R_wall_min_dist: -2.194, R_way_point_dist: 0.09, R_wp: 0.225
+2025-03-27 17:17:46, INFO: Path length: 14.390261532578439
+2025-03-27 17:17:46, INFO: Path left: 73.01119651813876
+2025-03-27 17:17:46, INFO: Actions: 31
+2025-03-27 17:17:46, INFO: Coordinates: 2.1246719602778246 -7.580117900186816
+2025-03-27 17:17:46, INFO: Stops times: 13
+
+2025-03-27 17:17:46, INFO: TRAIN in episode 28 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -4.7687
+2025-03-27 17:17:46, INFO: In each scenarios, TRAIN in episode 28 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -5.3532 -8.5464 -0.4067
+2025-03-27 17:17:48, INFO: human number: 8
+2025-03-27 17:17:48, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:17:50, INFO: 1/3 episode: Collision Wall! Total Reward: -26.327, R_dan: 1.35, R_goal: 0, R_col: 0, R_km: -2.5, R_col_wall: -25.0, R_wall_min_dist: -0.24, R_way_point_dist: -0.03, R_wp: 0.09
+2025-03-27 17:17:50, INFO: Path length: 4.4835033105580315
+2025-03-27 17:17:50, INFO: Path left: 78.88347549260014
+2025-03-27 17:17:50, INFO: Actions: 27
+2025-03-27 17:17:50, INFO: Coordinates: 7.4641863734056155 -12.812943846981224
+2025-03-27 17:17:50, INFO: Stops times: 16
+
+2025-03-27 17:17:52, INFO: human number: 8
+2025-03-27 17:17:53, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:17:53, INFO: 2/3 episode: Collision! Total Reward: -25.225, R_dan: 0.12, R_goal: 0, R_col: -25.0, R_km: -0.35, R_col_wall: 0, R_wall_min_dist: 0.009, R_way_point_dist: -0.02, R_wp: 0.015
+2025-03-27 17:17:53, INFO: Path length: 2.601398420439696
+2025-03-27 17:17:53, INFO: Path left: 79.37163801673115
+2025-03-27 17:17:53, INFO: Actions: 4
+2025-03-27 17:17:53, INFO: Coordinates: 8.740541424559693 -10.121040538193814
+2025-03-27 17:17:53, INFO: Stops times: 2
+
+2025-03-27 17:17:55, INFO: human number: 8
+2025-03-27 17:17:56, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:17:56, INFO: 3/3 episode: Collision! Total Reward: -25.311, R_dan: 0.09, R_goal: 0, R_col: -25.0, R_km: -0.3, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: -0.13, R_wp: 0.015
+2025-03-27 17:17:56, INFO: Path length: 2.32260209805643
+2025-03-27 17:17:56, INFO: Path left: 81.12646880981227
+2025-03-27 17:17:56, INFO: Actions: 5
+2025-03-27 17:17:56, INFO: Coordinates: 10.459259024742199 -9.359613408360733
+2025-03-27 17:17:56, INFO: Stops times: 2
+
+2025-03-27 17:17:56, INFO: TRAIN in episode 29 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -10.3672
+2025-03-27 17:17:56, INFO: In each scenarios, TRAIN in episode 29 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.7910 -16.2973 -14.0133
+2025-03-27 17:17:59, INFO: human number: 8
+2025-03-27 17:17:59, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:18:01, INFO: 1/3 episode: Collision Wall! Total Reward: -27.304, R_dan: 1.75, R_goal: 0, R_col: 0, R_km: -4.85, R_col_wall: -25.0, R_wall_min_dist: -0.244, R_way_point_dist: 0.21, R_wp: 0.825
+2025-03-27 17:18:01, INFO: Path length: 18.837271053559913
+2025-03-27 17:18:01, INFO: Path left: 65.37564379006328
+2025-03-27 17:18:01, INFO: Actions: 35
+2025-03-27 17:18:01, INFO: Coordinates: -8.78227217613285 -9.715963754463338
+2025-03-27 17:18:01, INFO: Stops times: 9
+
+2025-03-27 17:18:03, INFO: human number: 8
+2025-03-27 17:18:04, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:18:05, INFO: 2/3 episode: Collision! Total Reward: -25.566, R_dan: 0.19, R_goal: 0, R_col: -25.0, R_km: -0.75, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: -0.07, R_wp: 0.045
+2025-03-27 17:18:05, INFO: Path length: 1.6575510490282148
+2025-03-27 17:18:05, INFO: Path left: 79.09085006260729
+2025-03-27 17:18:05, INFO: Actions: 7
+2025-03-27 17:18:05, INFO: Coordinates: 8.164221809346099 -11.42130206958279
+2025-03-27 17:18:05, INFO: Stops times: 5
+
+2025-03-27 17:18:07, INFO: human number: 8
+2025-03-27 17:18:08, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:18:08, INFO: 3/3 episode: Collision! Total Reward: -25.807, R_dan: 0.22, R_goal: 0, R_col: -25.0, R_km: -0.8, R_col_wall: 0, R_wall_min_dist: -0.144, R_way_point_dist: -0.1, R_wp: 0.015
+2025-03-27 17:18:08, INFO: Path length: 2.8280527043072308
+2025-03-27 17:18:08, INFO: Path left: 79.51163272649228
+2025-03-27 17:18:08, INFO: Actions: 6
+2025-03-27 17:18:08, INFO: Coordinates: 8.690352384998608 -8.80960625909385
+2025-03-27 17:18:08, INFO: Stops times: 2
+
+2025-03-27 17:18:08, INFO: TRAIN in episode 30 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -7.9454
+2025-03-27 17:18:08, INFO: In each scenarios, TRAIN in episode 30 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.5262 -10.5888 -12.7212
+2025-03-27 17:18:10, INFO: human number: 8
+2025-03-27 17:18:10, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:18:29, INFO: 1/3 episode: Timeout! Total Reward: -4.116, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: -14.1, R_col_wall: 0, R_wall_min_dist: -4.448, R_way_point_dist: 0.99, R_wp: 0.54
+2025-03-27 17:18:29, INFO: Path length: 3.0364873702494943
+2025-03-27 17:18:29, INFO: Path left: 70.52952062378526
+2025-03-27 17:18:29, INFO: Actions: 257
+2025-03-27 17:18:29, INFO: Coordinates: 0.09061097248612505 -9.847724825108298
+2025-03-27 17:18:29, INFO: Stops times: 171
+
+2025-03-27 17:18:31, INFO: human number: 8
+2025-03-27 17:18:31, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:18:33, INFO: 2/3 episode: Collision! Total Reward: -25.288, R_dan: -0.05, R_goal: 0, R_col: -25.0, R_km: -0.2, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: -0.07, R_wp: 0.015
+2025-03-27 17:18:33, INFO: Path length: 1.2416542838675348
+2025-03-27 17:18:33, INFO: Path left: 79.52084808303627
+2025-03-27 17:18:33, INFO: Actions: 7
+2025-03-27 17:18:33, INFO: Coordinates: 8.748113769834294 -11.033795629890237
+2025-03-27 17:18:33, INFO: Stops times: 3
+
+2025-03-27 17:18:35, INFO: human number: 8
+2025-03-27 17:18:35, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:18:36, INFO: 3/3 episode: Collision! Total Reward: -25.357, R_dan: 0.07, R_goal: 0, R_col: -25.0, R_km: -0.4, R_col_wall: 0, R_wall_min_dist: 0.007, R_way_point_dist: -0.05, R_wp: 0.015
+2025-03-27 17:18:36, INFO: Path length: 0.8854114688956884
+2025-03-27 17:18:36, INFO: Path left: 79.66001746049118
+2025-03-27 17:18:36, INFO: Actions: 3
+2025-03-27 17:18:36, INFO: Coordinates: 9.001390101999869 -10.48102545942173
+2025-03-27 17:18:36, INFO: Stops times: 1
+
+2025-03-27 17:18:36, INFO: TRAIN in episode 31 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.33, collisionwall rate: 0.00, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -9.7682
+2025-03-27 17:18:36, INFO: In each scenarios, TRAIN in episode 31 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 1.00 0.00 0.00, collisionwall rate: 0.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.1437 -10.4998 -18.9486
+2025-03-27 17:18:38, INFO: human number: 8
+2025-03-27 17:18:38, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:18:43, INFO: 1/3 episode: Collision Wall! Total Reward: -30.463, R_dan: 3.55, R_goal: 0, R_col: 0, R_km: -4.15, R_col_wall: -25.0, R_wall_min_dist: -5.299, R_way_point_dist: 0.38, R_wp: 0.045
+2025-03-27 17:18:43, INFO: Path length: 3.0634993496141734
+2025-03-27 17:18:43, INFO: Path left: 79.42539302951091
+2025-03-27 17:18:43, INFO: Actions: 71
+2025-03-27 17:18:43, INFO: Coordinates: 7.941796475405033 -12.568707438271755
+2025-03-27 17:18:43, INFO: Stops times: 51
+
+2025-03-27 17:18:45, INFO: human number: 8
+2025-03-27 17:18:46, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:18:51, INFO: 2/3 episode: Collision Wall! Total Reward: -27.357, R_dan: 1.19, R_goal: 0, R_col: 0, R_km: -2.5, R_col_wall: -25.0, R_wall_min_dist: -0.711, R_way_point_dist: -0.38, R_wp: 0.045
+2025-03-27 17:18:51, INFO: Path length: 10.128186149720756
+2025-03-27 17:18:51, INFO: Path left: 85.13716113075728
+2025-03-27 17:18:51, INFO: Actions: 27
+2025-03-27 17:18:51, INFO: Coordinates: 13.452162577986954 -14.407847326022251
+2025-03-27 17:18:51, INFO: Stops times: 13
+
+2025-03-27 17:18:53, INFO: human number: 8
+2025-03-27 17:18:54, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:18:56, INFO: 3/3 episode: Collision! Total Reward: -25.555, R_dan: 0.32, R_goal: 0, R_col: -25.0, R_km: -0.15, R_col_wall: 0, R_wall_min_dist: -1.045, R_way_point_dist: 0.17, R_wp: 0.15
+2025-03-27 17:18:56, INFO: Path length: 7.7631572607468655
+2025-03-27 17:18:56, INFO: Path left: 75.13247496934375
+2025-03-27 17:18:56, INFO: Actions: 8
+2025-03-27 17:18:56, INFO: Coordinates: 4.2652679812339445 -7.799920350142714
+2025-03-27 17:18:56, INFO: Stops times: 1
+
+2025-03-27 17:18:56, INFO: TRAIN in episode 32 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -3.3183
+2025-03-27 17:18:56, INFO: In each scenarios, TRAIN in episode 32 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.0496 -0.8544 -9.0509
+2025-03-27 17:18:59, INFO: human number: 8
+2025-03-27 17:18:59, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:19:06, INFO: 1/3 episode: Collision Wall! Total Reward: -33.057, R_dan: 5.45, R_goal: 0, R_col: 0, R_km: -6.65, R_col_wall: -25.0, R_wall_min_dist: -7.407, R_way_point_dist: 0.4, R_wp: 0.15
+2025-03-27 17:19:06, INFO: Path length: 2.278122702622377
+2025-03-27 17:19:06, INFO: Path left: 76.5252860593968
+2025-03-27 17:19:06, INFO: Actions: 109
+2025-03-27 17:19:06, INFO: Coordinates: 5.103966490434703 -12.668484328181698
+2025-03-27 17:19:06, INFO: Stops times: 75
+
+2025-03-27 17:19:08, INFO: human number: 8
+2025-03-27 17:19:09, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:19:15, INFO: 2/3 episode: Collision Wall! Total Reward: -26.817, R_dan: 0.85, R_goal: 0, R_col: 0, R_km: -1.5, R_col_wall: -25.0, R_wall_min_dist: -1.056, R_way_point_dist: -0.16, R_wp: 0.045
+2025-03-27 17:19:15, INFO: Path length: 13.820603753335446
+2025-03-27 17:19:15, INFO: Path left: 86.53152166631509
+2025-03-27 17:19:15, INFO: Actions: 25
+2025-03-27 17:19:15, INFO: Coordinates: 13.379866064697433 -17.17725034903114
+2025-03-27 17:19:15, INFO: Stops times: 8
+
+2025-03-27 17:19:17, INFO: human number: 8
+2025-03-27 17:19:17, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:19:18, INFO: 3/3 episode: Collision! Total Reward: -24.824, R_dan: 0.04, R_goal: 0, R_col: -25.0, R_km: 0.2, R_col_wall: 0, R_wall_min_dist: 0.009, R_way_point_dist: -0.09, R_wp: 0.015
+2025-03-27 17:19:18, INFO: Path length: 1.3892588403071697
+2025-03-27 17:19:18, INFO: Path left: 80.17348635727801
+2025-03-27 17:19:18, INFO: Actions: 4
+2025-03-27 17:19:18, INFO: Coordinates: 9.544118973699366 -10.05010201071423
+2025-03-27 17:19:18, INFO: Stops times: 2
+
+2025-03-27 17:19:18, INFO: TRAIN in episode 33 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -5.6209
+2025-03-27 17:19:18, INFO: In each scenarios, TRAIN in episode 33 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.2982 -1.2172 -15.9437
+2025-03-27 17:19:20, INFO: human number: 8
+2025-03-27 17:19:20, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:19:37, INFO: 1/3 episode: Timeout! Total Reward: -11.868, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: -18.5, R_col_wall: 0, R_wall_min_dist: -0.348, R_way_point_dist: -5.94, R_wp: 0.045
+2025-03-27 17:19:37, INFO: Path length: 167.33439219964376
+2025-03-27 17:19:37, INFO: Path left: 230.05557049705433
+2025-03-27 17:19:37, INFO: Actions: 257
+2025-03-27 17:19:37, INFO: Coordinates: -13.575103364289156 -164.78037981449523
+2025-03-27 17:19:37, INFO: Stops times: 79
+
+2025-03-27 17:19:39, INFO: human number: 8
+2025-03-27 17:19:39, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:19:42, INFO: 2/3 episode: Collision Wall! Total Reward: -25.486, R_dan: 0.39, R_goal: 0, R_col: 0, R_km: -0.55, R_col_wall: -25.0, R_wall_min_dist: -0.253, R_way_point_dist: -0.09, R_wp: 0.015
+2025-03-27 17:19:42, INFO: Path length: 5.780720839734947
+2025-03-27 17:19:42, INFO: Path left: 82.69645814120751
+2025-03-27 17:19:42, INFO: Actions: 11
+2025-03-27 17:19:42, INFO: Coordinates: 11.34378295546479 -13.091838169925447
+2025-03-27 17:19:42, INFO: Stops times: 5
+
+2025-03-27 17:19:44, INFO: human number: 8
+2025-03-27 17:19:45, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:19:45, INFO: 3/3 episode: Collision! Total Reward: -25.235, R_dan: 0.04, R_goal: 0, R_col: -25.0, R_km: -0.35, R_col_wall: 0, R_wall_min_dist: 0.009, R_way_point_dist: 0.05, R_wp: 0.015
+2025-03-27 17:19:45, INFO: Path length: 1.0160812596024205
+2025-03-27 17:19:45, INFO: Path left: 79.42753860313002
+2025-03-27 17:19:45, INFO: Actions: 4
+2025-03-27 17:19:45, INFO: Coordinates: 8.79483598529753 -9.836457053378098
+2025-03-27 17:19:45, INFO: Stops times: 1
+
+2025-03-27 17:19:45, INFO: TRAIN in episode 34 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.33, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -7.4620
+2025-03-27 17:19:45, INFO: In each scenarios, TRAIN in episode 34 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 1.00 0.00 0.00, collisionwall rate: 0.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.3520 -5.8581 -16.1759
+2025-03-27 17:19:47, INFO: human number: 8
+2025-03-27 17:19:47, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:19:54, INFO: 1/3 episode: Collision Wall! Total Reward: -22.399, R_dan: 4.25, R_goal: 0, R_col: 0, R_km: -2.9, R_col_wall: -25.0, R_wall_min_dist: -0.035, R_way_point_dist: 0.87, R_wp: 0.42
+2025-03-27 17:19:54, INFO: Path length: 4.732096481833553
+2025-03-27 17:19:54, INFO: Path left: 72.5889495976014
+2025-03-27 17:19:54, INFO: Actions: 85
+2025-03-27 17:19:54, INFO: Coordinates: 1.0509366304525687 -12.15868357848859
+2025-03-27 17:19:54, INFO: Stops times: 63
+
+2025-03-27 17:19:56, INFO: human number: 8
+2025-03-27 17:19:57, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:19:59, INFO: 2/3 episode: Collision! Total Reward: -24.425, R_dan: 0.19, R_goal: 0, R_col: -25.0, R_km: 0.35, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: 0.0, R_wp: 0.015
+2025-03-27 17:19:59, INFO: Path length: 2.7204625179239033
+2025-03-27 17:19:59, INFO: Path left: 79.98411578301328
+2025-03-27 17:19:59, INFO: Actions: 7
+2025-03-27 17:19:59, INFO: Coordinates: 9.255831475538006 -10.913428672869232
+2025-03-27 17:19:59, INFO: Stops times: 3
+
+2025-03-27 17:20:01, INFO: human number: 8
+2025-03-27 17:20:01, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:20:04, INFO: 3/3 episode: Collision! Total Reward: -25.136, R_dan: 0.03, R_goal: 0, R_col: -25.0, R_km: -0.2, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: 0.0, R_wp: 0.015
+2025-03-27 17:20:04, INFO: Path length: 1.7871395801325265
+2025-03-27 17:20:04, INFO: Path left: 79.05110198047655
+2025-03-27 17:20:04, INFO: Actions: 7
+2025-03-27 17:20:04, INFO: Coordinates: 8.255112149008443 -11.039742431864521
+2025-03-27 17:20:04, INFO: Stops times: 5
+
+2025-03-27 17:20:04, INFO: TRAIN in episode 35 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -6.9016
+2025-03-27 17:20:04, INFO: In each scenarios, TRAIN in episode 35 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.4742 -9.9392 -10.2915
+2025-03-27 17:20:06, INFO: human number: 8
+2025-03-27 17:20:06, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:20:14, INFO: 1/3 episode: Collision Wall! Total Reward: -31.039, R_dan: 5.7, R_goal: 0, R_col: 0, R_km: -2.0, R_col_wall: -25.0, R_wall_min_dist: -10.304, R_way_point_dist: 0.41, R_wp: 0.15
+2025-03-27 17:20:14, INFO: Path length: 5.073581877889184
+2025-03-27 17:20:14, INFO: Path left: 78.6520598610401
+2025-03-27 17:20:14, INFO: Actions: 114
+2025-03-27 17:20:14, INFO: Coordinates: 7.370249009171137 -12.902694078476477
+2025-03-27 17:20:14, INFO: Stops times: 76
+
+2025-03-27 17:20:16, INFO: human number: 8
+2025-03-27 17:20:17, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:20:22, INFO: 2/3 episode: Collision Wall! Total Reward: -25.012, R_dan: 0.62, R_goal: 0, R_col: 0, R_km: 0.15, R_col_wall: -25.0, R_wall_min_dist: -0.554, R_way_point_dist: -0.28, R_wp: 0.045
+2025-03-27 17:20:22, INFO: Path length: 11.511695261319089
+2025-03-27 17:20:22, INFO: Path left: 87.1022498183155
+2025-03-27 17:20:22, INFO: Actions: 14
+2025-03-27 17:20:22, INFO: Coordinates: 13.402558636941777 -18.05983868013589
+2025-03-27 17:20:22, INFO: Stops times: 4
+
+2025-03-27 17:20:24, INFO: human number: 8
+2025-03-27 17:20:24, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:20:26, INFO: 3/3 episode: Collision Wall! Total Reward: -24.705, R_dan: 0.19, R_goal: 0, R_col: 0, R_km: 0.35, R_col_wall: -25.0, R_wall_min_dist: 0.015, R_way_point_dist: -0.28, R_wp: 0.015
+2025-03-27 17:20:26, INFO: Path length: 5.897221358231073
+2025-03-27 17:20:26, INFO: Path left: 83.65989216653252
+2025-03-27 17:20:26, INFO: Actions: 7
+2025-03-27 17:20:26, INFO: Coordinates: 13.03033359211362 -10.086670972835092
+2025-03-27 17:20:26, INFO: Stops times: 0
+
+2025-03-27 17:20:26, INFO: TRAIN in episode 36 has success rate: 0.00, collision rate: 0.00, timeout rate: 0.00, collisionwall rate: 1.00, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -4.5618
+2025-03-27 17:20:26, INFO: In each scenarios, TRAIN in episode 36 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.1928 -3.7084 -10.1699
+2025-03-27 17:20:28, INFO: human number: 8
+2025-03-27 17:20:28, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:20:35, INFO: 1/3 episode: Collision Wall! Total Reward: -32.074, R_dan: 5.75, R_goal: 0, R_col: 0, R_km: -11.85, R_col_wall: -25.0, R_wall_min_dist: -1.45, R_way_point_dist: 0.23, R_wp: 0.225
+2025-03-27 17:20:35, INFO: Path length: 3.187119568868904
+2025-03-27 17:20:35, INFO: Path left: 74.00028484354577
+2025-03-27 17:20:35, INFO: Actions: 115
+2025-03-27 17:20:35, INFO: Coordinates: 2.774921563795327 -11.953756729606278
+2025-03-27 17:20:35, INFO: Stops times: 83
+
+2025-03-27 17:20:37, INFO: human number: 8
+2025-03-27 17:20:38, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:20:40, INFO: 2/3 episode: Collision! Total Reward: -25.643, R_dan: 0.27, R_goal: 0, R_col: -25.0, R_km: -0.75, R_col_wall: 0, R_wall_min_dist: -0.208, R_way_point_dist: 0.0, R_wp: 0.045
+2025-03-27 17:20:40, INFO: Path length: 1.39
+2025-03-27 17:20:40, INFO: Path left: 79.00868769686036
+2025-03-27 17:20:40, INFO: Actions: 7
+2025-03-27 17:20:40, INFO: Coordinates: 7.860754901995684 -11.88724019600863
+2025-03-27 17:20:40, INFO: Stops times: 6
+
+2025-03-27 17:20:42, INFO: human number: 8
+2025-03-27 17:20:43, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:20:44, INFO: 3/3 episode: Collision! Total Reward: -25.374, R_dan: 0.04, R_goal: 0, R_col: -25.0, R_km: -0.35, R_col_wall: 0, R_wall_min_dist: 0.009, R_way_point_dist: -0.09, R_wp: 0.015
+2025-03-27 17:20:44, INFO: Path length: 1.7276020980564302
+2025-03-27 17:20:44, INFO: Path left: 80.7738280619088
+2025-03-27 17:20:44, INFO: Actions: 4
+2025-03-27 17:20:44, INFO: Coordinates: 10.042252152300138 -11.011719573490208
+2025-03-27 17:20:44, INFO: Stops times: 2
+
+2025-03-27 17:20:44, INFO: TRAIN in episode 37 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -9.0536
+2025-03-27 17:20:44, INFO: In each scenarios, TRAIN in episode 37 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.0855 -10.7866 -16.2886
+2025-03-27 17:20:46, INFO: human number: 8
+2025-03-27 17:20:46, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:20:53, INFO: 1/3 episode: Collision Wall! Total Reward: -23.615, R_dan: 4.3, R_goal: 0, R_col: 0, R_km: -2.85, R_col_wall: -25.0, R_wall_min_dist: -0.947, R_way_point_dist: 0.55, R_wp: 0.315
+2025-03-27 17:20:53, INFO: Path length: 4.40364866764466
+2025-03-27 17:20:53, INFO: Path left: 71.97725480629218
+2025-03-27 17:20:53, INFO: Actions: 86
+2025-03-27 17:20:53, INFO: Coordinates: 1.4204660610303135 -7.641347700444295
+2025-03-27 17:20:53, INFO: Stops times: 61
+
+2025-03-27 17:20:55, INFO: human number: 8
+2025-03-27 17:20:56, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:20:56, INFO: 2/3 episode: Collision! Total Reward: -24.684, R_dan: 0.04, R_goal: 0, R_col: -25.0, R_km: 0.2, R_col_wall: 0, R_wall_min_dist: 0.009, R_way_point_dist: 0.05, R_wp: 0.015
+2025-03-27 17:20:56, INFO: Path length: 2.6489494694679108
+2025-03-27 17:20:56, INFO: Path left: 79.21503504821068
+2025-03-27 17:20:56, INFO: Actions: 4
+2025-03-27 17:20:56, INFO: Coordinates: 8.576407561257591 -9.74224353675744
+2025-03-27 17:20:56, INFO: Stops times: 1
+
+2025-03-27 17:20:58, INFO: human number: 8
+2025-03-27 17:20:59, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:21:00, INFO: 3/3 episode: Collision! Total Reward: -24.86, R_dan: 0.04, R_goal: 0, R_col: -25.0, R_km: 0.2, R_col_wall: 0, R_wall_min_dist: -0.026, R_way_point_dist: -0.09, R_wp: 0.015
+2025-03-27 17:21:00, INFO: Path length: 0.26755104902821497
+2025-03-27 17:21:00, INFO: Path left: 80.19712101041684
+2025-03-27 17:21:00, INFO: Actions: 4
+2025-03-27 17:21:00, INFO: Coordinates: 9.426210855107517 -11.116801534786575
+2025-03-27 17:21:00, INFO: Stops times: 3
+
+2025-03-27 17:21:00, INFO: TRAIN in episode 38 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -10.4867
+2025-03-27 17:21:00, INFO: In each scenarios, TRAIN in episode 38 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.3469 -15.8215 -15.9853
+2025-03-27 17:21:02, INFO: human number: 8
+2025-03-27 17:21:02, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:21:06, INFO: 1/3 episode: Collision Wall! Total Reward: -26.664, R_dan: 3.0, R_goal: 0, R_col: 0, R_km: -3.6, R_col_wall: -25.0, R_wall_min_dist: -2.42, R_way_point_dist: -0.02, R_wp: 1.365
+2025-03-27 17:21:06, INFO: Path length: 28.657438570700865
+2025-03-27 17:21:06, INFO: Path left: 63.264548482468705
+2025-03-27 17:21:06, INFO: Actions: 60
+2025-03-27 17:21:06, INFO: Coordinates: -10.628657546737928 -7.581590829695812
+2025-03-27 17:21:06, INFO: Stops times: 22
+
+2025-03-27 17:21:08, INFO: human number: 8
+2025-03-27 17:21:09, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:21:17, INFO: 2/3 episode: Collision Wall! Total Reward: -27.587, R_dan: 1.65, R_goal: 0, R_col: 0, R_km: -3.3, R_col_wall: -25.0, R_wall_min_dist: -0.757, R_way_point_dist: -0.2, R_wp: 0.015
+2025-03-27 17:21:17, INFO: Path length: 8.302772222441853
+2025-03-27 17:21:17, INFO: Path left: 86.58035857054044
+2025-03-27 17:21:17, INFO: Actions: 33
+2025-03-27 17:21:17, INFO: Coordinates: 13.418625015299966 -16.967827246839203
+2025-03-27 17:21:17, INFO: Stops times: 19
+
+2025-03-27 17:21:19, INFO: human number: 8
+2025-03-27 17:21:19, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:21:21, INFO: 3/3 episode: Collision! Total Reward: -25.136, R_dan: 0.03, R_goal: 0, R_col: -25.0, R_km: -0.2, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: 0.0, R_wp: 0.015
+2025-03-27 17:21:21, INFO: Path length: 2.180296840879392
+2025-03-27 17:21:21, INFO: Path left: 80.15462067145073
+2025-03-27 17:21:21, INFO: Actions: 7
+2025-03-27 17:21:21, INFO: Coordinates: 9.523250579247708 -10.142198912617213
+2025-03-27 17:21:21, INFO: Stops times: 4
+
+2025-03-27 17:21:21, INFO: TRAIN in episode 39 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -3.7668
+2025-03-27 17:21:21, INFO: In each scenarios, TRAIN in episode 39 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.1725 -0.5277 -10.6001
+2025-03-27 17:21:23, INFO: human number: 8
+2025-03-27 17:21:23, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:21:30, INFO: 1/3 episode: Collision Wall! Total Reward: -27.66, R_dan: 5.0, R_goal: 0, R_col: 0, R_km: -7.1, R_col_wall: -25.0, R_wall_min_dist: -1.374, R_way_point_dist: 0.48, R_wp: 0.315
+2025-03-27 17:21:30, INFO: Path length: 6.977344394532148
+2025-03-27 17:21:30, INFO: Path left: 76.31948279020256
+2025-03-27 17:21:30, INFO: Actions: 100
+2025-03-27 17:21:30, INFO: Coordinates: 4.879577259561059 -12.97939556371056
+2025-03-27 17:21:30, INFO: Stops times: 70
+
+2025-03-27 17:21:32, INFO: human number: 8
+2025-03-27 17:21:32, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:21:33, INFO: 2/3 episode: Collision Wall! Total Reward: -26.297, R_dan: 0.39, R_goal: 0, R_col: 0, R_km: -1.1, R_col_wall: -25.0, R_wall_min_dist: -0.445, R_way_point_dist: -0.16, R_wp: 0.015
+2025-03-27 17:21:33, INFO: Path length: 4.039811544614401
+2025-03-27 17:21:33, INFO: Path left: 82.2257174537774
+2025-03-27 17:21:33, INFO: Actions: 11
+2025-03-27 17:21:33, INFO: Coordinates: 10.002266776487453 -14.263099112314425
+2025-03-27 17:21:33, INFO: Stops times: 5
+
+2025-03-27 17:21:35, INFO: human number: 8
+2025-03-27 17:21:36, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:21:38, INFO: 3/3 episode: Collision! Total Reward: -25.352, R_dan: 0.32, R_goal: 0, R_col: -25.0, R_km: -0.7, R_col_wall: 0, R_wall_min_dist: 0.017, R_way_point_dist: -0.04, R_wp: 0.045
+2025-03-27 17:21:38, INFO: Path length: 1.428933110453887
+2025-03-27 17:21:38, INFO: Path left: 78.81618484192643
+2025-03-27 17:21:38, INFO: Actions: 8
+2025-03-27 17:21:38, INFO: Coordinates: 8.001318233328726 -11.06593405059909
+2025-03-27 17:21:38, INFO: Stops times: 4
+
+2025-03-27 17:21:38, INFO: TRAIN in episode 40 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -5.3822
+2025-03-27 17:21:38, INFO: In each scenarios, TRAIN in episode 40 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.1062 -6.5719 -9.4684
+2025-03-27 17:21:40, INFO: human number: 8
+2025-03-27 17:21:40, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:21:41, INFO: 1/3 episode: Collision Wall! Total Reward: -28.379, R_dan: 0.95, R_goal: 0, R_col: 0, R_km: -2.9, R_col_wall: -25.0, R_wall_min_dist: -1.555, R_way_point_dist: 0.08, R_wp: 0.045
+2025-03-27 17:21:41, INFO: Path length: 3.22099886321711
+2025-03-27 17:21:41, INFO: Path left: 80.72204030224121
+2025-03-27 17:21:41, INFO: Actions: 19
+2025-03-27 17:21:41, INFO: Coordinates: 8.259939037340734 -14.240656947592031
+2025-03-27 17:21:41, INFO: Stops times: 14
+
+2025-03-27 17:21:43, INFO: human number: 8
+2025-03-27 17:21:44, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:21:53, INFO: 2/3 episode: Collision Wall! Total Reward: -26.673, R_dan: 1.19, R_goal: 0, R_col: 0, R_km: -2.1, R_col_wall: -25.0, R_wall_min_dist: -0.51, R_way_point_dist: -0.28, R_wp: 0.015
+2025-03-27 17:21:53, INFO: Path length: 12.641994383777119
+2025-03-27 17:21:53, INFO: Path left: 87.4645874753484
+2025-03-27 17:21:53, INFO: Actions: 35
+2025-03-27 17:21:53, INFO: Coordinates: 13.589793429259826 -18.102186526442946
+2025-03-27 17:21:53, INFO: Stops times: 18
+
+2025-03-27 17:21:55, INFO: human number: 8
+2025-03-27 17:21:56, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:21:58, INFO: 3/3 episode: Collision Wall! Total Reward: -24.533, R_dan: 0.4, R_goal: 0, R_col: 0, R_km: 0.4, R_col_wall: -25.0, R_wall_min_dist: -0.171, R_way_point_dist: -0.18, R_wp: 0.015
+2025-03-27 17:21:58, INFO: Path length: 6.42144946946791
+2025-03-27 17:21:58, INFO: Path left: 83.40811955310144
+2025-03-27 17:21:58, INFO: Actions: 8
+2025-03-27 17:21:58, INFO: Coordinates: 12.250922115938904 -12.798550512847664
+2025-03-27 17:21:58, INFO: Stops times: 2
+
+2025-03-27 17:21:58, INFO: TRAIN in episode 41 has success rate: 0.00, collision rate: 0.00, timeout rate: 0.00, collisionwall rate: 1.00, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -4.2561
+2025-03-27 17:21:58, INFO: In each scenarios, TRAIN in episode 41 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -2.7591 -1.4103 -8.5990
+2025-03-27 17:22:01, INFO: human number: 8
+2025-03-27 17:22:01, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:22:04, INFO: 1/3 episode: Collision Wall! Total Reward: -25.132, R_dan: 1.95, R_goal: 0, R_col: 0, R_km: -1.35, R_col_wall: -25.0, R_wall_min_dist: -1.474, R_way_point_dist: 0.19, R_wp: 0.54
+2025-03-27 17:22:04, INFO: Path length: 13.6020570518575
+2025-03-27 17:22:04, INFO: Path left: 69.08058746450891
+2025-03-27 17:22:04, INFO: Actions: 39
+2025-03-27 17:22:04, INFO: Coordinates: -0.6579819329866813 -7.77643878507308
+2025-03-27 17:22:04, INFO: Stops times: 19
+
+2025-03-27 17:22:06, INFO: human number: 8
+2025-03-27 17:22:06, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:22:14, INFO: 2/3 episode: Collision Wall! Total Reward: -26.59, R_dan: 1.5, R_goal: 0, R_col: 0, R_km: -0.7, R_col_wall: -25.0, R_wall_min_dist: -2.19, R_way_point_dist: -0.22, R_wp: 0.015
+2025-03-27 17:22:14, INFO: Path length: 20.114287110994297
+2025-03-27 17:22:14, INFO: Path left: 85.09639432881599
+2025-03-27 17:22:14, INFO: Actions: 30
+2025-03-27 17:22:14, INFO: Coordinates: 13.511195924018487 -14.122895547289176
+2025-03-27 17:22:14, INFO: Stops times: 9
+
+2025-03-27 17:22:16, INFO: human number: 8
+2025-03-27 17:22:16, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:22:18, INFO: 3/3 episode: Collision Wall! Total Reward: -25.524, R_dan: 0.01, R_goal: 0, R_col: 0, R_km: -0.3, R_col_wall: -25.0, R_wall_min_dist: -0.474, R_way_point_dist: 0.15, R_wp: 0.09
+2025-03-27 17:22:18, INFO: Path length: 5.014154283867535
+2025-03-27 17:22:18, INFO: Path left: 76.92852674688723
+2025-03-27 17:22:18, INFO: Actions: 5
+2025-03-27 17:22:18, INFO: Coordinates: 5.94137188415991 -7.508089848600402
+2025-03-27 17:22:18, INFO: Stops times: 0
+
+2025-03-27 17:22:18, INFO: TRAIN in episode 42 has success rate: 0.00, collision rate: 0.00, timeout rate: 0.00, collisionwall rate: 1.00, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -5.0660
+2025-03-27 17:22:18, INFO: In each scenarios, TRAIN in episode 42 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.4716 -0.6117 -14.1148
+2025-03-27 17:22:20, INFO: human number: 8
+2025-03-27 17:22:20, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:22:23, INFO: 1/3 episode: Collision Wall! Total Reward: -27.461, R_dan: 1.85, R_goal: 0, R_col: 0, R_km: -3.1, R_col_wall: -25.0, R_wall_min_dist: -0.971, R_way_point_dist: -0.29, R_wp: 0.045
+2025-03-27 17:22:23, INFO: Path length: 7.4604851643752905
+2025-03-27 17:22:23, INFO: Path left: 81.67121251332881
+2025-03-27 17:22:23, INFO: Actions: 37
+2025-03-27 17:22:23, INFO: Coordinates: 11.032468071210959 -8.400255525545163
+2025-03-27 17:22:23, INFO: Stops times: 21
+
+2025-03-27 17:22:25, INFO: human number: 8
+2025-03-27 17:22:25, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:22:29, INFO: 2/3 episode: Collision! Total Reward: -25.445, R_dan: 0.47, R_goal: 0, R_col: -25.0, R_km: 0.0, R_col_wall: 0, R_wall_min_dist: -1.49, R_way_point_dist: 0.26, R_wp: 0.315
+2025-03-27 17:22:29, INFO: Path length: 11.893001655279015
+2025-03-27 17:22:29, INFO: Path left: 69.81348274776403
+2025-03-27 17:22:29, INFO: Actions: 11
+2025-03-27 17:22:29, INFO: Coordinates: -0.8055571495073106 -7.671158157340412
+2025-03-27 17:22:29, INFO: Stops times: 1
+
+2025-03-27 17:22:31, INFO: human number: 8
+2025-03-27 17:22:31, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:22:33, INFO: 3/3 episode: Collision Wall! Total Reward: -25.473, R_dan: 0.35, R_goal: 0, R_col: 0, R_km: -0.75, R_col_wall: -25.0, R_wall_min_dist: -0.305, R_way_point_dist: 0.14, R_wp: 0.09
+2025-03-27 17:22:33, INFO: Path length: 6.226654283867535
+2025-03-27 17:22:33, INFO: Path left: 75.75219917462536
+2025-03-27 17:22:33, INFO: Actions: 7
+2025-03-27 17:22:33, INFO: Coordinates: 4.718217249518592 -7.692089626122428
+2025-03-27 17:22:33, INFO: Stops times: 1
+
+2025-03-27 17:22:33, INFO: TRAIN in episode 43 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -5.6765
+2025-03-27 17:22:33, INFO: In each scenarios, TRAIN in episode 43 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.4879 -5.6875 -10.8542
+2025-03-27 17:22:36, INFO: human number: 8
+2025-03-27 17:22:36, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:22:42, INFO: 1/3 episode: Collision Wall! Total Reward: -22.515, R_dan: 4.55, R_goal: 0, R_col: 0, R_km: -1.5, R_col_wall: -25.0, R_wall_min_dist: -1.289, R_way_point_dist: 0.49, R_wp: 0.225
+2025-03-27 17:22:42, INFO: Path length: 2.495737198748972
+2025-03-27 17:22:42, INFO: Path left: 74.25646040467116
+2025-03-27 17:22:42, INFO: Actions: 91
+2025-03-27 17:22:42, INFO: Coordinates: 3.0435248549064964 -11.994593216884855
+2025-03-27 17:22:42, INFO: Stops times: 64
+
+2025-03-27 17:22:44, INFO: human number: 8
+2025-03-27 17:22:45, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:22:46, INFO: 2/3 episode: Collision! Total Reward: -25.099, R_dan: 0.22, R_goal: 0, R_col: -25.0, R_km: -0.25, R_col_wall: 0, R_wall_min_dist: 0.013, R_way_point_dist: -0.1, R_wp: 0.015
+2025-03-27 17:22:46, INFO: Path length: 2.185720839734947
+2025-03-27 17:22:46, INFO: Path left: 79.92571284809301
+2025-03-27 17:22:46, INFO: Actions: 6
+2025-03-27 17:22:46, INFO: Coordinates: 9.135650166424394 -11.151179071902135
+2025-03-27 17:22:46, INFO: Stops times: 3
+
+2025-03-27 17:22:48, INFO: human number: 8
+2025-03-27 17:22:48, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:22:54, INFO: 3/3 episode: Collision Wall! Total Reward: -24.988, R_dan: 0.94, R_goal: 0, R_col: 0, R_km: 0.0, R_col_wall: -25.0, R_wall_min_dist: -0.558, R_way_point_dist: -0.39, R_wp: 0.015
+2025-03-27 17:22:54, INFO: Path length: 10.836621433949778
+2025-03-27 17:22:54, INFO: Path left: 88.16332795194313
+2025-03-27 17:22:54, INFO: Actions: 22
+2025-03-27 17:22:54, INFO: Coordinates: 13.569474200931245 -19.103757752554607
+2025-03-27 17:22:54, INFO: Stops times: 8
+
+2025-03-27 17:22:54, INFO: TRAIN in episode 44 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -4.3117
+2025-03-27 17:22:54, INFO: In each scenarios, TRAIN in episode 44 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 1.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.6891 -12.0710 -1.5532
+2025-03-27 17:22:56, INFO: human number: 8
+2025-03-27 17:22:56, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:23:14, INFO: 1/3 episode: Timeout! Total Reward: -13.326, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: -17.4, R_col_wall: 0, R_wall_min_dist: -3.772, R_way_point_dist: -5.03, R_wp: 0.045
+2025-03-27 17:23:14, INFO: Path length: 152.83989244064654
+2025-03-27 17:23:14, INFO: Path left: 222.39643654817698
+2025-03-27 17:23:14, INFO: Actions: 257
+2025-03-27 17:23:14, INFO: Coordinates: -20.896549740617687 -156.05143618324678
+2025-03-27 17:23:14, INFO: Stops times: 92
+
+2025-03-27 17:23:16, INFO: human number: 8
+2025-03-27 17:23:17, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:23:20, INFO: 2/3 episode: Collision! Total Reward: -25.756, R_dan: 0.03, R_goal: 0, R_col: -25.0, R_km: -0.75, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: -0.07, R_wp: 0.015
+2025-03-27 17:23:20, INFO: Path length: 3.5938984204396958
+2025-03-27 17:23:20, INFO: Path left: 81.09932510408082
+2025-03-27 17:23:20, INFO: Actions: 7
+2025-03-27 17:23:20, INFO: Coordinates: 10.320593453782513 -11.258921385531378
+2025-03-27 17:23:20, INFO: Stops times: 4
+
+2025-03-27 17:23:22, INFO: human number: 8
+2025-03-27 17:23:22, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:23:25, INFO: 3/3 episode: Collision! Total Reward: -24.253, R_dan: 0.32, R_goal: 0, R_col: -25.0, R_km: 0.4, R_col_wall: 0, R_wall_min_dist: 0.017, R_way_point_dist: -0.04, R_wp: 0.045
+2025-03-27 17:23:25, INFO: Path length: 0.794279160265053
+2025-03-27 17:23:25, INFO: Path left: 78.76980253037961
+2025-03-27 17:23:25, INFO: Actions: 8
+2025-03-27 17:23:25, INFO: Coordinates: 8.179063334884573 -10.040150536136919
+2025-03-27 17:23:25, INFO: Stops times: 4
+
+2025-03-27 17:23:25, INFO: TRAIN in episode 45 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.33, collisionwall rate: 0.00, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -6.8030
+2025-03-27 17:23:25, INFO: In each scenarios, TRAIN in episode 45 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 1.00 0.00 0.00, collisionwall rate: 0.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.7876 -11.1206 -8.5009
+2025-03-27 17:23:27, INFO: human number: 8
+2025-03-27 17:23:27, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:23:32, INFO: 1/3 episode: Collision Wall! Total Reward: -26.694, R_dan: 3.45, R_goal: 0, R_col: 0, R_km: -4.8, R_col_wall: -25.0, R_wall_min_dist: -0.732, R_way_point_dist: 0.32, R_wp: 0.045
+2025-03-27 17:23:32, INFO: Path length: 2.5913265820281097
+2025-03-27 17:23:32, INFO: Path left: 79.49288508802687
+2025-03-27 17:23:32, INFO: Actions: 69
+2025-03-27 17:23:32, INFO: Coordinates: 8.399332242571052 -11.890757147623548
+2025-03-27 17:23:32, INFO: Stops times: 47
+
+2025-03-27 17:23:34, INFO: human number: 8
+2025-03-27 17:23:34, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:23:36, INFO: 2/3 episode: Collision! Total Reward: -24.928, R_dan: 0.22, R_goal: 0, R_col: -25.0, R_km: -0.25, R_col_wall: 0, R_wall_min_dist: 0.013, R_way_point_dist: 0.04, R_wp: 0.045
+2025-03-27 17:23:36, INFO: Path length: 0.3755016552790159
+2025-03-27 17:23:36, INFO: Path left: 78.81358623858033
+2025-03-27 17:23:36, INFO: Actions: 6
+2025-03-27 17:23:36, INFO: Coordinates: 8.082632404993472 -10.786554753538425
+2025-03-27 17:23:36, INFO: Stops times: 4
+
+2025-03-27 17:23:38, INFO: human number: 8
+2025-03-27 17:23:39, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:23:40, INFO: 3/3 episode: Collision! Total Reward: -25.122, R_dan: 0.27, R_goal: 0, R_col: -25.0, R_km: -0.2, R_col_wall: 0, R_wall_min_dist: -0.308, R_way_point_dist: 0.07, R_wp: 0.045
+2025-03-27 17:23:40, INFO: Path length: 1.60839676516068
+2025-03-27 17:23:40, INFO: Path left: 79.09079435410703
+2025-03-27 17:23:40, INFO: Actions: 7
+2025-03-27 17:23:40, INFO: Coordinates: 7.797768669550727 -12.168623193614268
+2025-03-27 17:23:40, INFO: Stops times: 5
+
+2025-03-27 17:23:40, INFO: TRAIN in episode 46 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -7.3859
+2025-03-27 17:23:40, INFO: In each scenarios, TRAIN in episode 46 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.0980 -11.8291 -10.4266
+2025-03-27 17:23:42, INFO: human number: 8
+2025-03-27 17:23:42, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:24:00, INFO: 1/3 episode: Timeout! Total Reward: -5.866, R_dan: 12.85, R_goal: 0, R_col: 0, R_km: -10.8, R_col_wall: 0, R_wall_min_dist: -2.958, R_way_point_dist: -5.66, R_wp: 0.675
+2025-03-27 17:24:00, INFO: Path length: 201.30957731368153
+2025-03-27 17:24:00, INFO: Path left: 234.77092575463692
+2025-03-27 17:24:00, INFO: Actions: 257
+2025-03-27 17:24:00, INFO: Coordinates: -42.51119647677829 -175.7053626150024
+2025-03-27 17:24:00, INFO: Stops times: 64
+
+2025-03-27 17:24:02, INFO: human number: 8
+2025-03-27 17:24:02, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:24:08, INFO: 2/3 episode: Collision! Total Reward: -25.144, R_dan: 0.16, R_goal: 0, R_col: -25.0, R_km: 0.8, R_col_wall: 0, R_wall_min_dist: -2.19, R_way_point_dist: 0.41, R_wp: 0.675
+2025-03-27 17:24:08, INFO: Path length: 16.28027652092151
+2025-03-27 17:24:08, INFO: Path left: 65.39068632405251
+2025-03-27 17:24:08, INFO: Actions: 16
+2025-03-27 17:24:08, INFO: Coordinates: -5.347987082571454 -8.567892987661207
+2025-03-27 17:24:08, INFO: Stops times: 1
+
+2025-03-27 17:24:10, INFO: human number: 8
+2025-03-27 17:24:10, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:25:15, INFO: 3/3 episode: Timeout! Total Reward: -7.164, R_dan: 12.53, R_goal: 0, R_col: 0, R_km: -13.0, R_col_wall: 0, R_wall_min_dist: -0.458, R_way_point_dist: -6.71, R_wp: 0.42
+2025-03-27 17:25:15, INFO: Path length: 227.6160537871116
+2025-03-27 17:25:15, INFO: Path left: 281.08376612333586
+2025-03-27 17:25:15, INFO: Actions: 257
+2025-03-27 17:25:15, INFO: Coordinates: -36.17232972600928 -222.08698147788175
+2025-03-27 17:25:15, INFO: Stops times: 50
+
+2025-03-27 17:25:15, INFO: TRAIN in episode 47 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.67, collisionwall rate: 0.00, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -0.8918
+2025-03-27 17:25:15, INFO: In each scenarios, TRAIN in episode 47 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 1.00 0.00 1.00, collisionwall rate: 0.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.0517 -2.6146 -0.0090
+2025-03-27 17:25:17, INFO: human number: 8
+2025-03-27 17:25:17, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:25:27, INFO: 1/3 episode: Collision Wall! Total Reward: -25.607, R_dan: 6.3, R_goal: 0, R_col: 0, R_km: -6.9, R_col_wall: -25.0, R_wall_min_dist: -1.835, R_way_point_dist: 1.26, R_wp: 0.54
+2025-03-27 17:25:27, INFO: Path length: 1.6023235881772042
+2025-03-27 17:25:27, INFO: Path left: 65.4050289599917
+2025-03-27 17:25:27, INFO: Actions: 126
+2025-03-27 17:25:27, INFO: Coordinates: -4.177840143489896 -6.696450845031347
+2025-03-27 17:25:27, INFO: Stops times: 95
+
+2025-03-27 17:25:29, INFO: human number: 8
+2025-03-27 17:25:30, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:25:32, INFO: 2/3 episode: Collision! Total Reward: -25.037, R_dan: 0.27, R_goal: 0, R_col: -25.0, R_km: -0.2, R_col_wall: 0, R_wall_min_dist: 0.015, R_way_point_dist: -0.14, R_wp: 0.015
+2025-03-27 17:25:32, INFO: Path length: 2.382119260174643
+2025-03-27 17:25:32, INFO: Path left: 80.78001730561587
+2025-03-27 17:25:32, INFO: Actions: 7
+2025-03-27 17:25:32, INFO: Coordinates: 10.076497101371405 -10.863940986358902
+2025-03-27 17:25:32, INFO: Stops times: 3
+
+2025-03-27 17:25:34, INFO: human number: 8
+2025-03-27 17:25:34, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:25:35, INFO: 3/3 episode: Collision! Total Reward: -25.357, R_dan: 0.07, R_goal: 0, R_col: -25.0, R_km: -0.4, R_col_wall: 0, R_wall_min_dist: 0.007, R_way_point_dist: -0.05, R_wp: 0.015
+2025-03-27 17:25:35, INFO: Path length: 1.835552704307231
+2025-03-27 17:25:35, INFO: Path left: 79.80965657630469
+2025-03-27 17:25:35, INFO: Actions: 3
+2025-03-27 17:25:35, INFO: Coordinates: 9.176741816769065 -10.176750582630717
+2025-03-27 17:25:35, INFO: Stops times: 0
+
+2025-03-27 17:25:35, INFO: TRAIN in episode 48 has success rate: 0.00, collision rate: 0.67, timeout rate: 0.00, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -9.6603
+2025-03-27 17:25:35, INFO: In each scenarios, TRAIN in episode 48 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: 0.4667 -10.4909 -18.9568
+2025-03-27 17:25:37, INFO: human number: 8
+2025-03-27 17:25:37, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:25:38, INFO: 1/3 episode: Collision Wall! Total Reward: -28.165, R_dan: 1.6, R_goal: 0, R_col: 0, R_km: -3.9, R_col_wall: -25.0, R_wall_min_dist: -0.816, R_way_point_dist: -0.09, R_wp: 0.045
+2025-03-27 17:25:38, INFO: Path length: 3.7738637304255054
+2025-03-27 17:25:38, INFO: Path left: 81.22905665284226
+2025-03-27 17:25:38, INFO: Actions: 32
+2025-03-27 17:25:38, INFO: Coordinates: 9.781714870992325 -13.00380519688497
+2025-03-27 17:25:38, INFO: Stops times: 20
+
+2025-03-27 17:25:40, INFO: human number: 8
+2025-03-27 17:25:41, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:25:44, INFO: 2/3 episode: Collision Wall! Total Reward: -25.543, R_dan: 0.37, R_goal: 0, R_col: 0, R_km: -0.1, R_col_wall: -25.0, R_wall_min_dist: -0.708, R_way_point_dist: -0.15, R_wp: 0.045
+2025-03-27 17:25:44, INFO: Path length: 5.340501655279015
+2025-03-27 17:25:44, INFO: Path left: 83.28517468514382
+2025-03-27 17:25:44, INFO: Actions: 9
+2025-03-27 17:25:44, INFO: Coordinates: 12.06875893425094 -12.953294005303325
+2025-03-27 17:25:44, INFO: Stops times: 4
+
+2025-03-27 17:25:46, INFO: human number: 8
+2025-03-27 17:25:46, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:25:48, INFO: 3/3 episode: Collision! Total Reward: -25.178, R_dan: 0.14, R_goal: 0, R_col: -25.0, R_km: -0.25, R_col_wall: 0, R_wall_min_dist: 0.013, R_way_point_dist: -0.1, R_wp: 0.015
+2025-03-27 17:25:48, INFO: Path length: 3.1771395801325264
+2025-03-27 17:25:48, INFO: Path left: 80.54596759757271
+2025-03-27 17:25:48, INFO: Actions: 6
+2025-03-27 17:25:48, INFO: Coordinates: 9.660960423189792 -11.549192769234425
+2025-03-27 17:25:48, INFO: Stops times: 3
+
+2025-03-27 17:25:48, INFO: TRAIN in episode 49 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.00, collisionwall rate: 0.67, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -6.8498
+2025-03-27 17:25:48, INFO: In each scenarios, TRAIN in episode 49 has success rate: 0.00 0.00 0.00, collision rate: 0.00 0.00 1.00, timeout rate: 0.00 0.00 0.00, collisionwall rate: 1.00 1.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -0.5647 -7.9225 -12.0621
+2025-03-27 17:25:51, INFO: human number: 8
+2025-03-27 17:25:51, INFO: running 1/3 episode, simulation environment: no
+2025-03-27 17:25:52, INFO: 1/3 episode: Collision Wall! Total Reward: -27.084, R_dan: 1.1, R_goal: 0, R_col: 0, R_km: -1.65, R_col_wall: -25.0, R_wall_min_dist: -1.235, R_way_point_dist: -0.32, R_wp: 0.015
+2025-03-27 17:25:52, INFO: Path length: 8.836289903056201
+2025-03-27 17:25:52, INFO: Path left: 83.72661736842416
+2025-03-27 17:25:52, INFO: Actions: 22
+2025-03-27 17:25:52, INFO: Coordinates: 13.046819414795545 -9.100786119308822
+2025-03-27 17:25:52, INFO: Stops times: 8
+
+2025-03-27 17:25:54, INFO: human number: 8
+2025-03-27 17:25:54, INFO: running 2/3 episode, simulation environment: circle_crossing
+2025-03-27 17:25:55, INFO: 2/3 episode: Collision! Total Reward: -25.162, R_dan: 0.17, R_goal: 0, R_col: -25.0, R_km: -0.3, R_col_wall: 0, R_wall_min_dist: 0.011, R_way_point_dist: -0.06, R_wp: 0.015
+2025-03-27 17:25:55, INFO: Path length: 3.225051049028215
+2025-03-27 17:25:55, INFO: Path left: 80.9094414503188
+2025-03-27 17:25:55, INFO: Actions: 5
+2025-03-27 17:25:55, INFO: Coordinates: 10.271381500254385 -10.3048058564225
+2025-03-27 17:25:55, INFO: Stops times: 2
+
+2025-03-27 17:25:57, INFO: human number: 8
+2025-03-27 17:25:57, INFO: running 3/3 episode, simulation environment: circle_static
+2025-03-27 17:26:55, INFO: 3/3 episode: Timeout! Total Reward: -2.646, R_dan: 12.61, R_goal: 0, R_col: 0, R_km: -7.5, R_col_wall: 0, R_wall_min_dist: 0.048, R_way_point_dist: -7.9, R_wp: 0.09
+2025-03-27 17:26:55, INFO: Path length: 231.6913940041472
+2025-03-27 17:26:55, INFO: Path left: 291.030929813363
+2025-03-27 17:26:55, INFO: Actions: 257
+2025-03-27 17:26:55, INFO: Coordinates: -35.9621403618913 -225.24162441617807
+2025-03-27 17:26:55, INFO: Stops times: 50
+
+2025-03-27 17:26:55, INFO: TRAIN in episode 50 has success rate: 0.00, collision rate: 0.33, timeout rate: 0.33, collisionwall rate: 0.33, nav time: 0.00, average speed: 0.00, path length: 0.00, total reward: -5.0426
+2025-03-27 17:26:55, INFO: In each scenarios, TRAIN in episode 50 has success rate: 0.00 0.00 0.00, collision rate: 0.00 1.00 0.00, timeout rate: 0.00 0.00 1.00, collisionwall rate: 1.00 0.00 0.00, nav time: 0.00 0.00 0.00, average speed: 0.00 0.00 0.00, path length: 0.00 0.00 0.00, total reward: -1.4424 -14.1356 0.4503
+2025-03-27 17:26:58, INFO: human number: 8
+2025-03-27 17:26:58, INFO: running 1/3 episode, simulation environment: no
