@@ -1,3 +1,7 @@
+# Author: Changan Chen <changanvr@gmail.com>
+# Modified by: Keyu Li <kyli@link.cuhk.edu.hk>
+
+from __future__ import division
 import torch
 import numpy as np
 from crowd_sim.envs.utils.action import ActionRot, ActionXY
@@ -5,15 +9,41 @@ from crowd_nav.policy.cadrl import CADRL
 
 
 class MultiHumanRL(CADRL):
-    def __init__(self, epsilon=0.1):
-        super().__init__()
-        self.epsilon = epsilon
+    def __init__(self):
+        super(MultiHumanRL, self).__init__()
+        self.with_costmap = False
+        self.gc = None
+        self.gc_resolution = None
+        self.gc_width = None
+        self.gc_ox = None
+        self.gc_oy = None
+
+    # predict the cost that robot hits the static obstacles in the global map
+    def compute_cost(self, state):
+        costs = []
+        x = state.px
+        y = state.py
+        min_x = x - 0.3
+        min_y = y - 0.3
+        max_x = x + 0.3
+        max_y = y + 0.3
+        grid_min_x = int(round((min_x - self.gc_ox) / self.gc_resolution))
+        grid_min_y = int(round((min_y - self.gc_oy) / self.gc_resolution))
+        grid_max_x = int(round((max_x - self.gc_ox) / self.gc_resolution))
+        grid_max_y = int(round((max_y - self.gc_oy) / self.gc_resolution))
+        for i in range(grid_min_x, grid_max_x+1):
+            for j in range(grid_min_y, grid_max_y + 1):
+                index = i + self.gc_width * j
+                costs.append(self.gc[index])
+        max_cost = max(costs)
+        return max_cost
+
 
     def predict(self, state):
         """
-        A base class for all methods that takes pairwise joint state as input to value network.
-        The input to the value network is always of shape (batch_size, # humans, rotated joint state length)
-
+        Takes pairwise joint state as input to value network and output action.
+        The input to the value network is always of shape (batch_size, # humans, rotated joint state length).
+        If with_costmap is True, the dangerous actions predicted by the value network will be screened out to avoid static obstacles on the map.
         """
         if self.phase is None or self.device is None:
             raise AttributeError('Phase, device attributes have to be set!')
@@ -27,15 +57,23 @@ class MultiHumanRL(CADRL):
 
         occupancy_maps = None
         probability = np.random.random()
-        
         if self.phase == 'train' and probability < self.epsilon:
             max_action = self.action_space[np.random.choice(len(self.action_space))]
         else:
+            #print("Else Multi Human")
             self.action_values = list()
             max_value = float('-inf')
             max_action = None
             for action in self.action_space:
                 next_self_state = self.propagate(state.self_state, action)
+                next_self_state_further = self.propagate_more(state.self_state, action)
+
+                # # abort actions which will probably cause collision with static obstacles in the costmap
+                # cost = self.compute_cost(next_self_state_further)
+                # if cost > 0:
+                #     print("********** Abort action:", action, "cost:", cost, "that will hit the obstacles.")
+                #     continue
+
                 if self.query_env:
                     next_human_states, reward, done, info, _, _, _, _ = self.env.onestep_lookahead(action)
                 else:
@@ -43,21 +81,29 @@ class MultiHumanRL(CADRL):
                                        for human_state in state.human_states]
                     reward = self.compute_reward(next_self_state, next_human_states)
                 batch_next_states = torch.cat([torch.Tensor([next_self_state + next_human_state]).to(self.device)
-                                              for next_human_state in next_human_states], dim=0)
+                                                   for next_human_state in next_human_states], dim=0)
                 rotated_batch_input = self.rotate(batch_next_states).unsqueeze(0)
+
                 if self.with_om:
                     if occupancy_maps is None:
                         occupancy_maps = self.build_occupancy_maps(next_human_states).unsqueeze(0)
-                    rotated_batch_input = torch.cat([rotated_batch_input, occupancy_maps.to(self.device)], dim=2)
+                    rotated_batch_input = torch.cat([rotated_batch_input, occupancy_maps], dim=2)
                 # VALUE UPDATE
                 next_state_value = self.model(rotated_batch_input).data.item()
+                #print("Next State Value")
+                #print(next_state_value)
                 value = reward + pow(self.gamma, self.time_step * state.self_state.v_pref) * next_state_value
                 self.action_values.append(value)
                 if value > max_value:
                     max_value = value
                     max_action = action
+                    # print("********** choose action:", action)
+                    # print("********** cost:", cost)
+
             if max_action is None:
-                raise ValueError('Value network is not well trained. ')
+                # if the robot is trapped, choose the turning action to escape
+                max_action = ActionRot(0, 0.78)
+                print("The robot is trapped. Rotate in place to escape......")
 
         if self.phase == 'train':
             self.last_state = self.transform(state)
@@ -66,24 +112,24 @@ class MultiHumanRL(CADRL):
 
     def compute_reward(self, nav, humans):
         # collision detection
-        dclose = float('inf')
+        dmin = float('inf')
         collision = False
-        for i, human in enumerate(humans):
-            dist = np.linalg.norm((nav.px - human.px, nav.py - human.py)) - nav.radius - human.radius
-            if dist < 0:
-                collision = True
-                break
-            if dist < dclose:
-                dclose = dist
-
+        if len(humans):
+            for i, human in enumerate(humans):
+                dist = np.linalg.norm((nav.px - human.px, nav.py - human.py)) - nav.radius - human.radius
+                if dist < 0:
+                    collision = True
+                    break
+                if dist < dmin:
+                    dmin = dist
         # check if reaching the goal
         reaching_goal = np.linalg.norm((nav.px - nav.gx, nav.py - nav.gy)) < nav.radius
         if collision:
-            reward = -0.25
+            reward = self.env.collision_penalty
         elif reaching_goal:
             reward = 1
-        elif dclose < 0.2:
-            reward = (dclose - 0.2) * 0.5 * self.time_step
+        elif dmin < self.env.discomfort_dist:
+            reward = (dmin - self.env.discomfort_dist) * self.env.discomfort_penalty_factor * self.env.time_step
         else:
             reward = 0
 
@@ -98,15 +144,22 @@ class MultiHumanRL(CADRL):
         """
         state_tensor = torch.cat([torch.Tensor([state.self_state + human_state]).to(self.device)
                                   for human_state in state.human_states], dim=0)
+        #print(state.self_state)
+        #print(state_tensor)
+        #print(state_tensor.shape)
+        #print(state_tensor)
         if self.with_om:
             occupancy_maps = self.build_occupancy_maps(state.human_states)
-            state_tensor = torch.cat([self.rotate(state_tensor), occupancy_maps.to(self.device)], dim=1)
+            state_tensor = torch.cat([self.rotate(state_tensor), occupancy_maps], dim=1)
         else:
             state_tensor = self.rotate(state_tensor)
+        
         return state_tensor
 
     def input_dim(self):
         return self.joint_state_dim + (self.cell_num ** 2 * self.om_channel_size if self.with_om else 0)
+                                                  # a**b means a^b
+        # if not with_om, input_dim = joint_state_dim
 
     def build_occupancy_maps(self, human_states):
         """
@@ -153,9 +206,9 @@ class MultiHumanRL(CADRL):
                             dm[2 * int(index)].append(other_vx[i])
                             dm[2 * int(index) + 1].append(other_vy[i])
                         elif self.om_channel_size == 3:
-                            dm[3 * int(index)].append(1)
-                            dm[3 * int(index) + 1].append(other_vx[i])
-                            dm[3 * int(index) + 2].append(other_vy[i])
+                            dm[2 * int(index)].append(1)
+                            dm[2 * int(index) + 1].append(other_vx[i])
+                            dm[2 * int(index) + 2].append(other_vy[i])
                         else:
                             raise NotImplementedError
                 for i, cell in enumerate(dm):
