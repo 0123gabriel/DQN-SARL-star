@@ -56,8 +56,9 @@ class ValueNetwork2(nn.Module):
         mlp1_output = self.mlp1(state)
         mlp1_output = torch.reshape(mlp1_output, (size[0], size[1], -1))
 
-        h0 = torch.zeros(1, size[0], self.lstm_hidden_dim)
-        c0 = torch.zeros(1, size[0], self.lstm_hidden_dim)
+        device = state.device
+        h0 = torch.zeros(1, size[0], self.lstm_hidden_dim, device=device)
+        c0 = torch.zeros(1, size[0], self.lstm_hidden_dim, device=device)
         output, (hn, cn) = self.lstm(mlp1_output, (h0, c0))
         hn = hn.squeeze(0)
         joint_state = torch.cat([self_state, hn], dim=1)

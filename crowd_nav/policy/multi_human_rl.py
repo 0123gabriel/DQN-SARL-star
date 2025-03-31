@@ -60,7 +60,7 @@ class MultiHumanRL(CADRL):
         if self.phase == 'train' and probability < self.epsilon:
             max_action = self.action_space[np.random.choice(len(self.action_space))]
         else:
-            print("Else Multi Human")
+            #print("Else Multi Human")
             self.action_values = list()
             max_value = float('-inf')
             max_action = None
@@ -68,14 +68,14 @@ class MultiHumanRL(CADRL):
                 next_self_state = self.propagate(state.self_state, action)
                 next_self_state_further = self.propagate_more(state.self_state, action)
 
-                # abort actions which will probably cause collision with static obstacles in the costmap
-                cost = self.compute_cost(next_self_state_further)
-                if cost > 0:
-                    print("********** Abort action:", action, "cost:", cost, "that will hit the obstacles.")
-                    continue
+                # # abort actions which will probably cause collision with static obstacles in the costmap
+                # cost = self.compute_cost(next_self_state_further)
+                # if cost > 0:
+                #     print("********** Abort action:", action, "cost:", cost, "that will hit the obstacles.")
+                #     continue
 
                 if self.query_env:
-                    next_human_states, reward, done, info = self.env.onestep_lookahead(action)
+                    next_human_states, reward, done, info, _, _, _, _ = self.env.onestep_lookahead(action)
                 else:
                     next_human_states = [self.propagate(human_state, ActionXY(human_state.vx, human_state.vy))
                                        for human_state in state.human_states]
@@ -90,8 +90,8 @@ class MultiHumanRL(CADRL):
                     rotated_batch_input = torch.cat([rotated_batch_input, occupancy_maps], dim=2)
                 # VALUE UPDATE
                 next_state_value = self.model(rotated_batch_input).data.item()
-                print("Next State Value")
-                print(next_state_value)
+                #print("Next State Value")
+                #print(next_state_value)
                 value = reward + pow(self.gamma, self.time_step * state.self_state.v_pref) * next_state_value
                 self.action_values.append(value)
                 if value > max_value:
