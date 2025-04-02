@@ -41,12 +41,12 @@ def main():
         #              r"collision rate: (?P<cr>[0-1].\d+), nav time: (?P<time>\d+.\d+), " \
         #              r"total reward: (?P<reward>[-+]?\d+.\d+)"
         val_pattern = (
-    r"VAL   in episode (?P<episode>\d+) has success rate: (?P<sr>[0-1]\.\d+), "
-    r"collision rate: (?P<cr>[0-1]\.\d+), timeout rate: (?P<tr>[0-1]\.\d+), "
-    r"collisionwall rate: (?P<cwr>[0-1]\.\d+), nav time: (?P<time>\d+\.\d+), "
-    r"average speed: (?P<speed>\d+\.\d+), path length: (?P<path>\d+\.\d+), "
-    r"total reward: (?P<reward>[-+]?\d+\.\d+)"
-)
+                        r"VAL   in episode (?P<episode>\d+) has success rate: (?P<sr>[0-1]\.\d+), "
+                        r"collision rate: (?P<cr>[0-1]\.\d+), timeout rate: (?P<tr>[0-1]\.\d+), "
+                        r"collisionwall rate: (?P<cwr>[0-1]\.\d+), nav time: (?P<time>\d+\.\d+), "
+                        r"average speed: (?P<speed>\d+\.\d+), path length: (?P<path>\d+\.\d+), "
+                        r"total reward: (?P<reward>[-+]?\d+\.\d+)"
+                    )
         val_episode = []
         val_sr = []
         val_cr = []
