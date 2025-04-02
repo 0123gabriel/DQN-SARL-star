@@ -52,14 +52,14 @@ def main():
         val_cr = []
         val_time = []
         val_reward = []
-        print(re.findall(val_pattern, log))
+        #print(re.findall(val_pattern, log))
         for r in re.findall(val_pattern, log):
             val_episode.append(int(r[0]))
             val_sr.append(float(r[1]))
             val_cr.append(float(r[2]))
             val_time.append(float(r[3]))
             val_reward.append(float(r[4]))
-        print(val_time)
+        #print(val_time)
         #train_pattern = r"TRAIN in episode (?P<episode>\d+) has success rate: (?P<sr>[0-1].\d+), " \
         #                r"collision rate: (?P<cr>[0-1].\d+), nav time: (?P<time>\d+.\d+), " \
         #                r"total reward: (?P<reward>[-+]?\d+.\d+)"
@@ -73,6 +73,7 @@ def main():
         train_cr = []
         train_time = []
         train_reward = []
+        print(re.findall(train_pattern, log))
         for r in re.findall(train_pattern, log):
             train_episode.append(int(r[0]))
             train_sr.append(float(r[1]))
@@ -95,6 +96,7 @@ def main():
 
         # plot sr
         if args.plot_sr:
+            #print('Success rate')
             if ax1 is None:
                 _, ax1 = plt.subplots()
             if args.plot_train:

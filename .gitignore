@@ -1,3 +1,4 @@
+*.pyc
 Python-RVO2
 crowdnav.egg-info
 *pyc
