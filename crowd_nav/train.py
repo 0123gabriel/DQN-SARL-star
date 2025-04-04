@@ -12,9 +12,9 @@ import torch
 import gym
 import git
 
-files_path = '/home/rise2/Gabriel/CrowdNav'
-if files_path not in sys.path:
-    sys.path.insert(0, files_path)
+# files_path = '/home/rise2/Gabriel/CrowdNav'
+# if files_path not in sys.path:
+#     sys.path.insert(0, files_path)
     
 #print(sys.path)
 
@@ -31,7 +31,7 @@ def main():
     parser.add_argument('--policy', type=str, default='cadrl')    # --policy sarl
     parser.add_argument('--policy_config', type=str, default='configs/policy.config')
     parser.add_argument('--train_config', type=str, default='configs/train.config')
-    parser.add_argument('--output_dir', type=str, default='trained_models/train_8_2000ed_sarl') # Use trainings with the name of the policy in the file name
+    parser.add_argument('--output_dir', type=str, default='trained_models/train_10_2000ed_sarl') # Use trainings with the name of the policy in the file name
     parser.add_argument('--weights', type=str)
     parser.add_argument('--resume', default=False, action='store_true')
     parser.add_argument('--gpu', default=False, action='store_true')

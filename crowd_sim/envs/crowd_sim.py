@@ -11,10 +11,10 @@ import torch
 from matplotlib import patches
 from numpy.linalg import norm
 
-import sys
-files_path = '/home/rise2/Gabriel/CrowdNav'
-if files_path not in sys.path:
-    sys.path.insert(0, files_path)
+# import sys
+# files_path = '/home/rise2/Gabriel/CrowdNav'
+# if files_path not in sys.path:
+#     sys.path.insert(0, files_path)
     
 #print(sys.path)
 

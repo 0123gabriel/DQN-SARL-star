@@ -6,9 +6,9 @@ import heapq
 import time
 #import random  
 
-files_path = '/home/rise2/Gabriel/CrowdNav'
-if files_path not in sys.path:
-    sys.path.insert(0, files_path)
+# files_path = '/home/rise2/Gabriel/CrowdNav'
+# if files_path not in sys.path:
+#     sys.path.insert(0, files_path)
     
 #print(sys.path)
 

@@ -13,11 +13,11 @@ import torch
 import numpy as np
 import gym
 
-files_path = '/home/rise2/Gabriel/CrowdNav'
-if files_path not in sys.path:
-    sys.path.insert(0, files_path)
+# files_path = '/home/rise2/Gabriel/CrowdNav'
+# if files_path not in sys.path:
+#     sys.path.insert(0, files_path)
     
-print(sys.path)
+# print(sys.path)
 
 from crowd_nav.utils.explorer import Explorer
 from crowd_nav.policy.policy_factory import policy_factory
