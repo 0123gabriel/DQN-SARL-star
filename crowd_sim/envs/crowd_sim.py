@@ -737,9 +737,9 @@ class CrowdSim(gym.Env):
             #print('Robot: ', self.robot)
             
             if self.case_counter[phase] >= 0:
-                np.random.seed(counter_offset[phase] + self.case_counter[phase]) #training
-                #np.random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios 
-                #random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios
+                #np.random.seed(counter_offset[phase] + self.case_counter[phase]) #training
+                np.random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios 
+                random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios
                 if phase in ['train', 'val']:
                     human_num = self.human_num if self.robot.policy.multiagent_training else 1
                     self.generate_random_human_position(human_num=human_num, rule=self.train_val_sim)
@@ -1703,6 +1703,12 @@ class CrowdSim(gym.Env):
                         plot_value_heatmap()
                 else:
                     anim.event_source.start()
+
+            # writer = animation.ImageMagickWriter(
+            #     fps=10,
+            #     metadata=dict(artist='Gabriel'),
+            #     bitrate=1800
+            # )
 
             fig.canvas.mpl_connect('key_press_event', on_click)
             anim = animation.FuncAnimation(fig, update, frames=len(self.states), interval=self.time_step * 1000)
