@@ -121,11 +121,10 @@ def main():
             current_pos = np.array(robot.get_position())
             logging.debug('Speed: %.2f', np.linalg.norm(current_pos - last_pos) / robot.time_step)
             last_pos = current_pos
-        env.render('video', args.video_file, args.model_dir)
+        logging.info('It takes %.2f seconds to finish. Final status is %s', env.global_time, info)
+        env.render('video', args.video_file, args.model_dir, args.test_case)
 
         print(args.model_dir)
-
-        logging.info('It takes %.2f seconds to finish. Final status is %s', env.global_time, info)
         if robot.visible and info == 'reach goal':
             human_times = env.get_human_times()
             logging.info('Average time for humans to reach goal: %.2f', sum(human_times) / len(human_times))
