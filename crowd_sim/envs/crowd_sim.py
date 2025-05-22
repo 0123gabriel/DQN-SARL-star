@@ -1382,7 +1382,7 @@ class CrowdSim(gym.Env):
                 
             if test_case is not None:
                 plot_title = plot_title + ' - Test Number: ' + str(test_case)
-            ax.set_title(title)
+            ax.set_title(plot_title)
             
             ax.add_artist(Wedge((0.0, 20.6), 13.6, -90, 90, width=6.5, color="lightgray"))
             ax.add_artist(Wedge((0.0, 0.0), 13.6, 90, 270, width=6.5, color="lightgray"))
