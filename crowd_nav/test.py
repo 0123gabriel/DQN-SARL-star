@@ -123,7 +123,7 @@ def main():
             last_pos = current_pos
         
         logging.info('It takes %.2f seconds to finish. Final status is %s', env.global_time, info)
-        env.render('video', args.video_file, args.model_dir, args.test_case)
+        env.render('video', args.video_file, args.model_dir.split('/')[1], args.test_case)
 
         print(args.model_dir)
 

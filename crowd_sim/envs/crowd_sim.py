@@ -737,9 +737,9 @@ class CrowdSim(gym.Env):
             #print('Robot: ', self.robot)
             
             if self.case_counter[phase] >= 0:
-                np.random.seed(counter_offset[phase] + self.case_counter[phase]) #training
-                #np.random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios 
-                #random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios
+                #np.random.seed(counter_offset[phase] + self.case_counter[phase]) #training
+                np.random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios 
+                random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios
                 if phase in ['train', 'val']:
                     human_num = self.human_num if self.robot.policy.multiagent_training else 1
                     self.generate_random_human_position(human_num=human_num, rule=self.train_val_sim)
