@@ -392,6 +392,7 @@ class CrowdSim(gym.Env):
             # add some noise to simulate all the possible cases robot could meet with human
             px = random.randint(40, 80)
             py = random.randint(60, 100)
+            print('Fake human position:', (px, py))
             collide = False
             for agent in [self.robot] + self.humans:
                 min_dist = human.radius + agent.radius + self.discomfort_dist
