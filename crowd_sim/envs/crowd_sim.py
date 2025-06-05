@@ -10,6 +10,7 @@ import rvo2
 import torch
 from matplotlib import patches
 from numpy.linalg import norm
+import re
 
 import sys
 files_path = '/home/rise2/Gabriel/CrowdNav'
@@ -738,14 +739,15 @@ class CrowdSim(gym.Env):
             #print('Robot: ', self.robot)
             
             if self.case_counter[phase] >= 0:
-                #np.random.seed(counter_offset[phase] + self.case_counter[phase]) #training
-                np.random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios 
-                random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios
+                
                 if phase in ['train', 'val']:
+                    np.random.seed(counter_offset[phase] + self.case_counter[phase]) #training
                     human_num = self.human_num if self.robot.policy.multiagent_training else 1
                     self.generate_random_human_position(human_num=human_num, rule=self.train_val_sim)
 
                 else:
+                    np.random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios 
+                    random.seed(counter_offset[phase] + self.case_counter[phase]) #testing in the same scenarios
                     self.generate_random_human_position(human_num=self.human_num, rule=self.test_sim)
                 # case_counter is always between 0 and case_size[phase]
                 self.case_counter[phase] = (self.case_counter[phase] + 1) % self.case_size[phase]
@@ -1299,7 +1301,7 @@ class CrowdSim(gym.Env):
 
         return ob, reward, done, info, reward_values, left_path, position, is_stopped
 
-    def render(self, mode='human', output_file=None, title=None, test_case=None):
+    def render(self, mode='human', output_file=None, title=None, test_case=None, info=None, total_time=None):
         print('render starts')
         from matplotlib import animation
         import matplotlib.pyplot as plt
@@ -1379,10 +1381,19 @@ class CrowdSim(gym.Env):
             
             plot_title = ''
             if title is not None:
-                plot_title = plot_title + title
+                model_title = title.split('_')
+                model_name = model_title[-1].upper()
+                epsilon_dec = int(re.findall(r'\d+', model_title[2])[0])
+                plot_title = plot_title + f'{model_name}: {epsilon_dec}'
                 
             if test_case is not None:
-                plot_title = plot_title + ' Test number: ' + str(test_case)
+                plot_title = plot_title + ' - Test number: ' + str(test_case)
+                
+            if info is not None:
+                plot_title = plot_title + ' - ' + str(info)
+                
+            if total_time is not None:
+                plot_title = plot_title + ' - Time: ' + str(total_time) + 's'
             
             ax.set_title(plot_title)
             
@@ -1716,16 +1727,20 @@ class CrowdSim(gym.Env):
             fig.canvas.mpl_connect('key_press_event', on_click)
             anim = animation.FuncAnimation(fig, update, frames=len(self.states), interval=self.time_step * 1000)
             anim.running = True
-            anim.save('testcase_animation.gif', writer='imagemagick')
-        
+
             if output_file is not None:
-                anim1 = animation.FuncAnimation(fig, update, frames=len(self.states), interval=self.time_step * 1000)
-                anim1.running = True
-                #ffmpeg_writer = animation.writers['ffmpeg']
-                #writer = ffmpeg_writer(fps=8, metadata=dict(artist='Me'), bitrate=1800)
-                #anim1.save(output_file, writer=writer)
-                anim1.save(output_file, writer='imagemagick')
+                # Reuse the existing animation object
+                if self.test_sim == 'no':
+                    scenario_type = 'no'
+                elif self.test_sim == 'circle_crossing':
+                    scenario_type = 'dyn'
+                else:
+                    scenario_type = 'stat'
+                    
+                output_file = os.path.join(output_file, f'{model_name}_{epsilon_dec}_{scenario_type}_{test_case}.gif')
+                anim.save(output_file, writer='imagemagick')
             else:
+                anim.save('testcase_animation.gif', writer='imagemagick')
                 plt.show()
         else:
             raise NotImplementedError
