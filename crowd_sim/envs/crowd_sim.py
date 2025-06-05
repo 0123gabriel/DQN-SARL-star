@@ -1736,7 +1736,12 @@ class CrowdSim(gym.Env):
                     scenario_type = 'dyn'
                 else:
                     scenario_type = 'stat'
-                    
+                
+                # Check if the file already exists, and modify the name if so
+                if os.path.exists(output_file):
+                    base, ext = os.path.splitext(output_file)
+                    output_file = f"{base}_copy{ext}"
+                
                 output_file = os.path.join(output_file, f'{model_name}_{epsilon_dec}_{scenario_type}_{test_case}.gif')
                 anim.save(output_file, writer='imagemagick')
             else:
