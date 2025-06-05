@@ -761,7 +761,7 @@ class CrowdSim(gym.Env):
                     self.humans[2].set(5, -5, 5, 5, 0, 0, np.pi / 2)
                 else:
                     raise NotImplementedError
-\
+
         for agent in [self.robot] + self.humans:
             agent.time_step = self.time_step
             agent.policy.time_step = self.time_step
