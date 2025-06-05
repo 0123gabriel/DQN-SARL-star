@@ -123,9 +123,11 @@ def main():
             last_pos = current_pos
         
         logging.info('It takes %.2f seconds to finish. Final status is %s', env.global_time, info)
-        env.render('video', args.video_file, args.model_dir.split('/')[1], args.test_case)
-
-        print(args.model_dir)
+        
+        if args.video_file is None:
+            args.video_file = '/home/gabrielga/Gabo/outputs_DQN/formatted_gifs'
+        
+        env.render('video', args.video_file, args.model_dir.split('/')[1], args.test_case, info, env.global_time)
 
         
         if robot.visible and info == 'reach goal':
